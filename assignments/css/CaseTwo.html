@@ -12,6 +12,19 @@
 
 <style>
 
+    * {
+        font-family: 'Ubuntu', sans-serif;
+    }
+
+    /*header {*/
+    /*    background: white;*/
+    /*    !*x-offset, y-offset, blur radius, spread radius, color*!*/
+    /*    box-shadow: 4px 1px 4px 0px #0000005c;*/
+    /*    position: fixed;*/
+    /*    width: 100%;*/
+    /*    top: 0;*/
+    /*    z-index: 3;*/
+    /*}*/
 
 
 header{
@@ -139,29 +152,22 @@ footer>p{
 body>main{
     position: relative;
 }
-
-#chatbox{
-    width: 200px;
+#chatBox {
+    border-radius: 18px;
+    width: 148px;
     height: 50px;
     right: 20px;
-    bottom: 20px;
+    bottom: 30px;
     background: darkblue;
     text-align: center;
     color: white;
     position: fixed;
 
 }
-
-#chatbox>p{
-    padding-top: 5px;
+#chatBox>p{
     font-size: 20px;
-
+    margin-top: 14px;
 }
-
-
-
-
-
 
 
 </style>
@@ -213,13 +219,16 @@ body>main{
             Necessitatibus, veritatis.</p>
         <p>Aliquam dignissimos eveniet ex facere quasi sit sunt ut? Accusantium animi, architecto blanditiis eos et
             expedita id in laboriosam molestiae odio quidem, recusandae saepe soluta tempora totam. Autem, ex nemo.</p>
+
+        <div id="chatBox">
+            <p>Chat Box</p>
+        </div>
+
         <p>Aliquam atque enim, hic in minus mollitia numquam repellat unde vitae voluptates. Alias aliquid commodi
             consequuntur cumque deleniti doloremque, earum, exercitationem itaque laboriosam maxime possimus, quaerat
             quam recusandae sequi voluptatibus.</p>
 
-        <div id="chatbox">
-            <p>Chatbox</p>
-        </div>
+
 
     </section>
 </main>
