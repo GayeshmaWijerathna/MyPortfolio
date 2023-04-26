@@ -4,4 +4,124 @@ h2{
 
 *{
     font-family: 'Stick No Bills', sans-serif;
+    margin: 0;
 }
+ 
+
+header{
+    background: #eeeeee;
+    position: relative;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    border: 1px solid black;
+    z-index: 1;
+}
+
+header>div{
+    margin: 10px;
+    display: inline-block;
+    position: absolute;
+    right: 14px;
+    top: 16px;
+}
+
+a{
+    text-decoration: none;
+}
+
+/*#home{*/
+/*    top: 50px;*/
+/*}*/
+
+main>section#home { /* home */
+    height: 100vh;
+    width: 90vw;
+    top: 90px;
+    position: absolute;
+    border: 2px solid rgb(0, 0, 0);
+}
+
+main>section#mainImage{
+    position: absolute;
+    width: 50vw;
+    height: 60vh;
+}
+
+main>section>h3{
+    position: absolute;
+    top: 250px;
+    text-underline: white;
+    text-underline-mode: 1px;
+    color: #ffffff;
+    left: 0;
+    right: 0;
+    margin: auto;
+} 
+
+main>section>h1{
+    position: absolute;
+    top: 90px;
+    font-size: 40pt;
+}
+
+
+
+main>section#project { /* project */
+    height: 100vh;
+    width: 90vw;
+    margin-top: 767px;
+    position: absolute;
+    border: 2px solid black;
+}
+
+main>section#gallery { /* gallery */
+    height: 100vh;
+    width: 90vw;
+    margin-top: 1623px;
+    position: absolute;
+    border: 2px solid black;
+}
+
+main>section#skills { /* skills */
+    height: 100vh;
+    width: 90vw;
+    margin-top: 2437px;
+    position: absolute;
+    border: 2px solid black;
+}
+
+main>section#assignments { /* assignments */
+    height: 100vh;
+    width: 90vw;
+    margin-top: 3270px;
+    position: absolute;
+    border: 2px solid black;
+    display: table;
+}
+
+main>section#about { /* about */
+    height: 100vh;
+    width: 90vw;
+    margin-top: 3950px;
+    position: absolute;
+    border: 2px solid black;
+}
+
+
+
+
+
+
+
+
+footer{
+    height: 100vh;
+    width: 90vw;
+    /*color: white;*/
+    position: absolute;
+    margin-top: 5242px;
+    margin-bottom: 0;
+}
+
+
