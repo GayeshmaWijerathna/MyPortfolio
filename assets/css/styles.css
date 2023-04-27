@@ -1,6 +1,4 @@
-h2{
-    color: deeppink;
-}
+ 
 
 *{
     font-family: 'Stick No Bills', sans-serif;
@@ -30,13 +28,10 @@ a{
     text-decoration: none;
 }
 
-/*#home{*/
-/*    top: 50px;*/
-/*}*/
-
+ 
 main>section#home { /* home */
-    height: 100vh;
-    width: 90vw;
+    height: 80vh;
+    width: 98vw;
     top: 90px;
     position: absolute;
     border: 2px solid rgb(0, 0, 0);
@@ -45,25 +40,59 @@ main>section#home { /* home */
 main>section#mainImage{
     position: absolute;
     width: 50vw;
-    height: 60vh;
+    height: 0vh;
 }
 
-main>section>h3{
+main>section>h3{ 
+    /* hello .... */
+    font-family: IM FELL Great Primer SC;
     position: absolute;
-    top: 250px;
-    text-underline: white;
-    text-underline-mode: 1px;
+    font-size: 33px;
+    filter: drop-shadow(2px 1px 2px black);
+    /* text-shadow: 2px 1px 2px rgb(0, 0, 0); */
+    top: 250px; 
+     text-decoration: underline ;
     color: #ffffff;
-    left: 0;
-    right: 0;
-    margin: auto;
+    left: 150px; 
+     
 } 
 
+ 
 main>section>h1{
+    /* Gayeshma ...*/
+    font-family: Iceland;     
+  -webkit-text-stroke: 1px white ;  
     position: absolute;
-    top: 90px;
-    font-size: 40pt;
+    top: 250px;
+    font-size: 80pt;
+     left: 120px;
+    color: rgb(0, 0, 0);margin-bottom: 0px;margin-top: 10px;
 }
+
+main>section>h5{
+    /* A designer.. */
+    position: absolute;
+    left: 390px;
+    top: 482px;
+    color: #ffffff;
+    font-size: 18px;
+    filter: drop-shadow(2px 1px 2px black);
+}
+
+
+main>section>p{
+    /* Hello there.. */
+    position: absolute;
+    left: 110px;
+    top: 511px;
+    right: 266px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 18px;
+    filter: drop-shadow(4px 2px 3px black);
+}
+
+
 
 
 
