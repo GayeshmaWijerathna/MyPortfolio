@@ -10,16 +10,17 @@ header{
     background: #eeeeee;
     position: relative;
     position: fixed;
-    width: 100%;
+    width: 100%; 
     top: 0;
     border: 1px solid black;
     z-index: 1;
 }
-
+/* Navigation buttons */
 header>div{
     margin: 10px;
     display: inline-block;
     position: absolute;
+    position: fixed;
     right: 14px;
     top: 16px;
 }
@@ -29,27 +30,53 @@ a{
 }
 
  
-main>section#home { /* home */
+    /* logo */
+main>section>div#Mylogo{
+
+    position: absolute;
+    top: 56px;
+    left: 282px;
+    
+}
+
+ /* div background color */
+main>section>div#Background{
+        
+        color: black;
+        background-color: black;
+        position: absolute;
+        width: 750px; 
+        height: 650px;
+        border-radius: 10%;
+        top: 10px;
+        left: 20px;
+        opacity: 39%;
+
+}
+
+/* home */
+main>section#home { 
     height: 80vh;
     width: 98vw;
     top: 90px;
     position: absolute;
-    border: 2px solid rgb(0, 0, 0);
+    /* border: 2px solid rgb(0, 0, 0); */
 }
 
+/* Main background image */
 main>section#mainImage{
     position: absolute;
     width: 50vw;
-    height: 0vh;
+    height: 10vh;
 }
 
+  /* my portfolio .... */
 main>section>h3{ 
-    /* hello .... */
+  
     font-family: IM FELL Great Primer SC;
     position: absolute;
     font-size: 33px;
     filter: drop-shadow(2px 1px 2px black);
-    /* text-shadow: 2px 1px 2px rgb(0, 0, 0); */
     top: 250px; 
      text-decoration: underline ;
     color: #ffffff;
@@ -57,60 +84,143 @@ main>section>h3{
      
 } 
 
- 
+  /* Gayeshma ...*/
 main>section>h1{
-    /* Gayeshma ...*/
+   
     font-family: Iceland;     
   -webkit-text-stroke: 1px white ;  
     position: absolute;
-    top: 250px;
+    top: 270px;
     font-size: 80pt;
      left: 120px;
     color: rgb(0, 0, 0);margin-bottom: 0px;margin-top: 10px;
 }
 
+ /* A designer.. */
 main>section>h5{
-    /* A designer.. */
+   
     position: absolute;
     left: 390px;
-    top: 482px;
+    top: 502px;
     color: #ffffff;
     font-size: 18px;
     filter: drop-shadow(2px 1px 2px black);
 }
 
-
-main>section>p{
     /* Hello there.. */
+main>section>p{
+
     position: absolute;
-    left: 110px;
-    top: 511px;
-    right: 266px;
+    font-family: Inter;
+    left: 90px;
+    top: 531px;
+    right: 550px;
     text-align: center;
     color: #ffffff;
-    font-size: 18px;
+    font-size: 21px;
     filter: drop-shadow(4px 2px 3px black);
 }
 
+/* --------------------------------------------------------- */
 
-
-
-
-main>section#project { /* project */
-    height: 100vh;
-    width: 90vw;
+/* project */
+main>section#project { 
+    height: 60vh;
+    width: 98vw;
     margin-top: 767px;
     position: absolute;
-    border: 2px solid black;
+    /* border: 2px solid black; */
 }
 
-main>section#gallery { /* gallery */
+/* navigation tag line */
+main>section>h2#projectHead{
+    position: absolute;
+    top: 0;
+    margin: 0;
+    background: #ac290a;
+    height: 30px;
+    width: 100%;
+
+}
+
+main>section>section#roomres{
+    position: absolute;
+    top: 55px;
+    display:  grid;
+    left: 50px;
+    right: 940px;
+}
+
+main>section>section#chickago{
+    position: absolute;
+    top: 55px;
+    display:  grid;
+    left: 470px;
+    right: 840px;
+}
+
+main>section>section#connect{
+    position: absolute;
+    top: 55px;
+    display:  grid;
+    left: 895px;
+    right: 840px;    
+}
+
+main>section>section>h4{
+text-align: center;
+}
+
+main>section>section>p{
+    text-align: center;  
+    }
+
+/* see all button */
+    main>section>button{
+        width: 80px;
+        height: 40px;
+        position: absolute;
+        bottom: 30px;
+        right: 30px;
+        background-color: white;
+        border-radius: 8px;
+        border-color: aqua;
+    }
+
+
+/* ---------------------------------------------------------- */
+ /* gallery */
+main>section#gallery {
     height: 100vh;
-    width: 90vw;
-    margin-top: 1623px;
+    width: 98vw;
+    margin-top: 1403px;
     position: absolute;
     border: 2px solid black;
 }
+
+
+/* navigation tag line */
+main>section>h2#galleryHead{
+    position: absolute;
+    top: 0;
+    margin: 0;
+    background: #ac290a;
+    height: 30px;
+    width: 100%;
+
+}
+
+/* images */
+main>section#gallery>div{
+    top: 50px;
+      position: absolute;
+    display: inline-table;
+}
+
+
+
+
+/* --------------------------------------------------------- */
 
 main>section#skills { /* skills */
     height: 100vh;
