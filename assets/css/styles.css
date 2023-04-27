@@ -28,7 +28,7 @@ header>div{
 a{
     text-decoration: none;
 }
-
+/* -----------------------Home------------------------------- */
  
     /* logo */
 main>section>div#Mylogo{
@@ -121,7 +121,7 @@ main>section>p{
     filter: drop-shadow(4px 2px 3px black);
 }
 
-/* --------------------------------------------------------- */
+/* -------------------------Project-------------------------------- */
 
 /* project */
 main>section#project { 
@@ -176,7 +176,7 @@ main>section>section>p{
     }
 
 /* see all button */
-    main>section>button{
+    main>section>button#projectbtn{
         width: 80px;
         height: 40px;
         position: absolute;
@@ -188,14 +188,14 @@ main>section>section>p{
     }
 
 
-/* ---------------------------------------------------------- */
+/* --------------------------Gallery----------------------------- */
  /* gallery */
 main>section#gallery {
     height: 100vh;
     width: 98vw;
     margin-top: 1403px;
     position: absolute;
-    border: 2px solid black;
+    /* border: 2px solid black; */
 }
 
 
@@ -219,25 +219,122 @@ main>section#gallery>div{
 
 
 
-
-/* --------------------------------------------------------- */
+main>section>button#gallerybtn{
+    width: 80px;
+    height: 40px;
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    background-color: white;
+    border-radius: 8px;
+    border-color: aqua;
+}
+/* ------------------------Skills----------------------------- */
 
 main>section#skills { /* skills */
     height: 100vh;
-    width: 90vw;
-    margin-top: 2437px;
+    width: 98vw;
+    margin-top: 2337px;
     position: absolute;
-    border: 2px solid black;
+    /* border: 2px solid black; */
 }
 
-main>section#assignments { /* assignments */
+/* navigation tag line */
+main>section>h2#skillsHead{
+    position: absolute;
+    top: 0;
+    margin: 0;
+    background: #ac290a;
+    height: 30px;
+    width: 98vw;
+}
+
+main>section>h5#lang{
+    position: absolute;
+    top: 60px ;
+    margin: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    animation: forwards;
+}
+
+main>section>div#lang1{
+    position: relative; 
+    top: 137px;
+    left: 50px;
+    width: 85vw;
+    display: grid;
+    grid-auto-flow: column;
+    align-content: space-around;
+    justify-content: space-between;
+}
+
+main>section>h5#tool{
+    position: absolute;
+    top: 290px ;
+    margin: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+main>section>div#tool1{
+    
+    position: relative; 
+    top: 337px;
+    display: grid;
+    left: 50px;
+    width: 85vw;
+    grid-auto-flow: column;
+    align-content: space-around;
+    justify-content: space-between;
+}
+
+
+
+
+
+/* ----------------------------Assignments------------------------------- */
+/* assignments */
+main>section#assignments { 
     height: 100vh;
-    width: 90vw;
+    width: 98vw;
     margin-top: 3270px;
     position: absolute;
     border: 2px solid black;
     display: table;
 }
+
+
+
+
+/* navigation tag line */
+main>section>h2#assignmentsHead{
+    position: absolute;
+    top: 0;
+    margin: 0;
+    background: #ac290a;
+    height: 30px;
+    width: 98vw;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* -----------------------------About---------------------------- */
+
+
+
 
 main>section#about { /* about */
     height: 100vh;
@@ -248,8 +345,16 @@ main>section#about { /* about */
 }
 
 
+/* navigation tag line */
+main>section>h2#aboutHead{
+    position: absolute;
+    top: 0;
+    margin: 0;
+    background: #ac290a;
+    height: 30px;
+    width: 98vw;
 
-
+}
 
 
 
