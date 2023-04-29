@@ -3,8 +3,14 @@
 *{
     font-family: 'Stick No Bills', sans-serif;
     margin: 0;
+    
 }
  
+.upperLogo{
+    top: 5px;
+    left: 5px;
+    position: relative;
+}
 
 header{
     background: #eeeeee;
@@ -12,9 +18,12 @@ header{
     position: fixed;
     width: 100%; 
     top: 0;
-    border: 1px solid black;
+    height: 60px;
+    box-shadow: 2px 1px 1px #ac290a;
+    /* border: 1px solid black; */
     z-index: 1;
 }
+
 /* Navigation buttons */
 header>div{
     margin: 10px;
@@ -22,8 +31,8 @@ header>div{
     position: absolute;
     position: fixed;
     right: 14px;
-    top: 16px;
-}
+    top: 10px;
+    }
 
 a{
     text-decoration: none;
@@ -35,44 +44,54 @@ main>section>div#Mylogo{
 
     position: absolute;
     top: 56px;
-    left: 282px;
-    
+    left: 330px;
+  
 }
+ 
 
+
+main>section>div#mainImage1{
+    background-image:url(/assets/image/MainImg.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+     
+
+}
  /* div background color */
 main>section>div#Background{
         
         color: black;
         background-color: black;
         position: absolute;
-        width: 750px; 
-        height: 650px;
+        width: 820px; 
+        height: 630px;
         border-radius: 10%;
-        top: 10px;
-        left: 20px;
+        top: 20px;
+        left: 30px;
         opacity: 39%;
 
 }
 
 /* home */
-main>section#home { 
-    height: 80vh;
+    main>section#home { 
+    height: 100vh;
     width: 98vw;
     top: 90px;
     position: absolute;
+
     /* border: 2px solid rgb(0, 0, 0); */
 }
 
 /* Main background image */
-main>section#mainImage{
+    main>section#mainImage{
     position: absolute;
-    width: 50vw;
-    height: 10vh;
+    width: 100vw;
+    height: 100vh;
 }
 
   /* my portfolio .... */
-main>section>h3{ 
-  
+    main>section>h3{ 
     font-family: IM FELL Great Primer SC;
     position: absolute;
     font-size: 33px;
@@ -80,27 +99,25 @@ main>section>h3{
     top: 250px; 
      text-decoration: underline ;
     color: #ffffff;
-    left: 150px; 
-     
+    left: 187px;   
 } 
 
   /* Gayeshma ...*/
-main>section>h1{
+    main>section>h1{
    
     font-family: Iceland;     
   -webkit-text-stroke: 1px white ;  
     position: absolute;
     top: 270px;
     font-size: 80pt;
-     left: 120px;
+     left: 157px;
     color: rgb(0, 0, 0);margin-bottom: 0px;margin-top: 10px;
 }
 
  /* A designer.. */
-main>section>h5{
-   
+    main>section>h5{
     position: absolute;
-    left: 390px;
+    left: 430px;
     top: 502px;
     color: #ffffff;
     font-size: 18px;
@@ -108,11 +125,10 @@ main>section>h5{
 }
 
     /* Hello there.. */
-main>section>p{
-
+    main>section>p{
     position: absolute;
     font-family: Inter;
-    left: 90px;
+    left: 75px;
     top: 531px;
     right: 550px;
     text-align: center;
@@ -121,10 +137,10 @@ main>section>p{
     filter: drop-shadow(4px 2px 3px black);
 }
 
-/* -------------------------Project-------------------------------- */
 
+/* -------------------------Project-------------------------------- */
 /* project */
-main>section#project { 
+    main>section#project { 
     height: 60vh;
     width: 98vw;
     margin-top: 767px;
@@ -133,7 +149,7 @@ main>section#project {
 }
 
 /* navigation tag line */
-main>section>h2#projectHead{
+    main>section>h2#projectHead{
     position: absolute;
     top: 0;
     margin: 0;
@@ -143,7 +159,7 @@ main>section>h2#projectHead{
 
 }
 
-main>section>section#roomres{
+    main>section>section#roomres{
     position: absolute;
     top: 55px;
     display:  grid;
@@ -151,7 +167,7 @@ main>section>section#roomres{
     right: 940px;
 }
 
-main>section>section#chickago{
+    main>section>section#chickago{
     position: absolute;
     top: 55px;
     display:  grid;
@@ -159,7 +175,7 @@ main>section>section#chickago{
     right: 840px;
 }
 
-main>section>section#connect{
+    main>section>section#connect{
     position: absolute;
     top: 55px;
     display:  grid;
@@ -167,15 +183,15 @@ main>section>section#connect{
     right: 840px;    
 }
 
-main>section>section>h4{
-text-align: center;
-}
+    main>section>section>h4{
+    text-align: center;
+    }
 
-main>section>section>p{
+    main>section>section>p{
     text-align: center;  
     }
 
-/* see all button */
+    /* see all button */
     main>section>button#projectbtn{
         width: 80px;
         height: 40px;
@@ -189,8 +205,8 @@ main>section>section>p{
 
 
 /* --------------------------Gallery----------------------------- */
- /* gallery */
-main>section#gallery {
+    /* gallery */
+    main>section#gallery {
     height: 100vh;
     width: 98vw;
     margin-top: 1403px;
@@ -199,8 +215,8 @@ main>section#gallery {
 }
 
 
-/* navigation tag line */
-main>section>h2#galleryHead{
+    /* navigation tag line */
+    main>section>h2#galleryHead{
     position: absolute;
     top: 0;
     margin: 0;
@@ -210,29 +226,95 @@ main>section>h2#galleryHead{
 
 }
 
-/* images */
-main>section#gallery>div{
+    /* images */
+    main>section#gallery>div{
     top: 50px;
-      position: absolute;
+    position: absolute;
     display: inline-table;
 
 }
 
 
 
-main>section>button#gallerybtn{
+    main>section>button#gallerybtn{
     width: 80px;
     height: 40px;
     position: absolute;
-    bottom: 30px;
+    bottom: -200px;
     right: 30px;
     background-color: white;
     border-radius: 8px;
     border-color: aqua;
-}
+
+    }
+
+/* ===============Gallery Images============================================== */
+main>section#gallery>section#photos {
+    position: relative;
+    top: 50px;
+    left: 10px;
+    width: 1200px;
+    height: 600px;
+    border: 2px solid black;
+    display: grid;
+    margin: auto;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    gap: 7px;
+  }
+
+  section#photos>div:hover{
+    transform: scale(1.08);
+  }
+
+
+  section#photos>div{
+    background-size: cover;
+    background-position: center;
+    box-shadow: 1px 2px 1px 1px black;
+  }
+
+  section#photos>div:nth-child(1){
+    background-image: url("/assets/image/Gallery%202.png");
+  }
+  section#photos>div:nth-child(2){
+    background-image: url("/assets/image/temple.JPG");
+  }
+  section#photos>div:nth-child(3){
+    background-image: url("/assets/image/Manejaiya.JPG");
+  }
+  section#photos>div:nth-child(4){
+    background-image: url("/assets/image/sandun%20wed.jpg");
+  }
+  section#photos>div:nth-child(5){
+    background-image: url("/assets/image/adams.JPG");
+  }
+  section#photos>div:nth-child(6){
+    background-image: url("/assets/image/getphoto.jpg");
+  }
+  section#photos>div:nth-child(7){
+    background-image: url("/assets/image/Dulan%20aiya.JPG");
+  }
+  section#photos>div:nth-child(8){
+    background-image: url("/assets/image/streetfood.JPG");
+  }
+  section#photos>div:nth-child(9){
+    background-image: url("/assets/image/aiyawed.jpg");
+  }
+  section#photos>div:nth-child(10){
+    background-image: url("/assets/image/sharaf.jpg");
+  }
+  section#photos>div:nth-child(11){
+    background-image: url("/assets/image/wasanthaArunalu.jpg");
+  } 
+  section#photos>div:nth-child(12){
+    background-image: url("/assets/image/SSAOfs.jpg");
+  }
+/* ============================================================= */
+
 /* ------------------------Skills----------------------------- */
 
-main>section#skills { /* skills */
+    main>section#skills { /* skills */
     height: 100vh;
     width: 98vw;
     margin-top: 2337px;
@@ -240,8 +322,16 @@ main>section#skills { /* skills */
     /* border: 2px solid black; */
 }
 
+main>section#skills>div#lang1>img:hover {
+    transform: scale(1.5);
+}
+
+main>section#skills>div#tool1>img:hover {
+    transform: scale(1.5);
+}
+
 /* navigation tag line */
-main>section>h2#skillsHead{
+    main>section>h2#skillsHead{
     position: absolute;
     top: 0;
     margin: 0;
@@ -250,7 +340,7 @@ main>section>h2#skillsHead{
     width: 98vw;
 }
 
-main>section>h5#lang{
+    main>section>h5#lang{
     position: absolute;
     top: 60px ;
     margin: 0;
@@ -258,9 +348,12 @@ main>section>h5#lang{
     right: 0;
     text-align: center;
     animation: forwards;
+    color: rgb(255, 106, 0);
+    font-size: 34px;
 }
 
-main>section>div#lang1{
+
+    main>section>div#lang1{
     position: relative; 
     top: 137px;
     left: 50px;
@@ -268,20 +361,24 @@ main>section>div#lang1{
     display: grid;
     grid-auto-flow: column;
     align-content: space-around;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
-main>section>h5#tool{
+
+    main>section>h5#tool{
     position: absolute;
     top: 290px ;
     margin: 0;
     left: 0;
     right: 0;
     text-align: center;
+    color: rgb(255, 106, 0);
+    font-size: 34px;
+  
 }
 
-main>section>div#tool1{
-    
+
+    main>section>div#tool1{ 
     position: relative; 
     top: 337px;
     display: grid;
@@ -289,7 +386,7 @@ main>section>div#tool1{
     width: 85vw;
     grid-auto-flow: column;
     align-content: space-around;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 
@@ -298,10 +395,10 @@ main>section>div#tool1{
 
 /* ----------------------------Assignments------------------------------- */
 /* assignments */
-main>section#assignments { 
+    main>section#assignments { 
     height: 100vh;
     width: 98vw;
-    margin-top: 3270px;
+    margin-top: 3000px;
     position: absolute;
     border: 2px solid black;
     display: table;
@@ -311,7 +408,7 @@ main>section#assignments {
 
 
 /* navigation tag line */
-main>section>h2#assignmentsHead{
+    main>section>h2#assignmentsHead{
     position: absolute;
     top: 0;
     margin: 0;
@@ -323,9 +420,40 @@ main>section>h2#assignmentsHead{
 
 
 
+main>section#assignments>section>div#img1{
+ background-image: url(/assets/image/battlefield.jpg);
 
+}
 
+main>section#assignments>section>div#img2{
+    background-image: url(/assets/image/assignmentsicon.png);
+   
+   }
+   main>section#assignments>section>div#img3{
+    background-image: url(/assets/image/Assignment\ 3.png);
+   
+   }
 
+main>section#assignments>section{
+    position: relative;
+    top: 30px;
+    left: 10px;
+    width: 50px;
+    height: 60px;
+    margin: auto;
+    /*border: 2px solid black;*/
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(3, 1fr); 
+}
+
+main>section#assignments>section>div{
+
+    background-size: cover;
+    background-position: center;
+}
+
+      
 
 
 
