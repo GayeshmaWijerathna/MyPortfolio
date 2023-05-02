@@ -196,7 +196,7 @@ main>section>div#Background{
         width: 80px;
         height: 40px;
         position: absolute;
-        bottom: 202px;
+        bottom: 120px;
         right: 30px;
         background-color: white;
         border-radius: 8px;
@@ -240,7 +240,7 @@ main>section>div#Background{
     width: 80px;
     height: 40px;
     position: absolute;
-    bottom: 202px;
+    bottom: 30px;
     right: 30px;
     background-color: white;
     border-radius: 8px;
@@ -493,7 +493,7 @@ main>section#assignments>#btnAssignment{
 
 
 main>section#about { /* about */
-    height: 300vh;
+    height: 412vh;
     width: 98vw;
     margin-top: 3950px;
     position: absolute;
@@ -516,10 +516,10 @@ main>section>h2#aboutHead{
 
 main>section#about>article#art1{
     position: absolute;
-    top: 40px;
-    left: 10px;
+    top: 60px;
+    left: 40px;
     right: 10px;
-    font-size: larger;
+    font-size: 15pt;
     color: #ffffff;
     align-items: center;
      
@@ -559,7 +559,7 @@ main>section#about>article>ul>li#ijseli1{
     position: absolute;
     left: 250px;
     top: 249px;
-    right: 90px;
+    right: 180px;
 
 }
 
@@ -575,7 +575,7 @@ main>section#about>article>ul>li#ijseli2{
     position: absolute;
     left: 200px;
     top: 329px;
-    right: 190px;
+    right: 250px;
 
 }
 
@@ -721,22 +721,129 @@ main>section#about>article>ul>li#exli4{
 }
 
 
+/* Activities MAIN TEXT */
+main>section#about>h5#act0{
+    position: absolute;
+    top: 1910px;
+    left: 45%;
+    font-size: 20pt;
+}
 
+/* Movies */
+main>section#about>div>img#actimg1{
+    position: absolute;
+    top: 1940px;
+    left: 350px;
+}
 
+/* Movies Text */
+main>section#about>div>h6#acth1{
+    position: absolute;
+    left: 335px;
+    top: 2060px;
+    font-size: 14pt;
 
+}
 
+/* Music */
+main>section#about>div>img#actimg2{
+    position: absolute;
+    top: 1954px;
+    left: 550px;
+}
 
+/* Music Text */
+main>section#about>div>h6#acth2{
+    position: absolute;
+    left: 550px;
+    top: 2060px;
+    font-size: 14pt;
 
+}
+
+/* Web */
+main>section#about>div>img#actimg3{
+    position: absolute;
+    top: 1954px;
+    left: 753px;
+}
+
+/* Web Text */
+main>section#about>div>h6#acth3{
+    position: absolute;
+    left: 755px;
+    top: 2060px;
+    font-size: 14pt;
+
+}
+
+/* Travel */
+main>section#about>div>img#actimg4{
+    position: absolute;
+    top: 1954px;
+    left: 953px;
+}
+
+/* Travel Text */
+main>section#about>div>h6#acth4{
+    position: absolute;
+    left: 965px;
+    top: 2060px;
+    font-size: 14pt;
+
+}
+
+ 
 /* --------------------------Footer--------------------------- */
 
 
 footer{
-    height: 100vh;
+    height: 110vh;
     width: 98vw;
     /*color: white;*/
     position: absolute;
-    margin-top: 6242px;
+    margin-top: 6142px;
     margin-bottom: 0;
 }
 
+footer>fieldset>section>form#text{
+    position: absolute;
+    top: 25px;
+    right: 10px;
+    border-radius: 45px;
+}
 
+footer>fieldset>section>form#email{
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    border-radius: 45px;
+}
+
+footer>fieldset>section>form#tel{
+    position: absolute;
+    top: 95px;
+    right: 10px;
+    border-radius: 45px;
+}
+
+footer>fieldset>section>form#area{
+    position: absolute;
+    top: 125px;
+    right: 10px;
+    border-radius: 45px;
+}
+
+footer>fieldset>section>button#btnSubmit{
+    position: relative;
+    bottom: -69px;
+    left: 1250px;
+
+}
+fieldset{
+padding: 0.35em 0.75em 4.625em;
+}
+
+footer>fieldset>div#buttonset>img{
+  ..................
+}
