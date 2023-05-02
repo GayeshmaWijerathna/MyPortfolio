@@ -141,9 +141,9 @@ main>section>div#Background{
 /* -------------------------Project-------------------------------- */
 /* project */
     main>section#project { 
-    height: 60vh;
+    height: 100vh;
     width: 98vw;
-    margin-top: 767px;
+    top: 827px;
     position: absolute;
     /* border: 2px solid black; */
 }
@@ -196,7 +196,7 @@ main>section>div#Background{
         width: 80px;
         height: 40px;
         position: absolute;
-        bottom: 30px;
+        bottom: 202px;
         right: 30px;
         background-color: white;
         border-radius: 8px;
@@ -209,7 +209,7 @@ main>section>div#Background{
     main>section#gallery {
     height: 100vh;
     width: 98vw;
-    margin-top: 1403px;
+    margin-top: 1541px;
     position: absolute;
     /* border: 2px solid black; */
 }
@@ -240,7 +240,7 @@ main>section>div#Background{
     width: 80px;
     height: 40px;
     position: absolute;
-    bottom: -200px;
+    bottom: 202px;
     right: 30px;
     background-color: white;
     border-radius: 8px;
@@ -253,8 +253,8 @@ main>section#gallery>section#photos {
     position: relative;
     top: 50px;
     left: 10px;
-    width: 1200px;
-    height: 600px;
+    width: 1100px;
+    height: 500px;
     border: 2px solid black;
     display: grid;
     margin: auto;
@@ -356,12 +356,12 @@ main>section#skills>div#tool1>img:hover {
     main>section>div#lang1{
     position: relative; 
     top: 137px;
-    left: 50px;
+    left: 60px;
     width: 85vw;
     display: grid;
     grid-auto-flow: column;
     align-content: space-around;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 
@@ -382,11 +382,11 @@ main>section#skills>div#tool1>img:hover {
     position: relative; 
     top: 337px;
     display: grid;
-    left: 50px;
+    left: 60px;
     width: 85vw;
     grid-auto-flow: column;
-    align-content: space-around;
-    justify-content: space-around;
+    align-content: center;
+    justify-content: space-between;
 }
 
 
@@ -394,14 +394,15 @@ main>section#skills>div#tool1>img:hover {
 
 
 /* ----------------------------Assignments------------------------------- */
+
 /* assignments */
     main>section#assignments { 
     height: 100vh;
     width: 98vw;
-    margin-top: 3000px;
+    top: 3100px;
     position: absolute;
-    border: 2px solid black;
-    display: table;
+    /* border: 2px solid black; */
+    
 }
 
 
@@ -410,52 +411,80 @@ main>section#skills>div#tool1>img:hover {
 /* navigation tag line */
     main>section>h2#assignmentsHead{
     position: absolute;
-    top: 0;
-    margin: 0;
     background: #ac290a;
     height: 30px;
     width: 98vw;
-
 }
 
 
+main>section#assignments>section>div#div1{
 
-main>section#assignments>section>div#img1{
- background-image: url(/assets/image/battlefield.jpg);
-
+    background-image: url(/assets/image/battlefield.jpg);
 }
 
-main>section#assignments>section>div#img2{
-    background-image: url(/assets/image/assignmentsicon.png);
-   
+main>section#assignments>section>div#div2{
+
+    background-image: url(/assets/image/Chicago.jpg);
    }
-   main>section#assignments>section>div#img3{
+
+main>section#assignments>section>div#div3{
+
     background-image: url(/assets/image/Assignment\ 3.png);
-   
    }
+
 
 main>section#assignments>section{
     position: relative;
-    top: 30px;
-    left: 10px;
-    width: 50px;
-    height: 60px;
-    margin: auto;
-    /*border: 2px solid black;*/
+    /* border: 2px solid black; */
     display: grid;
-    grid-template-columns: repeat(3, 1fr); 
-    grid-template-rows: repeat(3, 1fr); 
+    align-items: center;
+    margin: auto;
+    top: 80px;
+    left: 60px;
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between; 
+}
+
+main>section#assignments>section>div:hover{
+ 
+    transform: scale(1.3);
+ 
 }
 
 main>section#assignments>section>div{
-
+    width: 300px;
+    height: 200px;
     background-size: cover;
     background-position: center;
 }
 
-      
+/* Assignment Texts */
+main>section#assignments>section>h4{
+    position: absolute;
+    position: relative;
+    /* border: 2px solid black; */
+    display: grid;
+    align-items: center;
+    margin: auto;
+    top: 60px;
+    left: 15px;
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+     font-size: larger;
+ 
+}
 
-
+main>section#assignments>#btnAssignment{
+    width: 80px;
+    height: 40px;
+    position: absolute;
+    bottom: 202px;
+    right: 30px;
+    background-color: white;
+    border-radius: 8px;
+    border-color: aqua;
+}
 
 
 
@@ -463,14 +492,14 @@ main>section#assignments>section>div{
 /* -----------------------------About---------------------------- */
 
 
-
-
 main>section#about { /* about */
-    height: 100vh;
-    width: 90vw;
+    height: 300vh;
+    width: 98vw;
     margin-top: 3950px;
     position: absolute;
     border: 2px solid black;
+    background-color: #376B7B;
+    
 }
 
 
@@ -482,18 +511,231 @@ main>section>h2#aboutHead{
     background: #ac290a;
     height: 30px;
     width: 98vw;
+}
 
+
+main>section#about>article#art1{
+    position: absolute;
+    top: 40px;
+    left: 10px;
+    right: 10px;
+    font-size: larger;
+    color: #ffffff;
+    align-items: center;
+     
+}
+
+main>section#about>article>h5{
+   
+    color: #ffffff;
+}
+
+/* UL deco none */
+main>section#about>article>ul>li{
+    list-style-type: none;
+    font-style: italic;
+    color:#ffffff;
+    font-family: Iceland;
+    font-size: 20px;
+}
+
+/* Education MAIN TEXT */
+main>section#about>article>h5#edu0{
+    position: absolute;
+    top: 210px;
+    left: 45%;
+    font-size: 20pt;
+}
+
+/* IJSE */
+main>section#about>article>ul>img#edu1{
+    position: absolute;
+    top: 240px;
+    left: 185px;
+}
+
+/* IJSE text */
+main>section#about>article>ul>li#ijseli1{
+    position: absolute;
+    left: 250px;
+    top: 249px;
+    right: 90px;
+
+}
+
+/* COT */
+main>section#about>article>ul>img#edu2{
+    position: absolute;
+    top: 320px;
+    left: 1085px;
+}
+
+/* COT Text */
+main>section#about>article>ul>li#ijseli2{
+    position: absolute;
+    left: 200px;
+    top: 329px;
+    right: 190px;
+
+}
+
+/* VCG */
+main>section#about>article>ul>img#edu3{
+    position: absolute;
+    top: 420px;
+    left: 185px;
+}
+
+/* VCG text */
+main>section#about>article>ul>li#ijseli3{
+    position: absolute;
+    left: 250px;
+    top: 429px;
+    right: 90px;
+
+}
+
+/* PILANA */
+main>section#about>article>ul>img#edu4{
+    position: absolute;
+    top: 520px;
+    left: 1085px;
+}
+
+/* PILANA Text */
+main>section#about>article>ul>li#ijseli4{
+    position: absolute;
+    left: 200px;
+    top: 529px;
+    right: 190px;
+
+}
+
+
+/* Certificates MAIN TEXT */
+main>section#about>h5#cert0{
+    position: absolute;
+    top: 610px;
+    left: 45%;
+    font-size: 20pt;
+}
+
+
+main>section#about>img#cimg1{
+    position: absolute;
+    top: 690px;
+    left: 28%;
+    z-index: 18;
+}
+
+
+main>section#about>img#cimg2{
+    position: absolute;
+    top: 748px;
+    left: 12%;
+    opacity: 25%;
+}
+
+
+main>section#about>img#cimg3{
+    position: absolute;
+    top: 748px;
+    left: 55%;
+    opacity: 25%;
+}
+
+
+/* Experiance MAIN TEXT */
+main>section#about>h5#ex0{
+    position: absolute;
+    top: 1210px;
+    left: 45%;
+    font-size: 20pt;
+}
+
+
+/* SSA */
+main>section#about>article>ul>img#eximg1{
+    position: absolute;
+    top: 1320px;
+    left: 200px;
+}
+
+/* SSA Text */
+main>section#about>article>ul>li#exli1{
+    position: absolute;
+    left: 345px;
+    top: 1349px;
+    font-size: 18pt;
+    list-style-type: square;
+
+}
+
+/* Sanasa */
+main>section#about>article>ul>img#eximg2{
+    position: absolute;
+    top: 1460px;
+    left: 300px;
+}
+
+/* Sanasa Text */
+main>section#about>article>ul>li#exli2{
+    position: absolute;
+    left: 440px;
+    top: 1489px;
+    font-size: 18pt;
+    list-style-type: square;
+}
+
+/* Inforlink */
+main>section#about>article>ul>img#eximg3{
+    position: absolute;
+    top: 1600px;
+    left: 400px;
+}
+
+/* Inforlink Text */
+main>section#about>article>ul>li#exli3{
+    position: absolute;
+    left: 540px;
+    top: 1629px;
+    font-size: 18pt;
+    list-style-type: square;
+}
+
+
+/* Arpico */
+main>section#about>article>ul>img#eximg4{
+    position: absolute;
+    top: 1740px;
+    left: 500px;
+}
+
+/* Arpico Text */
+main>section#about>article>ul>li#exli4{
+    position: absolute;
+    left: 640px;
+    top: 1769px;
+    font-size: 18pt;
+    list-style-type: square;
 }
 
 
 
 
+
+
+
+
+/* --------------------------Footer--------------------------- */
+
+
 footer{
     height: 100vh;
-    width: 90vw;
+    width: 98vw;
     /*color: white;*/
     position: absolute;
-    margin-top: 5242px;
+    margin-top: 6242px;
     margin-bottom: 0;
 }
 
