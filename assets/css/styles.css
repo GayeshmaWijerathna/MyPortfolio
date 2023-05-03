@@ -1,11 +1,11 @@
- 
+
 
 *{
     font-family: 'Stick No Bills', sans-serif;
     margin: 0;
-    
+
 }
- 
+
 .upperLogo{
     top: 5px;
     left: 5px;
@@ -16,7 +16,7 @@ header{
     background: #eeeeee;
     position: relative;
     position: fixed;
-    width: 100%; 
+    width: 100%;
     top: 0;
     height: 60px;
     box-shadow: 2px 1px 1px #ac290a;
@@ -38,16 +38,16 @@ a{
     text-decoration: none;
 }
 /* -----------------------Home------------------------------- */
- 
+
     /* logo */
 main>section>div#Mylogo{
 
     position: absolute;
     top: 56px;
     left: 330px;
-  
+
 }
- 
+
 
 
 main>section>div#mainImage1{
@@ -55,16 +55,16 @@ main>section>div#mainImage1{
     height: 100vh;
     background-size: cover;
     background-position: center;
-     
+
 
 }
  /* div background color */
 main>section>div#Background{
-        
+
         color: black;
         background-color: black;
         position: absolute;
-        width: 820px; 
+        width: 820px;
         height: 630px;
         border-radius: 10%;
         top: 20px;
@@ -74,11 +74,12 @@ main>section>div#Background{
 }
 
 /* home */
-    main>section#home { 
+    main>section#home {
     height: 100vh;
     width: 98vw;
     top: 90px;
     position: absolute;
+    padding: 4rem;
 
     /* border: 2px solid rgb(0, 0, 0); */
 }
@@ -91,22 +92,22 @@ main>section>div#Background{
 }
 
   /* my portfolio .... */
-    main>section>h3{ 
+    main>section>h3{
     font-family: IM FELL Great Primer SC;
     position: absolute;
     font-size: 33px;
     filter: drop-shadow(2px 1px 2px black);
-    top: 250px; 
+    top: 250px;
      text-decoration: underline ;
     color: #ffffff;
-    left: 187px;   
-} 
+    left: 187px;
+}
 
   /* Gayeshma ...*/
     main>section>h1{
-   
-    font-family: Iceland;     
-  -webkit-text-stroke: 1px white ;  
+
+    font-family: Iceland;
+  -webkit-text-stroke: 1px white ;
     position: absolute;
     top: 270px;
     font-size: 80pt;
@@ -140,11 +141,12 @@ main>section>div#Background{
 
 /* -------------------------Project-------------------------------- */
 /* project */
-    main>section#project { 
+    main>section#project {
     height: 100vh;
     width: 98vw;
     top: 827px;
     position: absolute;
+
     /* border: 2px solid black; */
 }
 
@@ -180,7 +182,7 @@ main>section>div#Background{
     top: 55px;
     display:  grid;
     left: 895px;
-    right: 840px;    
+    right: 840px;
 }
 
     main>section>section>h4{
@@ -188,7 +190,7 @@ main>section>div#Background{
     }
 
     main>section>section>p{
-    text-align: center;  
+    text-align: center;
     }
 
     /* see all button */
@@ -306,7 +308,7 @@ main>section#gallery>section#photos {
   }
   section#photos>div:nth-child(11){
     background-image: url("/assets/image/wasanthaArunalu.jpg");
-  } 
+  }
   section#photos>div:nth-child(12){
     background-image: url("/assets/image/SSAOfs.jpg");
   }
@@ -354,7 +356,7 @@ main>section#skills>div#tool1>img:hover {
 
 
     main>section>div#lang1{
-    position: relative; 
+    position: relative;
     top: 137px;
     left: 60px;
     width: 85vw;
@@ -374,12 +376,12 @@ main>section#skills>div#tool1>img:hover {
     text-align: center;
     color: rgb(255, 106, 0);
     font-size: 34px;
-  
+
 }
 
 
-    main>section>div#tool1{ 
-    position: relative; 
+    main>section>div#tool1{
+    position: relative;
     top: 337px;
     display: grid;
     left: 60px;
@@ -396,13 +398,13 @@ main>section#skills>div#tool1>img:hover {
 /* ----------------------------Assignments------------------------------- */
 
 /* assignments */
-    main>section#assignments { 
+    main>section#assignments {
     height: 100vh;
     width: 98vw;
     top: 3100px;
     position: absolute;
     /* border: 2px solid black; */
-    
+
 }
 
 
@@ -443,13 +445,13 @@ main>section#assignments>section{
     left: 60px;
     grid-template-rows: repeat(1, 1fr);
     grid-template-columns: repeat(3, 1fr);
-    justify-content: space-between; 
+    justify-content: space-between;
 }
 
 main>section#assignments>section>div:hover{
- 
+
     transform: scale(1.3);
- 
+
 }
 
 main>section#assignments>section>div{
@@ -472,7 +474,7 @@ main>section#assignments>section>h4{
     grid-template-rows: repeat(1, 1fr);
     grid-template-columns: repeat(3, 1fr);
      font-size: larger;
- 
+
 }
 
 main>section#assignments>#btnAssignment{
@@ -499,7 +501,7 @@ main>section#about { /* about */
     position: absolute;
     border: 2px solid black;
     background-color: #376B7B;
-    
+
 }
 
 
@@ -522,11 +524,11 @@ main>section#about>article#art1{
     font-size: 15pt;
     color: #ffffff;
     align-items: center;
-     
+
 }
 
 main>section#about>article>h5{
-   
+
     color: #ffffff;
 }
 
@@ -793,7 +795,7 @@ main>section#about>div>h6#acth4{
 
 }
 
- 
+
 /* --------------------------Footer--------------------------- */
 
 

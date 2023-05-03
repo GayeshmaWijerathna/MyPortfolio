@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=divice-width initial-scale=1">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/fontawesome/css/all.min.css">
+    <title>CaseOne</title>
+
+  <style>
+      section{
+          right: 230px;
+      }
+      section>div {
+          position: relative;
+          margin: 20px;
+          background-color: purple;
+          height: 50px;
+          width: 300px;
+          left: -240px;
+          top: 10px;
+          transition: all 2s;
+          align-items: center;
+      }
+
+      section>div:hover{
+          left: -20px;
+          transition: all 2s;
+      }
+
+      div>h1{
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 20px;
+          margin: auto;
+          height: max-content;
+          width: max-content;
+          color: white;
+          font-family: 'Ubuntu', sans-serif;
+          font-size: 20px;
+      }
+
+      div>i{
+          font-size: 25px;
+          color: white;
+          position: absolute;
+          margin-left: 260px;
+          top: 7px;
+
+      }
+
+  </style>
+
+
+</head>
+<body>
+<section>
+<div>
+    <h1>Menu One</h1>
+        <i class="fa-solid fa-book" style="color: #ffffff;"></i>
+    </div>
+    <div>
+        <h1>Menu Two</h1>
+        <i class="fa-solid fa-truck"></i>
+    </div>
+    <div>
+        <h1>Menu Three</h1>
+        <i class="fa-solid fa-layer-group"></i>
+    </div>
+    <div>
+        <h1>Menu Four</h1>
+        <i class="fa-sharp fa-solid fa-user"></i>
+    </div>
+    <div>
+        <h1>Menu Five</h1>
+        <i class="fa-solid fa-print"></i>
+    </div>
+</section>
+
+</body>
+</html>
