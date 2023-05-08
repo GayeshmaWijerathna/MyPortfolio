@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=divice-width initial-scale=1">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/fontawesome/css/all.min.css">
+    <title>Circle Transition</title>
+
+    <style>
+
+        div {
+            height: 430px;
+            width: 430px;
+            background-color: gray;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            border-radius: 100%;
+            border: 20px solid white;
+            border-top: 20px solid red;
+            cursor: pointer;
+
+        }
+
+        body {
+            background-color: blue;
+        }
+
+        div>h1 {
+            width: max-content;
+            height: max-content;
+            position: absolute;
+            color: white;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            font-family: 'Ubuntu', sans-serif;
+            font-size: 39pt;
+        }
+        div:hover{
+            transform: rotate(360deg);
+            transition: all 2s;
+        }
+        div:hover>h1{
+            transform: rotate(-360deg);
+            transition: all 2s;
+        }
+
+    </style>
+</head>
+<body>
+<div>
+    <h1>RWAD</h1>
+</div>
+</body>
+</html>
