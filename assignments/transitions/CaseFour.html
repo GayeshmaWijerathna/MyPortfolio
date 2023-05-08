@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/fontawesome/css/all.min.css">
+    <title>Water Drop Animation</title>
+    <style>
+
+        section{
+            position:relative;
+            height: 97.5vh;
+            z-index: 100;
+
+        }
+
+        section:active{
+            animation-name: click;
+            animation-duration: 0.5s;
+            animation-direction: initial;
+            animation-iteration-count: 1;
+        }
+
+        section>div#drop{
+            position: absolute;
+            top: 40vh;
+            left: 44vw;
+            animation-name: waterDrop;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+
+        }
+
+        @keyframes waterDrop {
+
+
+            0%{
+               transform: scale(2);
+                width: 20px;
+                height: 20px;
+                border: 2px solid rgb(167, 20, 20);
+                border-radius: 100%;
+
+             }
+            100%{
+                transform: scale(4);
+                width: 100px;
+                height: 100px;
+                border: 0 solid white;
+                border-radius: 100%;
+
+            }
+        }
+
+
+        @keyframes click {
+
+            from{
+                width: 0;
+                height: 0;
+                border-radius: 100%;
+                border: 2px solid rgb(55, 3, 112);
+            }
+
+            to{
+                width: 20px;
+                height: 20px;
+                border-radius: 100%;
+                border: 2px solid rgba(19, 190, 105, 0.99);
+
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+<section>
+    <div id="drop"></div>
+    <div id="clickme"></div>
+</section>
+
+</body>
+</html>
