@@ -14,21 +14,22 @@
 
 header{
     background: #eeeeee;
-    position: relative;
+    /*position: relative;*/
     position: fixed;
     width: 100%;
     top: 0;
     height: 60px;
+
     box-shadow: 2px 1px 1px #ac290a;
     /* border: 1px solid black; */
-    z-index: 1;
+    z-index: 9990;
 }
 
 /* Navigation buttons */
 header>div{
     margin: 10px;
     display: inline-block;
-    position: absolute;
+    /*position: absolute;*/
     position: fixed;
     right: 14px;
     top: 10px;
@@ -36,6 +37,10 @@ header>div{
 
 a{
     text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 /* -----------------------Home------------------------------- */
 
@@ -51,7 +56,7 @@ main>section>div#Mylogo{
 
 
 main>section>div#mainImage1{
-    background-image:url(/assets/image/MainImg.jpg);
+    background-image:url("../image/MainImg.jpg");
     height: 100vh;
     background-size: cover;
     background-position: center;
@@ -79,7 +84,7 @@ main>section>div#Background{
     width: 98vw;
     top: 90px;
     position: absolute;
-    padding: 4rem;
+    /*padding: 4rem;*/
 
     /* border: 2px solid rgb(0, 0, 0); */
 }
@@ -87,7 +92,7 @@ main>section>div#Background{
 /* Main background image */
     main>section#mainImage{
     position: absolute;
-    width: 100vw;
+    width: 98vw;
     height: 100vh;
 }
 
@@ -101,6 +106,7 @@ main>section>div#Background{
      text-decoration: underline ;
     color: #ffffff;
     left: 187px;
+
 }
 
   /* Gayeshma ...*/
@@ -112,7 +118,7 @@ main>section>div#Background{
     top: 270px;
     font-size: 80pt;
      left: 157px;
-    color: rgb(0, 0, 0);margin-bottom: 0px;margin-top: 10px;
+    color: rgb(0, 0, 0);margin-bottom: 0;margin-top: 10px;
 }
 
  /* A designer.. */
@@ -157,7 +163,7 @@ main>section>div#Background{
     margin: 0;
     background: #ac290a;
     height: 30px;
-    width: 100%;
+    width: 98vw;
 
 }
 
@@ -224,7 +230,7 @@ main>section>div#Background{
     margin: 0;
     background: #ac290a;
     height: 30px;
-    width: 100%;
+    width: 98vw;
 
 }
 
@@ -255,7 +261,7 @@ main>section#gallery>section#photos {
     position: relative;
     top: 50px;
     left: 10px;
-    width: 1100px;
+    width: 1000px;
     height: 500px;
     border: 2px solid black;
     display: grid;
@@ -277,40 +283,40 @@ main>section#gallery>section#photos {
   }
 
   section#photos>div:nth-child(1){
-    background-image: url("/assets/image/Gallery%202.png");
+    background-image: url("../image/Gallery%202.png");
   }
   section#photos>div:nth-child(2){
-    background-image: url("/assets/image/temple.JPG");
+    background-image: url("../image/temple.JPG");
   }
   section#photos>div:nth-child(3){
-    background-image: url("/assets/image/Manejaiya.JPG");
+    background-image: url("../image/Manejaiya.JPG");
   }
   section#photos>div:nth-child(4){
-    background-image: url("/assets/image/sandun%20wed.jpg");
+    background-image: url("../image/sandun%20wed.jpg");
   }
   section#photos>div:nth-child(5){
-    background-image: url("/assets/image/adams.JPG");
+    background-image: url("../image/adams.JPG");
   }
   section#photos>div:nth-child(6){
-    background-image: url("/assets/image/getphoto.jpg");
+    background-image: url("../image/getphoto.jpg");
   }
   section#photos>div:nth-child(7){
-    background-image: url("/assets/image/Dulan%20aiya.JPG");
+    background-image: url("../image/Dulan%20aiya.JPG");
   }
   section#photos>div:nth-child(8){
-    background-image: url("/assets/image/streetfood.JPG");
+    background-image: url("../image/streetfood.JPG");
   }
   section#photos>div:nth-child(9){
-    background-image: url("/assets/image/aiyawed.jpg");
+    background-image: url("../image/aiyawed.jpg");
   }
   section#photos>div:nth-child(10){
-    background-image: url("/assets/image/sharaf.jpg");
+    background-image: url("../image/sharaf.jpg");
   }
   section#photos>div:nth-child(11){
-    background-image: url("/assets/image/wasanthaArunalu.jpg");
+    background-image: url("../image/wasanthaArunalu.jpg");
   }
   section#photos>div:nth-child(12){
-    background-image: url("/assets/image/SSAOfs.jpg");
+    background-image: url("../image/SSAOfs.jpg");
   }
 /* ============================================================= */
 
@@ -421,17 +427,17 @@ main>section#skills>div#tool1>img:hover {
 
 main>section#assignments>section>div#div1{
 
-    background-image: url(/assets/image/battlefield.jpg);
+    background-image: url("../image/battlefield.jpg");
 }
 
 main>section#assignments>section>div#div2{
 
-    background-image: url(/assets/image/Chicago.jpg);
+    background-image: url("../image/Chicago.jpg");
    }
 
 main>section#assignments>section>div#div3{
 
-    background-image: url(/assets/image/Assignment\ 3.png);
+    background-image: url("../image/Assignment\ 3.png");
    }
 
 
@@ -463,7 +469,7 @@ main>section#assignments>section>div{
 
 /* Assignment Texts */
 main>section#assignments>section>h4{
-    position: absolute;
+    /*position: absolute;*/
     position: relative;
     /* border: 2px solid black; */
     display: grid;
@@ -800,7 +806,7 @@ main>section#about>div>h6#acth4{
 
 
 footer{
-    height: 110vh;
+    height: 58vh;
     width: 98vw;
     /*color: white;*/
     position: absolute;
@@ -839,9 +845,21 @@ footer>fieldset>section>form#area{
 footer>fieldset>section>button#btnSubmit{
     position: relative;
     bottom: -69px;
-    left: 1250px;
-
+    left: 844px;
 }
+
+footer>fieldset>h4{
+    top: 10px;
+    font-size: 18pt;
+    left: 6px;
+}
+
+footer>fieldset>section>address>ul>li>img{
+    top: 10px;
+    /*gap: 7px;*/
+}
+
+
 fieldset{
 padding: 0.35em 0.75em 4.625em;
 }
