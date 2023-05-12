@@ -276,6 +276,7 @@ main>section#gallery>section#photos {
 
   section#photos>div:hover{
     transform: scale(1.08);
+      filter: none;
   }
 
 
@@ -287,6 +288,7 @@ main>section#gallery>section#photos {
 
   section#photos>div:nth-child(1){
     background-image: url("../image/Gallery%202.png");
+      filter: grayscale(1);
   }
   section#photos>div:nth-child(2){
     background-image: url("../image/temple.JPG");
