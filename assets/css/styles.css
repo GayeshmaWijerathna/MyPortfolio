@@ -438,12 +438,12 @@ main > section > h2#assignmentsHead {
 
 main > section#assignments > section > div#div1 {
 
-    background-image: url("../image/battlefield.jpg");
+    background-image: url("../image/CaseOne1.gif");
 }
 
 main > section#assignments > section > div#div2 {
 
-    background-image: url("../image/Chicago.jpg");
+    background-image: url("../image/CaseTwo2.gif");
 }
 
 main > section#assignments > section > div#div3 {
@@ -457,9 +457,10 @@ main > section#assignments > section {
     /* border: 2px solid black; */
     display: grid;
     align-items: center;
-    margin: auto;
+    margin: 10px;
     top: 80px;
-    left: 60px;
+    left: 10px;
+    right: 10px;
     grid-template-rows: repeat(1, 1fr);
     grid-template-columns: repeat(3, 1fr);
     justify-content: space-between;
@@ -468,7 +469,7 @@ main > section#assignments > section {
 main > section#assignments > section > div:hover {
 
     transform: scale(1.3);
-
+        margin-left: 20px;
 }
 
 main > section#assignments > section > div {
@@ -866,6 +867,15 @@ footer > fieldset > section > button#btnSubmit {
     background-color: #ac290a;
     border-radius: 20px;
 
+}
+
+#btnSubmit:hover{
+    background-color: #376B7B;
+}
+
+input:focus{
+    background-color: #ac290a;
+    color: white;
 }
 
 footer > fieldset > h4 {
