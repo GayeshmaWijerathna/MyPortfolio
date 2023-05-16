@@ -105,6 +105,27 @@ main > section > div#Mylogo {
 
 }
 
+#hireme{
+    position: absolute;
+    top: 580px;
+    left: 1050px;
+    color: white;
+    background: linear-gradient(to right, black, #A93226); /* Example gradient colors */
+
+    background-clip: initial;
+    animation: ease 5s infinite;
+}
+
+@keyframes -shake {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+
 
 main > section > div#mainImage1 {
     background-image: url("../image/MainImg.jpg");
