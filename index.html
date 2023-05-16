@@ -40,12 +40,12 @@
     <!--    </menu>-->
 
     <div class="topnav">
-        <b><a class="active" href="#home" style="font-size: 18pt; alignment: center ">Home</a></b> &nbsp;
-        <b><a href="#project" style="font-size: 18pt">Project</a></b> &nbsp;
-        <b><a href="#gallery" style="font-size: 18pt">Gallery</a></b> &nbsp;
-        <b><a href="#skills" style="font-size: 18pt">Skills</a></b> &nbsp;
-        <b><a href="#assignments" style="font-size: 18pt">Assignments</a></b> &nbsp;
-        <b><a href="#about" style="font-size: 18pt">About</a></b> &nbsp;
+        <b><a  href="#home" style="font-size: 18pt; alignment: center "  class="menu-btn hoverText" >Home</a></b> &nbsp;
+        <b><a href="#project" style="font-size: 18pt"  class="menu-btn hoverText" >Project</a></b> &nbsp;
+        <b><a href="#gallery" style="font-size: 18pt"  class="menu-btn hoverText">Gallery</a></b> &nbsp;
+        <b><a href="#skills" style="font-size: 18pt"  class="menu-btn hoverText">Skills</a></b> &nbsp;
+        <b><a href="#assignments" style="font-size: 18pt"  class="menu-btn hoverText">Assignments</a></b> &nbsp;
+        <b><a href="#about" style="font-size: 18pt"  class="menu-btn hoverText">About</a></b> &nbsp;
 
     </div>
 
@@ -175,22 +175,28 @@
                                                                 width="20" align="left-center"> Assignments</h2>
 
         <section>
-            <div id="div1"></div>
-
+            <div id="div1">   <a href="assignments/transitions/CaseOne.html" target="_blank"> <h4> Assignment 1 </h4></a></div>
 
             <div id="div2"></div>
 
-
             <div id="div3"></div>
+
+
         </section>
 
         <section>
             <a href="assignments/transitions/CaseOne.html" target="_blank"> <h4> Assignment 1 </h4></a>
             <a href="assignments/transitions/CaseTwo.html" target="_blank"> <h4> Assignment 2 </h4></a>
             <a href="assignments/Animations/CaseThree.html" target="_blank"> <h4> Assignment 3 </h4></a>
+<!--            <a href="assignments/Animations/CaseFour.html" target="_blank"> <h4> Assignment 4 </h4></a>-->
 
         </section>
-        <button onclick="navigator.geolocation" id="btnAssignment"> See All</button>
+
+            <form action="https://ijse.lk" method="get" target="_blank">
+<!--                <button type="submit" id="btnAssignment">Show More</button>-->
+        <button type="submit" id="btnAssignment"> See All</button>
+        </form>
+
     </section>
 
     <!-- About -->
@@ -329,18 +335,18 @@
         </div>
 
 
-        <section>
+        <section id="msgSubmit_Section">
             <form id="text">
                 <input type='text' placeholder="Your Name"/>
-            </form>
-            <form id="email">
+<!--            </form>-->
+<!--            <form id="email">-->
                 <input type='email' placeholder='Email'/>
-            </form>
-            <form id="tel">
+<!--            </form>-->
+<!--            <form id="tel">-->
                 <input type='tel' height="5" width="100" placeholder='Contact Number'/>
-            </form>
+<!--            </form>-->
             <br>
-            <form id="area">
+<!--            <form id="area">-->
                 <textarea rows="4" cols="33" placeholder="Message..."></textarea>
             </form>
 
@@ -349,7 +355,7 @@
     </fieldset>
 
 
-    <small>© Copyright Gayeshma Wijayarathna. All Rights Reserved 2023. </small>
+    <small> &nbsp;&nbsp;&nbsp;   © Copyright Gayeshma Wijayarathna. All Rights Reserved 2023. </small>
 </footer>
 
 </body>

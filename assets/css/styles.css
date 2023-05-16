@@ -12,17 +12,69 @@
 }
 
 header {
-    background: #eeeeee;
+    background: #151515;
     /*position: relative;*/
     position: fixed;
     width: 100%;
     top: 0;
     height: 60px;
 
-    box-shadow: 2px 1px 1px #ac290a;
+    /*box-shadow: 2px 1px 1px #ac290a;*/
     /* border: 1px solid black; */
     z-index: 9990;
+
 }
+
+header menu li {
+    font-size: 20px;
+    margin-left: 40px;
+
+}
+
+/*----------------manu href-------------*/
+header menu li a {
+    color: white;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.hoverText {
+    font-weight: normal;
+    transition: all 0.2s ease-in-out;
+    color: white;
+}
+
+/* hover state */
+.hoverText:hover {
+    font-weight: bold;
+    color: deepskyblue;
+    transform: scale(1.1);
+}
+
+/* Underline Text */
+.menu-btn {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/*----------------animation-------------*/
+.menu-btn::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background-color: #000000;
+    transition: width 0.3s ease-in-out;
+}
+
+.menu-btn:hover::after {
+    width: 100%;
+}
+
 
 /* Navigation buttons */
 header > div {
@@ -74,7 +126,7 @@ main > section > div#Background {
     border-radius: 10%;
     top: 20px;
     left: 30px;
-    opacity: 39%;
+    opacity: 69%;
 
 }
 
@@ -82,10 +134,10 @@ main > section > div#Background {
 main > section#home {
     height: 100vh;
     width: 98vw;
-    top: 90px;
+    /*top: 90px;*/
     position: absolute;
     /*padding: 4rem;*/
-
+    background-color:#151515 ;
     /* border: 2px solid rgb(0, 0, 0); */
 }
 
@@ -112,8 +164,8 @@ main > section > h3 {
 /* Gayeshma ...*/
 main > section > h1 {
 
-    font-family: Iceland;
-    -webkit-text-stroke: 1px white;
+    /*font-family: Iceland;*/
+    -webkit-text-stroke: 0.5px white;
     position: absolute;
     top: 270px;
     font-size: 80pt;
@@ -143,7 +195,7 @@ main > section > p {
     right: 550px;
     text-align: center;
     color: #ffffff;
-    font-size: 21px;
+    font-size: 19px;
     filter: drop-shadow(4px 2px 3px black);
 }
 
@@ -153,18 +205,18 @@ main > section > p {
 main > section#project {
     height: 100vh;
     width: 98vw;
-    top: 827px;
+    top: 647px;
     position: absolute;
-
+    background-color:#151515 ;
     /* border: 2px solid black; */
 }
 
 /* navigation tag line */
 main > section > h2#projectHead {
     position: absolute;
-    top: 0;
-    margin: 0;
-    background: #ac290a;
+    margin-top: 75px;
+
+    background: linear-gradient(to right, #0D54BB, rgba(255, 255, 255, 0));
     height: 30px;
     width: 98vw;
 
@@ -172,15 +224,17 @@ main > section > h2#projectHead {
 
 main > section > section#roomres {
     position: absolute;
-    top: 55px;
+    top: 200px;
+    margin: auto;
     display: grid;
-    left: 50px;
+    left: 60px;
     right: 940px;
 }
 
 main > section > section#chickago {
     position: absolute;
-    top: 55px;
+    top: 200px;
+    margin: auto;
     display: grid;
     left: 470px;
     right: 840px;
@@ -188,7 +242,8 @@ main > section > section#chickago {
 
 main > section > section#connect {
     position: absolute;
-    top: 55px;
+    top: 200px;
+    margin: auto;
     display: grid;
     left: 895px;
     right: 840px;
@@ -196,10 +251,16 @@ main > section > section#connect {
 
 main > section > section > h4 {
     text-align: center;
+    height: 45px;
+    background-color: deepskyblue;
+    border-radius: 30px;
+    margin-top: 15PX;
+    color: white;
 }
 
 main > section > section > p {
     text-align: center;
+    color: white;
 }
 
 /* see all button */
@@ -231,7 +292,7 @@ main > section > h2#galleryHead {
     position: absolute;
     top: 0;
     margin: 0;
-    background: #ac290a;
+    background: linear-gradient(to right, #0D54BB, rgba(255, 255, 255, 0));
     height: 30px;
     width: 98vw;
 
@@ -255,7 +316,6 @@ main > section > button#gallerybtn {
     background-color: white;
     border-radius: 8px;
     border-color: aqua;
-
 }
 
 /* ===============Gallery Images============================================== */
@@ -359,21 +419,26 @@ main > section > h2#skillsHead {
     position: absolute;
     top: 0;
     margin: 0;
-    background: #ac290a;
+    /*background: #ac290a;*/
     height: 30px;
     width: 98vw;
+    background: linear-gradient(to right, #0D54BB, rgba(255, 255, 255, 0));
+
 }
 
 main > section > h5#lang {
     position: absolute;
     top: 60px;
     margin: 0;
-    left: 0;
+    left: 5px;
     right: 0;
     text-align: center;
     animation: forwards;
-    color: rgb(255, 106, 0);
-    font-size: 34px;
+    color: black;
+    font-size: 25px;
+    border-radius: 10px;
+    background: linear-gradient(to bottom, #85C1E9, rgba(255, 255, 255, 0));
+    height: 60px;
 }
 
 
@@ -386,6 +451,7 @@ main > section > div#lang1 {
     grid-auto-flow: column;
     align-content: space-around;
     justify-content: space-between;
+
 }
 
 
@@ -393,12 +459,14 @@ main > section > h5#tool {
     position: absolute;
     top: 290px;
     margin: 0;
-    left: 0;
+    left: 5px;
     right: 0;
     text-align: center;
-    color: rgb(255, 106, 0);
-    font-size: 34px;
-
+    color: black;
+    font-size: 25px;
+    border-radius: 10px;
+    background: linear-gradient(to bottom, #85C1E9, rgba(255, 255, 255, 0));
+    height: 60px;
 }
 
 
@@ -423,14 +491,13 @@ main > section#assignments {
     top: 3100px;
     position: absolute;
     /* border: 2px solid black; */
-
 }
 
 
 /* navigation tag line */
 main > section > h2#assignmentsHead {
     position: absolute;
-    background: #ac290a;
+    background: linear-gradient(to right, #0D54BB, rgba(255, 255, 255, 0));
     height: 30px;
     width: 98vw;
 }
@@ -448,9 +515,13 @@ main > section#assignments > section > div#div2 {
 
 main > section#assignments > section > div#div3 {
 
-    background-image: url("../image/Assignment\ 3.png");
+    background-image: url("../image/CaseThree.gif");
 }
 
+main > section#assignments > section > div#div4 {
+
+    /*background-image: url("../image/Assignment\ 3.png");*/
+}
 
 main > section#assignments > section {
     position: relative;
@@ -469,7 +540,7 @@ main > section#assignments > section {
 main > section#assignments > section > div:hover {
 
     transform: scale(1.3);
-        margin-left: 20px;
+    margin-left: 20px;
 }
 
 main > section#assignments > section > div {
@@ -480,9 +551,9 @@ main > section#assignments > section > div {
 }
 
 /* Assignment Texts */
-main > section#assignments > section > h4 {
+main > section#assignments > section > div> h4 {
     /*position: absolute;*/
-    position: relative;
+    position: absolute;
     /* border: 2px solid black; */
     display: grid;
     align-items: center;
@@ -495,7 +566,7 @@ main > section#assignments > section > h4 {
 
 }
 
-main > section#assignments > #btnAssignment {
+main > section#assignments >form > #btnAssignment {
     width: 80px;
     height: 40px;
     position: absolute;
@@ -515,9 +586,8 @@ main > section#about { /* about */
     width: 98vw;
     margin-top: 3950px;
     position: absolute;
-    border: 2px solid black;
+    /*border: 2px solid black;*/
     background-color: #376B7B;
-
 }
 
 
@@ -526,7 +596,7 @@ main > section > h2#aboutHead {
     position: absolute;
     top: 0;
     margin: 0;
-    background: #ac290a;
+    background: linear-gradient(to right, #0D54BB, rgba(255, 255, 255, 0));
     height: 30px;
     width: 98vw;
 }
@@ -751,13 +821,13 @@ main > section#about > h5#act0 {
 main > section#about > div > img#actimg1 {
     position: absolute;
     top: 1940px;
-    left: 350px;
+    left: 244px;
 }
 
 /* Movies Text */
 main > section#about > div > h6#acth1 {
     position: absolute;
-    left: 335px;
+    left: 230px;
     top: 2060px;
     font-size: 14pt;
 
@@ -767,13 +837,13 @@ main > section#about > div > h6#acth1 {
 main > section#about > div > img#actimg2 {
     position: absolute;
     top: 1954px;
-    left: 550px;
+    left: 481px;
 }
 
 /* Music Text */
 main > section#about > div > h6#acth2 {
     position: absolute;
-    left: 550px;
+    left: 482px;
     top: 2060px;
     font-size: 14pt;
 
@@ -783,13 +853,13 @@ main > section#about > div > h6#acth2 {
 main > section#about > div > img#actimg3 {
     position: absolute;
     top: 1954px;
-    left: 753px;
+    left: 696px;
 }
 
 /* Web Text */
 main > section#about > div > h6#acth3 {
     position: absolute;
-    left: 755px;
+    left: 705px;
     top: 2060px;
     font-size: 14pt;
 
@@ -799,13 +869,13 @@ main > section#about > div > h6#acth3 {
 main > section#about > div > img#actimg4 {
     position: absolute;
     top: 1954px;
-    left: 953px;
+    left: 916px;
 }
 
 /* Travel Text */
 main > section#about > div > h6#acth4 {
     position: absolute;
-    left: 965px;
+    left: 931px;
     top: 2060px;
     font-size: 14pt;
 
@@ -825,58 +895,47 @@ footer {
     background-color: white;
 }
 
-footer > fieldset > section > form#text {
-    position: absolute;
-    top: 25px;
-    width: 25%;
-    right: 10px;
-    border-radius: 45px;
+
+legend {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 12px;
 }
 
-footer > fieldset > section > form#email {
-    position: absolute;
-    top: 60px;
-    width: 25%;
-    right: 10px;
-    border-radius: 45px;
-}
 
-footer > fieldset > section > form#tel {
-    position: absolute;
-    top: 95px;
-    width: 25%;
-    right: 10px;
-    border-radius: 45px;
-}
-
-footer > fieldset > section > form#area {
-    position: absolute;
-    width: 25%;
-    top: 125px;
-    right: 10px;
-    border-radius: 45px;
-}
-
-footer > fieldset > section > button#btnSubmit {
+#btnSubmit {
     position: relative;
     height: 30px;
-    width: 70px;
-    bottom: -66px;
-    left: 1145px;
+    width: 254px;
+    bottom: 1px;
+    left: 150px;
     color: white;
-    background-color: #ac290a;
+    background-color: #566573;
     border-radius: 20px;
-
+    border: none;
 }
 
-#btnSubmit:hover{
-    background-color: #376B7B;
+button#btnSubmit:hover {
+    background-color: aquamarine;
+    color: #1E1E1E;
 }
 
-input:focus{
-    background-color: #ac290a;
+button#btnSubmit:focus {
+
+    background-color: darkmagenta;
     color: white;
 }
+
+
+input::placeholder {
+    color: #000;
+}
+
+
+textarea::placeholder {
+    color: #000;
+}
+
 
 footer > fieldset > h4 {
     top: 10px;
@@ -892,8 +951,9 @@ footer > fieldset > section > address > ul > li > img {
 
 
 fieldset {
-    padding: 0.35em 0.75em 4.625em;
+    padding: 0.35em 0.75em 8.625em;
 }
+
 
 #buttonset {
     position: absolute;
@@ -903,6 +963,36 @@ fieldset {
     transform: scale(1.6);
     left: 140px;
 
+}
+
+#text textarea {
+    display: flex;
+    width: 100%;
+    padding: 2px;
+    border-color: #85C1E9;
+    background-color: gainsboro;
+    border-radius: 10px;
+    margin-bottom: 6px;
+    color: black;
+}
+
+#text input {
+    display: flex;
+    width: 100%;
+    padding: 6px;
+    border-radius: 10px;
+    margin-bottom: 2px;
+    background-color: gainsboro;
+    border-color: #85C1E9;
+    color: black;
+}
+
+
+#msgSubmit_Section {
+    position: absolute;
+    right: 20px;
+    width: 40%;
+    top: 20px;
 }
 
 #b1:hover {
@@ -940,18 +1030,18 @@ fieldset {
     transition: 0.7s ease;
 }
 
-#ftr1{
+#ftr1 {
     position: relative;
     top: 25px;
 }
 
 
-#ftr2{
+#ftr2 {
     position: relative;
     top: 36px;
 }
 
-#ftr3{
+#ftr3 {
     position: relative;
     top: 48px;
 }
