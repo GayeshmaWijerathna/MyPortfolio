@@ -1,0 +1,47 @@
+
+@media all and (min-device-width: 1024px) to (max-device-width: 1440px){
+
+   div#mainImage1 {
+        height: 163%;
+        width: 116.5%;
+    }
+
+    main > section#hireme {
+        left: 902px;
+    }
+
+    main > section#project {
+        top: 601px;
+    }
+
+    main > section#project {
+        height: 129%;
+    }
+
+    main > section#gallery {
+        height: 132%;
+    }
+
+    main > section#skills {
+        height: 130%;
+    }
+
+    main > section#assignments {
+        height: 119%;
+    }
+
+
+    main > section#about > article > ul > img#edu2 {
+        left: 1202px;
+    }
+
+    main > section#about > article > ul > img#edu4 {
+        left: 1202px;
+    }
+
+    main > section#about {
+        height: 458%;
+    }
+
+
+    }

@@ -2,7 +2,10 @@
 * {
     font-family: 'Stick No Bills', sans-serif;
     margin: 0;
+}
 
+.body {
+    width: 100%;
 }
 
 .upperLogo {
@@ -110,26 +113,16 @@ main > section > div#Mylogo {
     top: 580px;
     left: 1050px;
     color: white;
-    background: linear-gradient(to right, black, #A93226); /* Example gradient colors */
+    background: linear-gradient(to right, black, #A93226);
 
     background-clip: initial;
     animation: ease 5s infinite;
 }
 
-@keyframes -shake {
-    0% {
-        background-position: 0% 50%;
-    }
-    100% {
-        background-position: 100% 50%;
-    }
-}
-
-
-
 main > section > div#mainImage1 {
     background-image: url("../image/MainImg.jpg");
-    height: 100vh;
+    height: 100%;
+    width: 100%;
     background-size: cover;
     background-position: center;
 
@@ -153,8 +146,8 @@ main > section > div#Background {
 
 /* home */
 main > section#home {
-    height: 100vh;
-    width: 98vw;
+    height: 110%;
+    width: 100%;
     /*top: 90px;*/
     position: absolute;
     /*padding: 4rem;*/
@@ -165,8 +158,8 @@ main > section#home {
 /* Main background image */
 main > section#mainImage {
     position: absolute;
-    width: 98vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
 }
 
 /* my portfolio .... */
@@ -186,7 +179,7 @@ main > section > h3 {
 main > section > h1 {
 
     /*font-family: Iceland;*/
-    -webkit-text-stroke: 0.5px white;
+    -webkit-text-stroke: 1px white;
     position: absolute;
     top: 270px;
     font-size: 80pt;
@@ -224,8 +217,8 @@ main > section > p {
 /* -------------------------Project-------------------------------- */
 /* project */
 main > section#project {
-    height: 110vh;
-    width: 98vw;
+    height: 110%;
+    width: 100%;
     top: 647px;
     position: absolute;
     background-color:#151515 ;
@@ -236,10 +229,9 @@ main > section#project {
 main > section > h2#projectHead {
     position: absolute;
     margin-top: 75px;
-
     background: linear-gradient(to right, #0D54BB, rgba(255, 255, 255, 0));
     height: 30px;
-    width: 98vw;
+    width: 100%;
 
 }
 
@@ -270,7 +262,7 @@ main > section > section#connect {
     right: 840px;
 }
 
-main > section > section > h4 {
+h4#assi0 {
     text-align: center;
     height: 45px;
     background-color: deepskyblue;
@@ -278,6 +270,24 @@ main > section > section > h4 {
     margin-top: 15PX;
     color: white;
 }
+
+h4#assi1:hover {
+    padding-left: 80px;
+    transform: scale(1.4);
+    color: #ff253a;
+}
+
+h4#assi2:hover {
+    padding-left: 90px;
+    transform: scale(1.4);
+    color: #ff253a;
+}
+
+ h4#assi3:hover {
+     padding-left: 30px;
+     transform: scale(1.1);
+     color: #ff253a;
+ }
 
 main > section > section > p {
     text-align: center;
@@ -300,8 +310,8 @@ main > section > button#projectbtn {
 /* --------------------------Gallery----------------------------- */
 /* gallery */
 main > section#gallery {
-    height: 110vh;
-    width: 98vw;
+    height: 110%;
+    width: 100%;
     margin-top: 1301px;
     position: absolute;
     background-color:#151515 ;
@@ -315,8 +325,7 @@ main > section > h2#galleryHead {
    margin-top: 75px;
     background: linear-gradient(to right, #0D54BB, rgba(255, 255, 255, 0));
     height: 30px;
-    width: 98vw;
-
+    width: 100%;
 }
 
 /* images */
@@ -344,7 +353,7 @@ main > section#gallery > section#photos {
     position: relative;
     top: 150px;
     left: 10px;
-    width: 1000px;
+    width: 90%;
     height: 480px;
     border: 2px solid black;
     display: grid;
@@ -420,8 +429,8 @@ section#photos > div:nth-child(12) {
 /* ------------------------Skills----------------------------- */
 
 main > section#skills { /* skills */
-    height: 110vh;
-    width: 98vw;
+    height: 110%;
+    width: 100%;
     margin-top: 2007px;
     position: absolute;
     background-color:#151515 ;
@@ -516,8 +525,8 @@ main > section > div#tool1 {
 
 /* assignments */
 main > section#assignments {
-    height: 100vh;
-    width: 98vw;
+    height: 100%;
+    width: 100%;
     top: 2710px;
     position: absolute;
     background-color:#151515 ;
@@ -531,7 +540,7 @@ main > section > h2#assignmentsHead {
     position: absolute;
     background: linear-gradient(to right, #0D54BB, rgba(255, 255, 255, 0));
     height: 30px;
-    width: 98vw;
+    width: 100%;
     margin-top: 75px;
 }
 
@@ -615,8 +624,8 @@ main > section#assignments >form > #btnAssignment {
 
 
 main > section#about { /* about */
-    height: 380vh;
-    width: 98vw;
+    height: 380%;
+    width: 100%;
     margin-top: 3350px;
     position: absolute;
     /*border: 2px solid red;*/
@@ -630,7 +639,7 @@ main > section > h2#aboutHead {
   margin-top: 75px;
     background: linear-gradient(to right, #0D54BB, rgba(255, 255, 255, 0));
     height: 30px;
-    width: 98vw;
+    width: 100%;
 }
 
 
@@ -931,8 +940,8 @@ main > section#about > div > h6#acth4 {
 /* --------------------------Footer--------------------------- */
 
 footer {
-    height: 44vh;
-    width: 98vw;
+    height: 44%;
+    width: 100%;
     /*color: white;*/
     position: absolute;
     margin-top: 5842px;
@@ -1090,3 +1099,7 @@ fieldset {
     position: relative;
     top: 48px;
 }
+
+
+
+
