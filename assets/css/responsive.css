@@ -27,23 +27,23 @@
 
 
 
-/*@media all and (min-width: 1024px)and (max-width: 1440px ){*/
+/*@media all and (min-width: 1024px) and (max-width: 1440px) {*/
 
 /*   #mainImage1 {*/
 /*       position: absolute;*/
-/*       width: 1160px;*/
-/*       height: 1000px;*/
+/*       width: 100%;*/
+/*       height: 100%;*/
 /*        margin-top: 59px;*/
 /*    }*/
 
 /*    #home {*/
-/*        height: 185%;*/
+/*        height: 256%;*/
 /*        width: 100%;*/
 /*    }*/
 
-/*    div#Background {*/
-/*        width: 757px;*/
-/*        height: 578px;*/
+/*    #Background {*/
+/*        width: 647px;*/
+/*        height: 524px;*/
 /*        margin-top: 44px;*/
 /*        left: 22px;*/
 /*    }*/

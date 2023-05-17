@@ -532,7 +532,7 @@ section#photos > div:nth-child(9) {
 
 /* assignments */
 #assignments {
-    height: 100%;
+    height: 120%;
     width: 100%;
     top: 2710px;
     position: absolute;
