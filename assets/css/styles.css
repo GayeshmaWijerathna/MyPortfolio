@@ -102,7 +102,7 @@ html {
 
 #home{
     width: 100%;
-    height: 100vh;
+    height: 259%;
     position: absolute;
 }
 /* logo */
@@ -125,7 +125,7 @@ html {
     animation: ease 5s infinite;
 }
 
-main > section > div#mainImage1 {
+#mainImage1 {
     background-image: url("../image/MainImg.jpg");
     height: 100%;
     width: 100%;
@@ -136,7 +136,7 @@ main > section > div#mainImage1 {
 }
 
 /* div background color */
-main > section > div#Background {
+#Background {
 
     color: black;
     background-color: black;
@@ -151,7 +151,7 @@ main > section > div#Background {
 }
 
 /* home */
-main > section#home {
+#home {
     height: 110%;
     width: 100%;
     /*top: 90px;*/
@@ -162,7 +162,7 @@ main > section#home {
 }
 
 /* Main background image */
-main > section#mainImage {
+#mainImage {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -223,7 +223,7 @@ main > section > p {
 
 /* -------------------------Project-------------------------------- */
 /* project */
-main > section#project {
+#project {
     height: 110%;
     width: 100%;
     top: 647px;
@@ -233,7 +233,7 @@ main > section#project {
 }
 
 /* navigation tag line */
-main > section > h2#projectHead {
+#projectHead {
     position: absolute;
     margin-top: 75px;
     background: linear-gradient(to right, #0D54BB, rgba(255, 255, 255, 0));
@@ -242,7 +242,7 @@ main > section > h2#projectHead {
 
 }
 
-main > section > section#roomres {
+#roomres {
     position: absolute;
     top: 200px;
     margin: auto;
@@ -251,7 +251,7 @@ main > section > section#roomres {
     right: 940px;
 }
 
-main > section > section#chickago {
+#chickago {
     position: absolute;
     top: 200px;
     margin: auto;
@@ -260,7 +260,7 @@ main > section > section#chickago {
     right: 840px;
 }
 
-main > section > section#connect {
+#connect {
     position: absolute;
     top: 200px;
     margin: auto;
@@ -269,30 +269,30 @@ main > section > section#connect {
     right: 840px;
 }
 
-h4#assi0 {
+#assi0 {
     text-align: center;
-    height: 45px;
-    background-color: deepskyblue;
+    height: 25px;
+    /*background-color: deepskyblue;*/
     border-radius: 30px;
     margin-top: 15PX;
     color: white;
 }
 
-h4#assi1:hover {
-    padding-left: 80px;
+#assi1:hover {
+    /*padding-left: 80px;*/
     transform: scale(1.4);
     color: #ff253a;
 }
 
-h4#assi2:hover {
-    padding-left: 90px;
+#assi2:hover {
+    /*padding-left: 90px;*/
     transform: scale(1.4);
     color: #ff253a;
 }
 
- h4#assi3:hover {
-     padding-left: 30px;
-     transform: scale(1.1);
+#assi3:hover {
+     /*padding-left: 30px;*/
+     transform: scale(1.4);
      color: #ff253a;
  }
 
@@ -302,7 +302,7 @@ main > section > section > p {
 }
 
 /* see all button */
-main > section > button#projectbtn {
+#projectbtn {
     width: 80px;
     height: 40px;
     position: absolute;
@@ -316,7 +316,7 @@ main > section > button#projectbtn {
 
 /* --------------------------Gallery----------------------------- */
 /* gallery */
-main > section#gallery {
+#gallery {
     height: 110%;
     width: 100%;
     margin-top: 1301px;
@@ -327,7 +327,7 @@ main > section#gallery {
 
 
 /* navigation tag line */
-main > section > h2#galleryHead {
+#galleryHead {
     position: absolute;
    margin-top: 75px;
     background: linear-gradient(to right, #0D54BB, rgba(255, 255, 255, 0));
@@ -344,7 +344,7 @@ main > section#gallery > div {
 }
 
 
-main > section > button#gallerybtn {
+#gallerybtn {
     width: 80px;
     height: 40px;
     position: absolute;
@@ -356,7 +356,7 @@ main > section > button#gallerybtn {
 }
 
 /* ===============Gallery Images============================================== */
-main > section#gallery > section#photos {
+#photos {
     position: relative;
     top: 150px;
     left: 10px;
@@ -370,48 +370,48 @@ main > section#gallery > section#photos {
     gap: 7px;
 }
 
-section#photos > div:hover {
+#photos > div:hover {
     transform: scale(1.08);
     filter: none;
 }
 
 
-section#photos > div {
+#photos > div {
     background-size: cover;
     background-position: center;
     box-shadow: 1px 2px 1px 1px black;
 }
 
-section#photos > div:nth-child(1) {
+#photos > div:nth-child(1) {
     background-image: url("../image/Gallery%202.png");
     filter: grayscale(1);
 }
 
-section#photos > div:nth-child(2) {
+#photos > div:nth-child(2) {
     background-image: url("../image/temple.JPG");
 }
 
-section#photos > div:nth-child(3) {
+#photos > div:nth-child(3) {
     background-image: url("../image/Manejaiya.JPG");
 }
 
-section#photos > div:nth-child(4) {
+#photos > div:nth-child(4) {
     background-image: url("../image/sandun%20wed.jpg");
 }
 
-section#photos > div:nth-child(5) {
+#photos > div:nth-child(5) {
     background-image: url("../image/adams.JPG");
 }
 
-section#photos > div:nth-child(6) {
+#photos > div:nth-child(6) {
     background-image: url("../image/getphoto.jpg");
 }
 
-section#photos > div:nth-child(7) {
+#photos > div:nth-child(7) {
     background-image: url("../image/Dulan%20aiya.JPG");
 }
 
-section#photos > div:nth-child(8) {
+#photos > div:nth-child(8) {
     background-image: url("../image/streetfood.JPG");
 }
 
@@ -419,15 +419,15 @@ section#photos > div:nth-child(9) {
     background-image: url("../image/aiyawed.jpg");
 }
 
-section#photos > div:nth-child(10) {
+#photos > div:nth-child(10) {
     background-image: url("../image/sharaf.jpg");
 }
 
-section#photos > div:nth-child(11) {
+#photos > div:nth-child(11) {
     background-image: url("../image/wasanthaArunalu.jpg");
 }
 
-section#photos > div:nth-child(12) {
+#photos > div:nth-child(12) {
     background-image: url("../image/SSAOfs.jpg");
 }
 
@@ -435,7 +435,7 @@ section#photos > div:nth-child(12) {
 
 /* ------------------------Skills----------------------------- */
 
-main > section#skills { /* skills */
+#skills { /* skills */
     height: 110%;
     width: 100%;
     margin-top: 2007px;
@@ -444,24 +444,24 @@ main > section#skills { /* skills */
     /* border: 2px solid black; */
 }
 
-main > section#skills > div#lang1 > img:hover {
+#skills > div#lang1 > img:hover {
     transform: scale(1.5);
 
 }
 
-main > section#skills > div#tool1 > img:hover {
+#skills > div#tool1 > img:hover {
     transform: scale(1.5);
 }
 
 @media (min-width: 1024px) and (max-width: 1440px) {
-    section#skills > div > img {
+    #skills > div > img {
         top: 31px;
         left: 7px;
     }
 }
 
 /* navigation tag line */
-main > section > h2#skillsHead {
+#skillsHead {
     position: absolute;
     margin-top: 75px;
     /*background: #ac290a;*/
@@ -471,7 +471,7 @@ main > section > h2#skillsHead {
 
 }
 
-main > section > h5#lang {
+#lang {
     position: absolute;
     top: 150px;
     margin: 0;
@@ -487,7 +487,7 @@ main > section > h5#lang {
 }
 
 
-main > section > div#lang1 {
+#lang1 {
     position: relative;
     top: 287px;
     left: 60px;
@@ -500,7 +500,7 @@ main > section > div#lang1 {
 }
 
 
-main > section > h5#tool {
+#tool {
     position: absolute;
     top: 440px;
     margin: 0;
@@ -515,7 +515,7 @@ main > section > h5#tool {
 }
 
 
-main > section > div#tool1 {
+#tool1 {
     position: relative;
     top: 487px;
     display: grid;
@@ -531,7 +531,7 @@ main > section > div#tool1 {
 /* ----------------------------Assignments------------------------------- */
 
 /* assignments */
-main > section#assignments {
+#assignments {
     height: 100%;
     width: 100%;
     top: 2710px;
@@ -543,7 +543,7 @@ main > section#assignments {
 
 
 /* navigation tag line */
-main > section > h2#assignmentsHead {
+#assignmentsHead {
     position: absolute;
     background: linear-gradient(to right, #0D54BB, rgba(255, 255, 255, 0));
     height: 30px;
@@ -552,17 +552,17 @@ main > section > h2#assignmentsHead {
 }
 
 
-main > section#assignments > section > div#div1 {
+ #div1 {
 
     background-image: url("../image/CaseOne1.gif");
 }
 
-main > section#assignments > section > div#div2 {
+#div2 {
 
     background-image: url("../image/CaseTwo2.gif");
 }
 
-main > section#assignments > section > div#div3 {
+#div3 {
 
     background-image: url("../image/CaseThree.gif");
 }
@@ -572,27 +572,29 @@ main > section#assignments > section > div#div3 {
 /*    !*background-image: url("../image/Assignment\ 3.png");*!*/
 /*}*/
 
-main > section#assignments > section {
+#assignments > section {
     position: relative;
     /* border: 2px solid black; */
     display: grid;
     align-items: center;
-    margin: 10px;
+    margin: 61px;
     top: 230px;
-    left: 10px;
+    left: -38px;
     right: 10px;
     grid-template-rows: repeat(1, 1fr);
     grid-template-columns: repeat(3, 1fr);
     justify-content: space-between;
+    align-content: space-between;
+    justify-items: center;
 }
 
-main > section#assignments > section > div:hover {
+#assignments > section > div:hover {
 
     transform: scale(1.3);
-    margin-left: 20px;
+    /*margin-left: 20px;*/
 }
 
-main > section#assignments > section > div {
+#assignments > section > div {
     width: 300px;
     height: 200px;
     background-size: cover;
@@ -600,7 +602,7 @@ main > section#assignments > section > div {
 }
 
 /* Assignment Texts */
-main > section#assignments > section > div> h4 {
+#assignments > section > div> h4 {
     /*position: absolute;*/
     position: absolute;
     /* border: 2px solid black; */
@@ -615,7 +617,7 @@ main > section#assignments > section > div> h4 {
 
 }
 
-main > section#assignments >form > #btnAssignment {
+#assignments >form > #btnAssignment {
     width: 80px;
     height: 40px;
     position: absolute;
@@ -630,10 +632,10 @@ main > section#assignments >form > #btnAssignment {
 /* -----------------------------About---------------------------- */
 
 
-main > section#about { /* about */
-    height: 380%;
+#about { /* about */
+    height: 400%;
     width: 100%;
-    margin-top: 3350px;
+    margin-top: 3470px;
     position: absolute;
     /*border: 2px solid red;*/
     background-color:#151515 ;
@@ -641,7 +643,7 @@ main > section#about { /* about */
 
 
 /* navigation tag line */
-main > section > h2#aboutHead {
+#aboutHead {
     position: absolute;
   margin-top: 75px;
     background: linear-gradient(to right, #0D54BB, rgba(255, 255, 255, 0));
@@ -649,8 +651,7 @@ main > section > h2#aboutHead {
     width: 100%;
 }
 
-
-main > section#about > article#art1 {
+#about > article#art1 {
     position: absolute;
     top: 180px;
     left: 40px;
@@ -661,13 +662,13 @@ main > section#about > article#art1 {
 
 }
 
-main > section#about > article > h5 {
+#about > article > h5 {
 
     color: #ffffff;
 }
 
 /* UL deco none */
-main > section#about > article > ul > li {
+#about > article > ul > li {
     list-style-type: none;
     font-style: italic;
     color: #ffffff;
@@ -676,7 +677,7 @@ main > section#about > article > ul > li {
 }
 
 /* Education MAIN TEXT */
-main > section#about > article > h5#edu0 {
+#about > article > h5#edu0 {
     position: absolute;
     top: 310px;
     left: 45%;
@@ -684,14 +685,14 @@ main > section#about > article > h5#edu0 {
 }
 
 /* IJSE */
-main > section#about > article > ul > img#edu1 {
+#about > article > ul > img#edu1 {
     position: absolute;
     top: 400px;
     left: 185px;
 }
 
 /* IJSE text */
-main > section#about > article > ul > li#ijseli1 {
+#ijseli1 {
     position: absolute;
     left: 250px;
     top: 409px;
@@ -700,14 +701,14 @@ main > section#about > article > ul > li#ijseli1 {
 }
 
 /* COT */
-main > section#about > article > ul > img#edu2 {
+#edu2 {
     position: absolute;
     top: 480px;
     left: 1085px;
 }
 
 /* COT Text */
-main > section#about > article > ul > li#ijseli2 {
+#ijseli2 {
     position: absolute;
     left: 200px;
     top: 489px;
@@ -716,14 +717,14 @@ main > section#about > article > ul > li#ijseli2 {
 }
 
 /* VCG */
-main > section#about > article > ul > img#edu3 {
+#edu3 {
     position: absolute;
     top: 580px;
     left: 185px;
 }
 
 /* VCG text */
-main > section#about > article > ul > li#ijseli3 {
+#ijseli3 {
     position: absolute;
     left: 250px;
     top: 589px;
@@ -732,14 +733,14 @@ main > section#about > article > ul > li#ijseli3 {
 }
 
 /* PILANA */
-main > section#about > article > ul > img#edu4 {
+#edu4 {
     position: absolute;
     top: 680px;
     left: 1085px;
 }
 
 /* PILANA Text */
-main > section#about > article > ul > li#ijseli4 {
+#ijseli4 {
     position: absolute;
     left: 200px;
     top: 689px;
@@ -748,7 +749,7 @@ main > section#about > article > ul > li#ijseli4 {
 
 
 /* Certificates MAIN TEXT */
-main > section#about > h5#cert0 {
+#cert0 {
     position: absolute;
     top: 810px;
     left: 45%;
@@ -757,7 +758,7 @@ main > section#about > h5#cert0 {
 }
 
 
-main > section#about > img#cimg1 {
+#cimg1 {
     position: absolute;
     top: 890px;
     left: 28%;
@@ -765,7 +766,7 @@ main > section#about > img#cimg1 {
 }
 
 
-main > section#about > img#cimg2 {
+#cimg2 {
     position: absolute;
     top: 948px;
     left: 12%;
@@ -773,7 +774,7 @@ main > section#about > img#cimg2 {
 }
 
 
-main > section#about > img#cimg3 {
+#cimg3 {
     position: absolute;
     top: 948px;
     left: 55%;
@@ -782,7 +783,7 @@ main > section#about > img#cimg3 {
 
 
 /* Experiance MAIN TEXT */
-main > section#about > h5#ex0 {
+#ex0 {
     position: absolute;
     top: 1410px;
     left: 45%;
@@ -792,14 +793,14 @@ main > section#about > h5#ex0 {
 
 
 /* SSA */
-main > section#about > article > ul > img#eximg1 {
+#eximg1 {
     position: absolute;
     top: 1520px;
     left: 200px;
 }
 
 /* SSA Text */
-main > section#about > article > ul > li#exli1 {
+#exli1 {
     position: absolute;
     left: 345px;
     top: 1549px;
@@ -809,14 +810,14 @@ main > section#about > article > ul > li#exli1 {
 }
 
 /* Sanasa */
-main > section#about > article > ul > img#eximg2 {
+#eximg2 {
     position: absolute;
     top: 1660px;
     left: 300px;
 }
 
 /* Sanasa Text */
-main > section#about > article > ul > li#exli2 {
+#exli2 {
     position: absolute;
     left: 440px;
     top: 1689px;
@@ -825,14 +826,14 @@ main > section#about > article > ul > li#exli2 {
 }
 
 /* Inforlink */
-main > section#about > article > ul > img#eximg3 {
+#eximg3 {
     position: absolute;
     top: 1800px;
     left: 400px;
 }
 
 /* Inforlink Text */
-main > section#about > article > ul > li#exli3 {
+#exli3 {
     position: absolute;
     left: 540px;
     top: 1829px;
@@ -842,14 +843,14 @@ main > section#about > article > ul > li#exli3 {
 
 
 /* Arpico */
-main > section#about > article > ul > img#eximg4 {
+#eximg4 {
     position: absolute;
     top: 1940px;
     left: 500px;
 }
 
 /* Arpico Text */
-main > section#about > article > ul > li#exli4 {
+#exli4 {
     position: absolute;
     left: 640px;
     top: 1969px;
@@ -859,7 +860,7 @@ main > section#about > article > ul > li#exli4 {
 
 
 /* Activities MAIN TEXT */
-main > section#about > h5#act0 {
+#act0 {
     position: absolute;
     top: 2110px;
     left: 45%;
@@ -869,7 +870,7 @@ main > section#about > h5#act0 {
 }
 
 /* Movies */
-main > section#about > div > img#actimg1 {
+#actimg1 {
     position: absolute;
     top: 2140px;
     left: 244px;
@@ -877,7 +878,7 @@ main > section#about > div > img#actimg1 {
 }
 
 /* Movies Text */
-main > section#about > div > h6#acth1 {
+#acth1 {
     position: absolute;
     left: 230px;
     top: 2260px;
@@ -888,14 +889,14 @@ main > section#about > div > h6#acth1 {
 }
 
 /* Music */
-main > section#about > div > img#actimg2 {
+#actimg2 {
     position: absolute;
     top: 2154px;
     left: 481px;
 }
 
 /* Music Text */
-main > section#about > div > h6#acth2 {
+#acth2 {
     position: absolute;
     left: 482px;
     top: 2260px;
@@ -907,7 +908,7 @@ main > section#about > div > h6#acth2 {
 }
 
 /* Web */
-main > section#about > div > img#actimg3 {
+#actimg3 {
     position: absolute;
     top: 2154px;
     left: 696px;
@@ -915,7 +916,7 @@ main > section#about > div > img#actimg3 {
 }
 
 /* Web Text */
-main > section#about > div > h6#acth3 {
+#acth3 {
     position: absolute;
     left: 705px;
     top: 2260px;
@@ -926,14 +927,14 @@ main > section#about > div > h6#acth3 {
 }
 
 /* Travel */
-main > section#about > div > img#actimg4 {
+#actimg4 {
     position: absolute;
     top: 2154px;
     left: 916px;
 }
 
 /* Travel Text */
-main > section#about > div > h6#acth4 {
+#acth4 {
     position: absolute;
     left: 931px;
     top: 2260px;
@@ -947,13 +948,13 @@ main > section#about > div > h6#acth4 {
 /* --------------------------Footer--------------------------- */
 
 footer {
-    height: 44%;
+
     width: 100%;
-    /*color: white;*/
     position: absolute;
-    margin-top: 5842px;
     margin-bottom: 0;
     background-color: white;
+    height: 44%;
+    margin-top: 6000px;
 }
 
 
@@ -976,12 +977,12 @@ legend {
     border: none;
 }
 
-button#btnSubmit:hover {
+#btnSubmit:hover {
     background-color: aquamarine;
     color: #1E1E1E;
 }
 
-button#btnSubmit:focus {
+#btnSubmit:focus {
 
     background-color: darkmagenta;
     color: white;
@@ -1019,11 +1020,10 @@ fieldset {
 #buttonset {
     position: absolute;
     display: flex;
-    bottom: 25px;
-    gap: 34px;
+    gap: 25px;
     transform: scale(1.6);
     left: 140px;
-
+    bottom: 20px;
 }
 
 #text textarea {
