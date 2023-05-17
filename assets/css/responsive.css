@@ -64,6 +64,10 @@
 
 @media all and (min-width: 768px) and (max-width: 1023px ) {
 
+    main > section > div#mainImage1 {
+        height: 130%;
+    }
+
     main > section#home {
         height: 179%;
         width: 156%;
@@ -102,7 +106,7 @@
 
 
     main > section#project {
-        height: 214%;
+        height: 261%;
         width: 156%;
     }
 
@@ -118,13 +122,13 @@
     }
 
     main > section#gallery {
-        height: 198%;
+        height: 256%;
         width: 156%;
         margin-top: 1313px;
     }
 
     main > section#skills {
-        height: 195%;
+        height: 255%;
         width: 156%;
     }
 
@@ -138,29 +142,30 @@
         width: 136vw;
     }
 
+    main > section#assignments > section {
+        margin: 45px;
+        left: 26px;
+    }
     main > section#assignments {
-        height: 178%;
+        height: 255%;
         width: 156%;
     }
 
-    main > section#assignments > section {
-        margin: 53px;
-        left: 26px;
-    }
 
     main > section#about {
-        height: 571%;
+        height: 854%;
         width: 156%;
     }
 
     footer {
         width: 156%;
         height: 68%;
+        margin-top: 5751px;
     }
 
 
     #buttonset {
-        bottom: 52px;
+        bottom: -59px;
     }
 
 }
