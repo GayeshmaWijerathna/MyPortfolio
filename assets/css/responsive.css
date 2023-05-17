@@ -1,47 +1,245 @@
 
-@media all and (min-device-width: 1024px) to (max-device-width: 1440px){
 
-   div#mainImage1 {
-        height: 163%;
-        width: 116.5%;
+/*++++++++++++++  START - 425 PX  +++++++++++++ (min-device-width: 425) to (max-device-width: 768px)*/
+
+
+@media all and (min-width: 425px) and (max-width: 767px ){
+
+    main > section#home {
+        height: 212%;
+        width: 200%;
     }
 
-    main > section#hireme {
-        left: 902px;
+
+    main > section >div#Background {
+        width: 541px;
+        height: 546px;
+        top: 15px;
+        left: 15px;
     }
+
+    .h {
+        position: absolute;
+        width: 400px;
+        height: 400px;
+    }
+
+    main > section > h3 {
+        font-size: 19px;
+        top: 197px;
+        left: 107px;
+    }
+
+    main > section > h1 {
+        top: 208px;
+        font-size: 54pt;
+        left: 157px;
+        margin-left: -55px;
+        margin-top: 10px;
+    }
+
+    main > section > p {
+        left: 32px;
+        top: 440px;
+        right: 322px;
+        font-size: 16px;
+    }
+
+
+    main > section > div > h5 {
+        left: 252px;
+        top: 375px;
+        font-size: 17px;
+    }
+
+
+
+
+
+}
+/*=======================   END */
+
+
+/*++++++++++++++  START - 768 PX  +++++++++++++ (min-device-width: 768px) to (max-device-width: 1024px)*/
+
+@media all and (min-width: 768px) and (max-width: 1023px ) {
+
+    main > section#home {
+        height: 179%;
+        width: 156%;
+    }
+
+    #Mylogo>img {
+        left: 307px;
+    }
+
+    main > section > div#Background {
+        width: 735px;
+    }
+    main > section > h3 {
+        font-size: 30px;
+        top: 232px;
+        left: 151px;
+    }
+
+    main > section > h1 {
+        top: 242px;
+        font-size: 77pt;
+        left: 141px;
+    }
+
+    main > section > p {
+        left: 28px;
+        top: 544px;
+        right: 432px;
+    }
+
+
+    main > section > div > h5 {
+        left: 401px;
+        top: 476px;
+    }
+
 
     main > section#project {
-        top: 601px;
+        height: 214%;
+        width: 156%;
     }
 
-    main > section#project {
-        height: 129%;
+
+    main > section > section#chickago {
+        left: 451px;
+
+    }
+
+    main > section > section#connect {
+        left: 867px;
+        right: 840px;
     }
 
     main > section#gallery {
-        height: 132%;
+        height: 198%;
+        width: 156%;
+        margin-top: 1313px;
     }
 
     main > section#skills {
-        height: 130%;
+        height: 195%;
+        width: 156%;
+    }
+
+    main > section > div#lang1 {
+        left: 106px;
+        width: 129vw;
+    }
+
+    main > section > div#tool1 {;
+        left: 74px;
+        width: 136vw;
     }
 
     main > section#assignments {
-        height: 119%;
+        height: 178%;
+        width: 156%;
     }
 
-
-    main > section#about > article > ul > img#edu2 {
-        left: 1202px;
-    }
-
-    main > section#about > article > ul > img#edu4 {
-        left: 1202px;
+    main > section#assignments > section {
+        margin: 53px;
+        left: 26px;
     }
 
     main > section#about {
-        height: 458%;
+        height: 571%;
+        width: 156%;
+    }
+
+    footer {
+        width: 156%;
+        height: 68%;
     }
 
 
+    #buttonset {
+        bottom: 52px;
     }
+
+}
+/*=======================   END */
+
+
+/*++++++++++++++  START - 1024 PX  +++++++++++++ (min-device-width: 1024px) to (max-device-width: 1440px)*/
+
+/*Done>>>>>>>>*/
+@media all and (min-width: 1024px) and (max-width: 1440px ){
+
+    main > section > div#mainImage1 {
+        height: 160%;
+        margin-top: 59px;
+    }
+
+    main > section#home {
+        height: 185%;
+        width: 100%;
+    }
+
+    div#Background {
+        width: 757px;
+        height: 578px;
+        margin-top: 44px;
+        left: 22px;
+    }
+
+    main > section > p {
+        left: 43px;
+        top: 574px;
+        right: 484px;
+    }
+
+    main > section#project {
+        height: 278%;
+        top: 807px;
+    }
+
+    main > section > section#connect {
+        left: 860px;
+    }
+
+    main > section#gallery {
+
+        height: 283%;
+        width: 100%;
+        margin-top: 1449px;
+    }
+
+    main > section#skills {
+        height: 327%;
+        margin-top: 2149px;
+        }
+
+    main > section#assignments {
+        height: 260%;
+        width: 100%;
+        top: 2969px;
+    }
+    main > section#about {
+        height: 915%;
+        width: 100%;
+        margin-top: 3615px;
+    }
+
+
+    footer {
+        height: 44%;
+        margin-top: 5928px;
+    }
+
+    #buttonset {
+        bottom: -138px;
+    }
+
+}
+
+/*=======================   END */
+
+
+
