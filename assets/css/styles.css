@@ -248,7 +248,9 @@ main > section > p {
     margin: auto;
     display: grid;
     left: 60px;
-    right: 940px;
+    right: 970px;
+    color: white;
+
 }
 
 #chickago {
@@ -258,6 +260,8 @@ main > section > p {
     display: grid;
     left: 470px;
     right: 840px;
+    color: white;
+
 }
 
 #connect {
@@ -267,6 +271,7 @@ main > section > p {
     display: grid;
     left: 895px;
     right: 840px;
+    color: white;
 }
 
 #assi0 {

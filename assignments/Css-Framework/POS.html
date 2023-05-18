@@ -1,14 +1,104 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="../css/normalize.css">
-    <link rel="stylesheet" href="../css/fontawesome/css/all.min.css">
-    <title>DarkTown POS System</title>
+  <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>POS</title>
+        <link rel="stylesheet" href="/assets/css/normalize.css">
+        <title>DarkTown POS System</title>
+        <link rel="stylesheet" href="../../assets/css/bootstrap.css">
+        <script src="../../assets/js/bootstrap.bundle.js"></script>
+        <script src="../../assets/js/bootstrap.js"></script>
+        <link rel="stylesheet" href="assets/StyleFW.css">
+        <link href="Customer.html">
+        <link href="POS.html">
+    </head>
 
-</head>
 <body>
 
+<header>
+    <section class="navigation_bar">
+        <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+<!--            <nav class="navbar bg-primary" data-bs-theme="dark" >-->
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">DARKTOWN</a>
+                <img src="assets/fw_Images/posLogo.png" alt="Logo" width="60" height="28" class="d-inline-block align-text-top">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="POS.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="Customer.html">Customers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#" > <img src="assets/fw_Images/CartPos.png" alt="" width="30"> Shop Now >> </a>
+                        </li>
+
+
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </section>
+</header>
+
+<main>
+
+    <section class="cards">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+              <div class="card h-100" style="width: 360px;">
+                  <a href="#"><img src="assets/fw_Images/orders1.png" class="card-img-top" alt="orders"></a>
+                  <div class="card-body">
+                      <h1 class="card-title">Shop Now</h1>
+                      <p class="card-text">  <<< Click This >>>  for your Orders </p>
+                  </div>
+                  <!--                    <div class="card-footer">-->
+                  <!--                        <small class="text-body-secondary">Last updated 3 mins ago</small>-->
+                  <!--                    </div>-->
+              </div>
+             </div>
+            <div class="col">
+                <div class="card h-100" style="width: 360px;"  >
+                    <a href="Customer.html" >    <img src="assets/fw_Images/Customer1.png" class="card-img-top" alt="customers"></a>
+                    <div class="card-body">
+                        <h1 class="card-title">Customers</h1>
+                        <p class="card-text">  <<< Click This >>>  for Manage Customer </p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100" style="width: 360px;">
+                    <a href=""> <img src="assets/fw_Images/Items.gif" class="card-img-top" alt="items"> </a>
+                    <div class="card-body">
+                        <h1 class="card-title">Products</h1>
+                        <p class="card-text">  <<< Click This >>>  for Manage Items </p>
+                    </div>
+                    <!--<div class="card-footer">
+                        <small class="text-body-secondary">Last updated 3 mins ago</small>
+                    </div>-->
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+
+</footer>
 </body>
 </html>

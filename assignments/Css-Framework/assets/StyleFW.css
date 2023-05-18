@@ -1,0 +1,15 @@
+
+.cards {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: 70px;
+    justify-content:  space-around;
+}
+.card:hover {
+    box-shadow: 2px 3px 8px 6px #0D54BB;
+    transform: scale(1.1);
+}
+
+
+
+
