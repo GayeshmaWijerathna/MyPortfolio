@@ -3,22 +3,166 @@
 /*++++++++++++++  START - 425 PX  +++++++++++++ (min-device-width: 425) to (max-device-width: 768px)*/
 
 
-/*@media all and (min-width: 425px)and (max-width: 767px ){*/
+@media all and (min-width:425px) and (max-width:767px){
+    #home {
+        height: 212%;
+        width: 100%;
+    }
 
 
-/*}*/
+  #Background {
+        width: 541px;
+        height: 546px;
+        top: 15px;
+        left: 15px;
+    }
+
+    .h {
+        position: absolute;
+        width: 400px;
+        height: 400px;
+    }
+
+    main > section > h3 {
+        font-size: 19px;
+        top: 197px;
+        left: 107px;
+    }
+
+    main > section > h1 {
+        top: 208px;
+        font-size: 54pt;
+        left: 157px;
+        margin-left: -55px;
+        margin-top: 10px;
+    }
+
+    main > section > p {
+        left: 32px;
+        top: 440px;
+        right: 322px;
+        font-size: 16px;
+    }
+
+
+    main > section > div > h5 {
+        left: 252px;
+        top: 375px;
+        font-size: 17px;
+    }
+
+}
 /*=======================   END */
-
-
-
 
 
 /*++++++++++++++  START - 768 PX  +++++++++++++ (min-device-width: 768px) to (max-device-width: 1024px)*/
 
-/*@media all and (min-width: 768px)and (max-width: 1023px ) {*/
+@media all and (min-width:768px) and (max-width:1023px) {
+
+   #home {
+        height: 179%;
+        width: 100%;
+    }
+
+    #Mylogo>img {
+        left: 307px;
+    }
+
+    #hireme {
+        left: 557px;
+    }
+
+  #Background {
+        width: 735px;
+    }
+    main > section > h3 {
+        font-size: 30px;
+        top: 232px;
+        left: 151px;
+    }
+
+    main > section > h1 {
+        top: 242px;
+        font-size: 77pt;
+        left: 141px;
+    }
+
+    main > section > p {
+        left: 28px;
+        top: 544px;
+        right: 432px;
+    }
 
 
-/*}*/
+    main > section > div > h5 {
+        left: 401px;
+        top: 476px;
+    }
+
+
+  #project {
+        height: 214%;
+      width: 100%;
+    }
+
+
+    #chickago {
+        left: 451px;
+
+    }
+
+    #connect {
+        left: 867px;
+        right: 840px;
+    }
+
+    #gallery {
+        height: 198%;
+        width: 100%;
+        margin-top: 1313px;
+    }
+
+    #skills {
+        height: 195%;
+        width: 100%;
+    }
+
+    #lang1 {
+        left: 106px;
+        width: 129vw;
+    }
+
+   #tool1 {;
+        left: 74px;
+       width: 100%;
+    }
+
+    #assignments {
+        height: 178%;
+        width: 100%;
+    }
+
+    #assignments > section {
+        margin: 53px;
+        left: 26px;
+    }
+
+    #about {
+        height: 571%;
+        width: 100%;
+    }
+
+    footer {
+        width: 156%;
+        height: 68%;
+    }
+
+
+    #buttonset {
+        bottom: 52px;
+    }
+
+}
 /*=======================   END */
 
 
@@ -27,7 +171,7 @@
 
 
 
-/*@media all and (min-width: 1024px) and (max-width: 1440px) {*/
+/*@media all and (min-width:1024px) and (max-width:1440px) {*/
 
 /*   #mainImage1 {*/
 /*       position: absolute;*/
@@ -93,7 +237,7 @@
 /*    }*/
 
 
-/*}*/
+/*} */
 
 /*=======================   END */
 

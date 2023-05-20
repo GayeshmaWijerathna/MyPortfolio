@@ -4,9 +4,9 @@
     margin: 0;
 }
 
-.body {
-    width: 100%;
-}
+/*.body {*/
+/*    width: 100%;*/
+/*}*/
 
 .upperLogo {
     top: 5px;
@@ -68,7 +68,7 @@ header menu li a {
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 0%;
+    width: 1px;
     height: 3px;
     background-color: #000000;
     transition: width 0.3s ease-in-out;
@@ -102,7 +102,7 @@ html {
 
 #home{
     width: 100%;
-    height: 259%;
+    height: 100vh;
     position: absolute;
 }
 /* logo */
@@ -152,7 +152,7 @@ html {
 
 /* home */
 #home {
-    height: 110%;
+    height: 100vh;
     width: 100%;
     /*top: 90px;*/
     position: absolute;
@@ -165,7 +165,8 @@ html {
 #mainImage {
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 100vh;
+    z-index: 999;
 }
 
 /* my portfolio .... */
@@ -324,7 +325,7 @@ main > section > section > p {
 #gallery {
     height: 110%;
     width: 100%;
-    margin-top: 1301px;
+    margin-top: 1341px;
     position: absolute;
     background-color:#151515 ;
     /* border: 2px solid black; */
@@ -443,7 +444,7 @@ section#photos > div:nth-child(9) {
 #skills { /* skills */
     height: 110%;
     width: 100%;
-    margin-top: 2007px;
+    margin-top: 2120px;
     position: absolute;
     background-color:#151515 ;
     /* border: 2px solid black; */
@@ -539,7 +540,7 @@ section#photos > div:nth-child(9) {
 #assignments {
     height: 120%;
     width: 100%;
-    top: 2710px;
+    top: 2836px;
     position: absolute;
     background-color:#151515 ;
 
@@ -638,9 +639,9 @@ section#photos > div:nth-child(9) {
 
 
 #about { /* about */
-    height: 400%;
+    height: 350%;
     width: 100%;
-    margin-top: 3470px;
+    margin-top: 3644px;
     position: absolute;
     /*border: 2px solid red;*/
     background-color:#151515 ;
@@ -1028,7 +1029,7 @@ fieldset {
     gap: 25px;
     transform: scale(1.6);
     left: 140px;
-    bottom: 20px;
+    bottom: 70px;
 }
 
 #text textarea {

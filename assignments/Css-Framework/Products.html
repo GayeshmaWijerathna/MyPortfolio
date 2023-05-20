@@ -1,10 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Products</title>
+    <link rel="stylesheet" href="../../assets/css/bootstrap.css">
+    <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
+    <link href="Customer.html">
+    <link href="POS.html">
+    <link href="Products.html">
+
+    <link rel="stylesheet" href="assets/StyleFW.css">
 </head>
 <body>
-$END$
+<header>
+
+    <section class="navigation_bar">
+        <nav class="navbar navbar-expand-lg bg-gradient" data-bs-theme="dark">
+            <!--            <nav class="navbar bg-primary" data-bs-theme="dark" >-->
+            <div class="container-fluid">
+                <a class="navbar-brand" href="POS.html">DARKTOWN</a>
+                <img src="assets/fw_Images/posLogo.png" alt="Logo" width="60" height="28" class="d-inline-block align-text-top">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="POS.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="Customer.html">Customers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="Products.html">Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="ShopNow.html" > <img src="assets/fw_Images/CartPos.png" alt="" width="30"> Shop Now >> </a>
+                        </li>
+                    </ul>
+
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="searchBtn" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </section>
+</header>
+
+
+<main>
+
+    <div id="manageAllCustomers ">
+        <section class="container w-100 bg-white">
+            <section class="row bg-white">
+                <div class="col-5  bg-white">
+                    <form>
+                        <div class="col-autoLbl">
+                            <label for="Itemcode" class="col-form-label">Item Code</label>
+                        </div>
+                        <div class="col-auto">
+                            <input type="text" id="Itemcode" class="form-control" placeholder="ex: I001" aria-describedby="passwordHelpInline">
+                        </div>
+
+                        <div class="col-autoLbl">
+                            <label for="Desc" class="col-form-label">Description</label>
+                        </div>
+                        <div class="col-auto">
+                            <input type="text" id="Desc" class="form-control" placeholder="Item Name" aria-describedby="passwordHelpInline">
+                        </div>
+                        <div class="col-autoLbl">
+                            <label for="qty" class="col-form-label">Qty</label>
+                        </div>
+                        <div class="col-auto">
+                            <input type="text" id="qty" class="form-control" placeholder="00"  aria-describedby="passwordHelpInline">
+                        </div>
+                        <div class="col-autoLbl">
+                            <label for="Up" class="col-form-label">Unit Price</label>
+                        </div>
+                        <div class="col-auto">
+                            <input type="text" id="Up" class="form-control" placeholder="Price" aria-describedby="passwordHelpInline">
+                        </div>
+
+                        <div class="buttons container-fluid">
+                            <button class="btn btn-success" type="button">Add</button>
+                            <button class="btn bg-warning" type="button">Update</button>
+                            <button class="btn btn-danger" type="button">Remove</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="col-7 bg-gradient">
+                    <table class="table table-hover">
+                        <thead class="bg-gradient bg-info ">
+                        <tr>
+                            <th>Item Code</th>
+                            <th> Description </th>
+                            <th>Qty</th>
+                            <th>Unit Price</th>
+
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>I001</td>
+                            <td>Tikiri Mari</td>
+                            <td>20</td>
+                            <td>250.00</td>
+                        </tr>
+
+                        <tr>
+                            <td>I002</td>
+                            <td>Cargils Ice Cream</td>
+                            <td>50L</td>
+                            <td>520.00</td>
+                        </tr>
+
+                        <tr>
+                            <td>I003</td>
+                            <td>Chicken</td>
+                            <td>40kg</td>
+                            <td>1180.00</td>
+                        </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+
+            </section>
+        </section>
+    </div>
+
+
+
+
+</main>
 </body>
 </html>

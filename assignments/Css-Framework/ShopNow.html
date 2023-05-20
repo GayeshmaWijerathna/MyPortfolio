@@ -1,10 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Shop Now</title>
+    <link rel="stylesheet" href="../../assets/css/bootstrap.css">
+    <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
+    <link href="Customer.html">
+    <link href="POS.html">
+    <link href="Products.html">
+    <link href="ShopNow.html">
+
+    <link rel="stylesheet" href="assets/StyleFW.css">
 </head>
 <body>
-$END$
+<header>
+
+    <section class="navigation_bar">
+        <nav class="navbar navbar-expand-lg bg-gradient" data-bs-theme="dark">
+            <!--            <nav class="navbar bg-primary" data-bs-theme="dark" >-->
+            <div class="container-fluid">
+                <a class="navbar-brand" href="POS.html">DARKTOWN</a>
+                <img src="assets/fw_Images/posLogo.png" alt="Logo" width="60" height="28" class="d-inline-block align-text-top">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="POS.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="Customer.html">Customers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="Products.html">Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="ShopNow.html" > <img src="assets/fw_Images/CartPos.png" alt="" width="30"> Shop Now >> </a>
+                        </li>
+                    </ul>
+
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="searchBtn" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </section>
+</header>
+
+<main>
+
+    <div id="placeOrder">
+        <section class="container-fluid w-100 bg-white" style=" padding-left: 30px;">
+            <section class="row bg-white">
+                <div class="col-3 bg-white">
+                    <form>
+
+                        <div class="col-autoLbl">
+                            <label class="col-form-label">Customer Id</label>
+                        </div>
+                        <div class="col-auto">
+                            <input type="text" class="form-control" aria-describedby="passwordHelpInline">
+                        </div>
+
+
+                        <div class="col-autoLbl">
+                            <label  class="col-form-label">Name</label>
+                        </div>
+                        <div class="col-auto">
+                            <input type="text" class="form-control" aria-describedby="passwordHelpInline">
+                        </div>
+
+                        <div class="col-autoLbl">
+                            <label  class="col-form-label">Address</label>
+                        </div>
+                        <div class="col-auto">
+                            <input type="text"  class="form-control" aria-describedby="passwordHelpInline">
+                        </div>
+
+                        <div class="col-autoLbl">
+                            <label  class="col-form-label">Contact</label>
+                        </div>
+                        <div class="col-auto">
+                            <input type="text" class="form-control" aria-describedby="passwordHelpInline">
+                        </div>
+                    </form>
+                </div>
+
+                <div class="col-2  bg-white">
+                    <button class="searchBtn btn-success " style="width: 120px; background-color: #6610f2" type="button">Search </button>
+                </div>
+
+
+                <div class="col-3  bg-white">
+                    <form>
+                        <div class="col-autoLbl">
+                            <label class="col-form-label">Item Code</label>
+<!--                            <div style="margin-left: 10px; position: absolute; margin-top: 0;"><img src="assets/fw_Images/pngtree-transparent-order-now-png-png-image_6117014.png" width="300px" alt="orderimg"></div>-->
+
+                        </div>
+                        <div class="col-auto">
+                            <input type="text" class="form-control" aria-describedby="passwordHelpInline">
+                        </div>
+
+                        <div class="col-autoLbl">
+                            <label  class="col-form-label">Description</label>
+                        </div>
+                        <div class="col-auto">
+                            <input type="text"  class="form-control" aria-describedby="passwordHelpInline">
+                        </div>
+            <div class="col-autoLbl">
+                            <label for="unit" class="col-form-label">Unit Price</label>
+                        </div>
+                        <div class="col-auto">
+                            <input type="text"  class="form-control" aria-describedby="passwordHelpInline">
+                        </div>
+                        <div class="col-auto">
+                            <div class="col-qty">
+                                <label for="unit"   class="col-form-label-lg">Qty</label>
+                            </div>
+                            <div class="qtyNum" >
+                                <input type="number" id="unit" class="qty"  aria-describedby="qtyHelpInline">
+                                <button class="addToCartBtn btn-warning " style=" margin-left: 25px;  width: 150px; height: 40px; border-radius: 15px" type="button">Add To Cart </button>
+                            </div>
+
+                        </div>
+
+                    </form>
+                </div>
+                <div class="col-1  bg-white" style="padding-top: 30px">
+                    <button class="searchBtn btn-success " style="width: 100px; background-color: #6610f2"  type="button">Search </button>
+
+                    <button class="butCartBtn btn-success " style=" font-weight: bold; font-size: large; border-radius: 20px; margin-top: 150px; height: 70px;" type="button">Buy Cart</button>
+
+    </div>
+
+            </section>
+
+        </section>
+
+    </div>
+
+
+    <div class="col-12 bg-light" style="justify-content: center">
+        <table class="table table-hover" style="margin-top: 10px;">
+            <thead class="bg-light ">
+            <tr>
+                <th>Item Code</th>
+                <th>Description</th>
+                <th>Unit Price</th>
+                <th>Qty</th>
+                <th>Total</th>
+             <th><button class="butCartBtn btn-danger " style="border-radius: 20px"  type="button">Remove Item</button></th>
+
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>I001</td>
+                <td>Tikiri Mari</td>
+                <td>1</td>
+                <td>250.00</td>
+                <td>250.00</td>
+            </tr>
+            <tr>
+                <td>I002</td>
+                <td>Cargils Ice Cream</td>
+                <td>1L</td>
+                <td>520.00</td>
+                <td>520.00</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+</main>
 </body>
 </html>
