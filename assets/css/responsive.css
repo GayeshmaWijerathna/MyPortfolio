@@ -3,53 +3,458 @@
 /*++++++++++++++  START - 425 PX  +++++++++++++ (min-device-width: 425) to (max-device-width: 768px)*/
 
 
-@media all and (min-width:425px) and (max-width:767px){
+@media all and (min-width:425px) and (max-width:767px) {
+
+    header > div {
+        margin: 10px;
+        right: -4px;
+        top: 10px;
+    }
+
+    .upperLogo {
+        top: 8px;
+        left: 4px;
+        height: 33px;
+        width: 49px;
+    }
+
+    main > section > div > h5 {
+        left: 115px;
+        top: 183px;
+        font-size: 8px;
+    }
+
+    header {
+        height: 45px;
+    }
+
+    #Background {
+        width: 241px;
+        height: 312px;
+    }
+
+    #Background {
+        width: 237px;
+        height: 192px;
+        top: 49px;
+        left: 10px;
+    }
+
+    #Mylogo > img {
+        top: 58px;
+        left: 110px;
+        height: 41px;
+        width: 46px;
+    }
+
     #home {
-        height: 212%;
-        width: 100%;
-    }
-
-
-  #Background {
-        width: 541px;
-        height: 546px;
-        top: 15px;
-        left: 15px;
-    }
-
-    .h {
-        position: absolute;
-        width: 400px;
-        height: 400px;
+        height: 52vh;
     }
 
     main > section > h3 {
-        font-size: 19px;
-        top: 197px;
-        left: 107px;
+        font-size: 12px;
+        top: 105px;
+        left: 42px;
     }
 
     main > section > h1 {
-        top: 208px;
-        font-size: 54pt;
-        left: 157px;
-        margin-left: -55px;
-        margin-top: 10px;
+        top: 110px;
+        font-size: 21pt;
+        left: 54px;
+        text-align: center;
     }
 
     main > section > p {
-        left: 32px;
-        top: 440px;
-        right: 322px;
+        left: 21px;
+        top: 198px;
+        right: 169px;
+        font-size: 7px;
+    }
+
+    #hireme {
+        top: 221px;
+        left: 306px;
+        font-size: 12pt;
+    }
+
+    #project {
+        height: 100%;
+        top: 264px;
+    }
+
+    #projectHead {
+        margin-top: 56px;
+    }
+
+    .project-list {
+        padding-top: 88px;
+        height: 321px;
+        margin: 24px;
+        gap: 26px;
+    }
+
+    .project h4 {
+        font-size: 9pt;
+        alignment: center;
+    }
+
+    .project img {
+        height: 73px;
+    }
+
+    .project p {
+        margin-top: 5px;
+        font-size: 7pt;
+    }
+
+    #gallery {
+        margin-top: 756px;
+    }
+
+    #galleryHead {
+        margin-top: 60px;
+    }
+
+    #photos {
+        top: 124px;
+        left: -1px;
+        height: 300px;
+    }
+
+
+    #skills {
+        margin-top: 1274px;
+    }
+
+    #skillsHead {
+        margin-top: 59px;
+    }
+
+    #lang {
+        top: 126px;
+        left: 16px;
+        right: 16px;
+        font-size: 21px;
+    }
+
+    #lang1 {
+        left: 35px;
+        width: 79vw;
+        top: 208px;
+    }
+
+    #tool {
+        top: 306px;
+        left: 16px;
+        right: 16px;
+        font-size: 21px;
+    }
+
+    #tool1 {
+        top: 340px;
+        left: 0;
+        width: 94%;
+    }
+
+    #assignments {
+        top: 1753px;
+    }
+
+    #assignmentsHead {
+        margin-top: 58px;
+    }
+
+    .assignment-list {
+        height: 296px;
+        margin: 20px;
+        gap: 17px;
+    }
+
+    .assignment h4 {
+        margin-left: 13%;
         font-size: 16px;
     }
 
-
-    main > section > div > h5 {
-        left: 252px;
-        top: 375px;
-        font-size: 17px;
+    .git-btn {
+        left: 45%;
     }
+
+    #about {
+        margin-top: 2254px;
+        height: 365vh;
+    }
+
+    #aboutHead {
+        margin-top: 58px;
+    }
+
+    #about > article#art1 {
+        position: absolute;
+        top: 104px;
+        left: 40px;
+        right: 10px;
+        font-size: 11pt;
+    }
+
+    #edu0 {
+        top: 290px;
+        left: 40%;
+        font-size: 16pt;
+    }
+
+    #edu1 {
+        top: 359px;
+        left: 30px;
+    }
+
+    #ijseli1 {
+        left: 122px;
+        top: 361px;
+        right: 13px;
+    }
+
+    #edu2 {
+        left: 329px;
+    }
+
+    #ijseli2 {
+        left: 45px;
+        top: 485px;
+        right: 88px;
+    }
+
+    #edu3 {
+        left: 30px;
+    }
+
+    #ijseli3 {
+        left: 122px;
+        top: 582px;
+        right: 13px;
+    }
+
+    #edu4 {
+        left: 329px;
+    }
+
+    #ijseli4 {
+        left: 45px;
+        top: 685px;
+        right: 88px;
+    }
+
+    #cert0 {
+        top: 798px;
+        left: 40%;
+        font-size: 16pt;
+    }
+
+    #cimg2 {
+        top: 897px;
+        width: 226px;
+        left: 9%;
+    }
+
+    #cimg1 {
+        top: 883px;
+        left: 19%;
+        width: 253px;
+    }
+
+    #cimg3 {
+        top: 897px;
+        left: 36%;
+        width: 226px;
+    }
+
+    #ex0 {
+        top: 1130px;
+        left: 40%;
+        font-size: 16pt;
+    }
+
+    .experience {
+        position: relative;
+        margin-top: -313px;
+        margin-left: -165px;
+    }
+
+    #about > article > ul > li {
+        font-size: 16px;
+        margin-top: -24px;
+    }
+
+    #eximg1 {
+        width: 51px;
+    }
+
+    #exli1 {
+        left: 285px;
+    }
+
+    #exli2 {
+        left: 440px;
+        top: 1689px;
+        font-size: 18pt;
+    }
+
+    #eximg2 {
+        top: 1613px;
+        left: 249px;
+        width: 51px;
+    }
+
+    #exli2 {
+        left: 330px;
+        top: 1641px;
+        font-size: 18pt;
+    }
+
+    #eximg3 {
+        top: 1702px;
+        left: 288px;
+        width: 52px;
+    }
+
+    #exli3 {
+        left: 368px;
+        top: 1732px;
+    }
+
+    #eximg4 {
+        top: 1789px;
+        left: 314px;
+        width: 51px;
+    }
+
+    #exli4 {
+        left: 380px;
+        top: 1821px;
+    }
+
+    .activities {
+        position: relative;
+        margin-left: -193px;
+    }
+
+    #act0 {
+        top: 1590px;
+        left: 40%;
+        font-size: 16pt;
+    }
+
+
+    #actimg1 {
+        top: 1964px;
+        width: 50px;
+    }
+
+    #acth1 {
+        left: 232px;
+        top: 2033px;
+        font-size: 8pt;
+    }
+
+    #actimg2 {
+        width: 47px;
+        height: 40px;
+        top: 1972px;
+        left: 329px;
+    }
+
+    #acth2 {
+        left: 327px;
+        top: 2034px;
+        font-size: 8pt;
+    }
+
+    #actimg3 {
+        top: 1972px;
+        left: 414px;
+        width: 50px;
+        height: 40px;
+    }
+
+    #acth3 {
+        left: 412px;
+        top: 2034px;
+        font-size: 8pt;
+    }
+
+    #actimg4 {
+        top: 1972px;
+        left: 506px;
+        width: 50px;
+        height: 40px;
+    }
+
+    #acth4 {
+        left: 511px;
+        top: 2034px;
+        font-size: 8pt;
+    }
+
+    footer {
+        height: 44%;
+        margin-top: 4088px;
+    }
+
+    #buttonset {
+        gap: 10px;
+        transform: scale(1.4);
+        left: 83px;
+        bottom: -409px;
+    }
+
+    footer > fieldset > h4 {
+        position: relative;
+        top: 10px;
+        font-size: 11pt;
+    }
+
+
+    fieldset {
+
+        padding: 0.35em 0.75em 13.625em;
+    }
+
+    #askIcons{
+
+        position: relative;
+        margin-left: 41px;
+    }
+
+    #msgSubmit_Section {
+
+        position: relative;
+        top: 121px;
+        width: 94%;
+        overflow: hidden;
+        right: -21px;
+    }
+
+    #text input {
+        position: relative;
+        width: 90%;
+        margin-bottom: 10px;
+    }
+
+    #text textarea {
+        position: relative;
+        width: 92%;
+        padding: 2px;
+        border-radius: 8px;
+        margin-bottom: 33px;
+    }
+
+    #btnSubmit {
+        left: 45px;
+    }
+
+
+
+
+
 
 }
 /*=======================   END */
@@ -57,187 +462,246 @@
 
 /*++++++++++++++  START - 768 PX  +++++++++++++ (min-device-width: 768px) to (max-device-width: 1024px)*/
 
-@media all and (min-width:768px) and (max-width:1023px) {
+@media all and (min-width:768px) and (max-width:1024px) {
 
-   #home {
-        height: 179%;
-        width: 100%;
-    }
 
     #Mylogo>img {
-        left: 307px;
+        top: 73px;
+        left: 181px;
+        height: 72px;
+        width: 85px;
     }
 
-    #hireme {
-        left: 557px;
-    }
-
-  #Background {
-        width: 735px;
-    }
     main > section > h3 {
-        font-size: 30px;
-        top: 232px;
-        left: 151px;
+        font-size: 18px;
+        top: 166px;
+        left: 93px;
     }
+
 
     main > section > h1 {
-        top: 242px;
-        font-size: 77pt;
-        left: 141px;
+        top: 172px;
+        font-size: 50pt;
+        left: 48px;
+    }
+
+    main > section > div > h5 {
+        left: 188px;
+        top: 330px;
+        font-size: 16px;
     }
 
     main > section > p {
-        left: 28px;
-        top: 544px;
-        right: 432px;
+        left: 53px;
+        top: 383px;
+        right: 323px;
+        font-size: 14px;
+    }
+
+    #Background {
+        width: 434px;
+        height: 415px;
+    }
+
+    #hireme {
+        top: 441px;
+        left: 583px;
     }
 
 
-    main > section > div > h5 {
-        left: 401px;
-        top: 476px;
+    #project {
+        height: 160%;
+        top: 512px;
     }
 
-
-  #project {
-        height: 214%;
-      width: 100%;
-    }
-
-
-    #chickago {
-        left: 451px;
-
-    }
-
-    #connect {
-        left: 867px;
-        right: 840px;
-    }
 
     #gallery {
-        height: 198%;
-        width: 100%;
-        margin-top: 1313px;
+        height: 150%;
+        margin-top: 1299px;
     }
+
 
     #skills {
-        height: 195%;
-        width: 100%;
-    }
-
-    #lang1 {
-        left: 106px;
-        width: 129vw;
-    }
-
-   #tool1 {;
-        left: 74px;
-       width: 100%;
+        height: 150%;
+        margin-top: 2030px;
     }
 
     #assignments {
-        height: 178%;
-        width: 100%;
-    }
-
-    #assignments > section {
-        margin: 53px;
-        left: 26px;
+        height: 150%;
+        top: 2770px;
     }
 
     #about {
-        height: 571%;
-        width: 100%;
+        height: 485%;
+        margin-top: 3511px;
+    }
+
+
+    #about > article#art1 {
+        top: 139px;
+    }
+
+    .education {
+        color: white;
+        position: relative;
+        margin-left: -99px;
+        margin-right: 5px;
+    }
+
+
+    #edu2 {
+        left: 715px;
+    }
+    #edu4 {
+        left: 715px;
+    }
+
+    #cimg1 {
+        position: absolute;
+        top: 955px;
+        left: 23%;
+        z-index: 18;
+        width: 444px;
+    }
+
+    #cimg2 {
+        position: absolute;
+        top: 980px;
+        left: 9%;
+        opacity: 25%;
+        width: 395px;
+    }
+
+    #cimg3 {
+        position: absolute;
+        top: 973px;
+        left: 42%;
+        opacity: 25%;
+        width: 390px;
+    }
+
+    .experience{
+        position: relative;
+        left: -118px;
+        margin-right: -92px;
+    }
+
+
+.activities{
+    position: relative;
+    margin-left: -193px;
+}
+    #actimg1 {
+
+        top: 2161px;
+        left: 254px;
+        width: 80px;
+    }
+    #acth1 {
+        left: 247px;
+        font-size: 11pt;
+    }
+
+    #actimg2 {
+        top: 2166px;
+        left: 429px;
+        width: 80px;
+        height: 70px;
+    }
+
+    #acth2 {
+        left: 435px;
+        font-size: 11pt;
+    }
+
+    #actimg3 {
+        top: 2166px;
+        left: 614px;
+        width: 80px;
+        height: 70px;
+    }
+
+    #acth3 {
+        left: 621px;
+        font-size: 11pt;
+    }
+
+    #actimg4 {
+        top: 2166px;
+        left: 793px;
+        width: 80px;
+        height: 70px;
+    }
+
+    #acth4 {
+        left: 807px;
+        font-size: 11pt;
     }
 
     footer {
-        width: 156%;
-        height: 68%;
+        margin-top: 5874px;
     }
 
-
     #buttonset {
-        bottom: 52px;
+        gap: 14px;
+        transform: scale(1.4);
+        left: 78px;
+        bottom: -90px;
+    }
+
+    #btnSubmit {
+        width: 220px;
+        bottom: -3px;
+        left: 40px;
+
     }
 
 }
 /*=======================   END */
 
 
-/*++++++++++++++  START - 1024 PX  +++++++++++++ (min-device-width: 1024px) to (max-device-width: 1440px)*/
+/*++++++++++++++  START - 1025 PX  +++++++++++++ (min-device-width: 1024px) to (max-device-width: 1440px)*/
+
+@media all and (min-width:1025px) and (max-width:1440px) {
+    #hireme {
+        left: 839px;
+    }
+
+    #gallery {
+        height: 120%;
+    }
+
+    #edu2 {
+        left: 845px;
+    }
+
+    #edu4 {
+        left: 845px;
+    }
+
+    #cimg2 {
+        left: 17%;
+    }
+
+    #cimg3 {
+        left: 50%;
+    }
+
+    .activities{
+        position: absolute;
+        left: -131px;
+    }
+
+    #about {
+        height: 350%;
+    }
+    #buttonset {
+        bottom: -35px;
+    }
 
 
 
-
-/*@media all and (min-width:1024px) and (max-width:1440px) {*/
-
-/*   #mainImage1 {*/
-/*       position: absolute;*/
-/*       width: 100%;*/
-/*       height: 100%;*/
-/*        margin-top: 59px;*/
-/*    }*/
-
-/*    #home {*/
-/*        height: 256%;*/
-/*        width: 100%;*/
-/*    }*/
-
-/*    #Background {*/
-/*        width: 647px;*/
-/*        height: 524px;*/
-/*        margin-top: 44px;*/
-/*        left: 22px;*/
-/*    }*/
-
-/*    main > section > p {*/
-/*        left: 43px;*/
-/*        top: 574px;*/
-/*        right: 484px;*/
-/*    }*/
-
-/*    #project {*/
-/*        height: 278%;*/
-/*        top: 807px;*/
-/*    }*/
-
-/*   #connect {*/
-/*        left: 860px;*/
-/*    }*/
-
-/*    #gallery {*/
-
-/*        height: 283%;*/
-/*        width: 100%;*/
-/*        margin-top: 1449px;*/
-/*    }*/
-
-/*    #skills {*/
-/*        height: 327%;*/
-/*        margin-top: 2149px;*/
-/*        }*/
-
-/*    #assignments {*/
-/*        height: 260%;*/
-/*        width: 100%;*/
-/*        top: 2969px;*/
-/*    }*/
-/*    #about {*/
-/*        height: 915%;*/
-/*        width: 100%;*/
-/*        margin-top: 3615px;*/
-/*    }*/
-
-
-/*    footer {*/
-/*        height: 44%;*/
-/*        margin-top: 5928px;*/
-/*    }*/
-
-
-/*} */
+}
 
 /*=======================   END */
 

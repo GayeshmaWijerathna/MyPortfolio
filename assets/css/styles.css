@@ -131,8 +131,6 @@ html {
     width: 100%;
     background-size: cover;
     background-position: center;
-
-
 }
 
 /* div background color */
@@ -141,10 +139,10 @@ html {
     color: black;
     background-color: black;
     position: absolute;
-    width: 820px;
-    height: 630px;
+    width: 790px;
+    height: 570px;
     border-radius: 10%;
-    top: 20px;
+    top: 70px;
     left: 30px;
     opacity: 69%;
 
@@ -243,80 +241,59 @@ main > section > p {
 
 }
 
-#roomres {
-    position: absolute;
-    top: 200px;
-    margin: auto;
+
+.project-list {
+    padding-top: 100px;
+    height: 450px;
     display: grid;
-    left: 60px;
-    right: 970px;
-    color: white;
+    margin: 40px;
+    gap: 40px;
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    overflow: hidden;
 
 }
 
-#chickago {
-    position: absolute;
-    top: 200px;
-    margin: auto;
-    display: grid;
-    left: 470px;
-    right: 840px;
+.project {
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.project h4 {
+    padding-top: 15px;
     color: white;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
 
 }
 
-#connect {
-    position: absolute;
-    top: 200px;
-    margin: auto;
-    display: grid;
-    left: 895px;
-    right: 840px;
-    color: white;
+.project img {
+    height: 200px;
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+    opacity: 0.9;
+    object-fit: cover;
+
 }
 
-#assi0 {
+.project p {
+    margin-top: 10px;
+    color: white;
     text-align: center;
-    height: 25px;
-    /*background-color: deepskyblue;*/
-    border-radius: 30px;
-    margin-top: 15PX;
-    color: white;
 }
 
-#assi1:hover {
-    /*padding-left: 80px;*/
-    transform: scale(1.4);
-    color: #ff253a;
+.click-Here {
+    position: relative;
 }
 
-#assi2:hover {
-    /*padding-left: 90px;*/
-    transform: scale(1.4);
-    color: #ff253a;
-}
-
-#assi3:hover {
-     /*padding-left: 30px;*/
-     transform: scale(1.4);
-     color: #ff253a;
- }
-
-main > section > section > p {
-    text-align: center;
-    color: white;
-}
-
-/* see all button */
-#projectbtn {
-    width: 80px;
-    height: 40px;
+.git-btn {
     position: absolute;
-    bottom: 120px;
-    right: 30px;
-    background-color: white;
-    border-radius: 8px;
-    border-color: aqua;
+    top: 50%;
+    left: 50%;
 }
 
 
@@ -342,7 +319,7 @@ main > section > section > p {
 }
 
 /* images */
-main > section#gallery > div {
+#gallery > div {
     margin-top:  80px;
     position: absolute;
     display: inline-table;
@@ -421,7 +398,7 @@ main > section#gallery > div {
     background-image: url("../image/streetfood.JPG");
 }
 
-section#photos > div:nth-child(9) {
+#photos > div:nth-child(9) {
     background-image: url("../image/aiyawed.jpg");
 }
 
@@ -558,88 +535,61 @@ section#photos > div:nth-child(9) {
 }
 
 
- #div1 {
 
-    background-image: url("../image/CaseOne1.gif");
+.assignment-list {
+    padding-top: 100px;
+    height: 450px;
+    display: grid;
+    margin: 40px;
+    gap: 40px;
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    overflow: hidden;
+
 }
 
-#div2 {
-
-    background-image: url("../image/CaseTwo2.gif");
-}
-
-#div3 {
-
-    background-image: url("../image/CaseThree.gif");
-}
-
-/*main > section#assignments > section > div#div4 {*/
-
-/*    !*background-image: url("../image/Assignment\ 3.png");*!*/
-/*}*/
-
-#assignments > section {
+.assignment {
+    border-radius: 10px;
     position: relative;
-    /* border: 2px solid black; */
-    display: grid;
-    align-items: center;
-    margin: 61px;
-    top: 230px;
-    left: -38px;
-    right: 10px;
-    grid-template-rows: repeat(1, 1fr);
-    grid-template-columns: repeat(3, 1fr);
-    justify-content: space-between;
-    align-content: space-between;
-    justify-items: center;
+    overflow: hidden;
 }
 
-#assignments > section > div:hover {
-
-    transform: scale(1.3);
-    /*margin-left: 20px;*/
+.assignment h4 {
+    padding-top: 18px;
+    color: white;
+    font-weight: bold;
+     margin-left: 30%;
+    font-size: 20px;
 }
 
-#assignments > section > div {
-    width: 300px;
+.assignment img {
     height: 200px;
-    background-size: cover;
-    background-position: center;
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+    opacity: 0.9;
+    object-fit: cover;
 }
 
-/* Assignment Texts */
-#assignments > section > div> h4 {
-    /*position: absolute;*/
+.click-Here {
+    position: relative;
+}
+
+.git-btn {
     position: absolute;
-    /* border: 2px solid black; */
-    display: grid;
-    align-items: center;
-    margin: auto;
-    top: 60px;
-    left: 15px;
-    grid-template-rows: repeat(1, 1fr);
-    grid-template-columns: repeat(3, 1fr);
-    font-size: larger;
-
+    top: 50%;
+    left: 50%;
 }
 
-#assignments >form > #btnAssignment {
-    width: 80px;
-    height: 40px;
-    position: absolute;
-    bottom: 82px;
-    right: 50px;
-    /*background-color: white;*/
-    border-radius: 8px;
-    border-color: aqua;
-}
+
 
 
 /* -----------------------------About---------------------------- */
 
 
 #about { /* about */
-    height: 350%;
+    height: 280%;
     width: 100%;
     margin-top: 3644px;
     position: absolute;
@@ -683,18 +633,23 @@ section#photos > div:nth-child(9) {
 }
 
 /* Education MAIN TEXT */
-#about > article > h5#edu0 {
+#edu0 {
     position: absolute;
     top: 310px;
     left: 45%;
     font-size: 20pt;
 }
 
+.education{
+    color: white;
+}
+
 /* IJSE */
-#about > article > ul > img#edu1 {
+#edu1 {
+
     position: absolute;
     top: 400px;
-    left: 185px;
+    left: 165px;
 }
 
 /* IJSE text */
@@ -703,20 +658,19 @@ section#photos > div:nth-child(9) {
     left: 250px;
     top: 409px;
     right: 180px;
-
-}
+  }
 
 /* COT */
 #edu2 {
     position: absolute;
     top: 480px;
-    left: 1085px;
+    left: 1010px;
 }
 
 /* COT Text */
 #ijseli2 {
     position: absolute;
-    left: 200px;
+    left: 270px;
     top: 489px;
     right: 250px;
 
@@ -726,7 +680,7 @@ section#photos > div:nth-child(9) {
 #edu3 {
     position: absolute;
     top: 580px;
-    left: 185px;
+    left: 165px;
 }
 
 /* VCG text */
@@ -742,13 +696,13 @@ section#photos > div:nth-child(9) {
 #edu4 {
     position: absolute;
     top: 680px;
-    left: 1085px;
+    left: 1010px;
 }
 
 /* PILANA Text */
 #ijseli4 {
     position: absolute;
-    left: 200px;
+    left: 270px;
     top: 689px;
     right: 190px;
 }
@@ -959,7 +913,7 @@ footer {
     position: absolute;
     margin-bottom: 0;
     background-color: white;
-    height: 44%;
+    height: 33%;
     margin-top: 6000px;
 }
 
@@ -1029,7 +983,7 @@ fieldset {
     gap: 25px;
     transform: scale(1.6);
     left: 140px;
-    bottom: 70px;
+    bottom: 45px;
 }
 
 #text textarea {
