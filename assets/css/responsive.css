@@ -214,6 +214,7 @@
     }
 
     #edu2 {
+        position: relative;
         left: 329px;
     }
 
@@ -234,6 +235,7 @@
     }
 
     #edu4 {
+        position: relative;
         left: 329px;
     }
 
@@ -494,7 +496,7 @@
     main > section > p {
         left: 53px;
         top: 383px;
-        right: 323px;
+        right: 558px;
         font-size: 14px;
     }
 
@@ -550,10 +552,12 @@
 
 
     #edu2 {
-        left: 715px;
+        position: relative;
+        left: 959px;
     }
     #edu4 {
-        left: 715px;
+        /*position: relative;*/
+        left: 959px;
     }
 
     #cimg1 {
@@ -664,7 +668,11 @@
 
 @media all and (min-width:1025px) and (max-width:1440px) {
     #hireme {
-        left: 839px;
+        left: 999px;
+    }
+
+    main > section > p {
+        right: 632px;
     }
 
     #gallery {
@@ -672,11 +680,11 @@
     }
 
     #edu2 {
-        left: 845px;
+        left: 1050px;
     }
 
     #edu4 {
-        left: 845px;
+        left: 1050px;
     }
 
     #cimg2 {
@@ -687,9 +695,9 @@
         left: 50%;
     }
 
-    .activities{
-        position: absolute;
-        left: -131px;
+    .activities {
+        position: relative;
+        left: 68px;
     }
 
     #about {
