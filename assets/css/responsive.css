@@ -3,7 +3,7 @@
 /*++++++++++++++  START - 425 PX  +++++++++++++ (min-device-width: 425) to (max-device-width: 768px)*/
 
 
-@media all and (min-width:425px) and (max-width:767px) {
+@media all and (max-width:768px) {
 
     header > div {
         margin: 10px;
@@ -464,7 +464,7 @@
 
 /*++++++++++++++  START - 768 PX  +++++++++++++ (min-device-width: 768px) to (max-device-width: 1024px)*/
 
-@media all and (min-width:768px) and (max-width:1024px) {
+@media all and (max-width:1024px) {
 
 
     #Mylogo>img {
@@ -666,7 +666,7 @@
 
 /*++++++++++++++  START - 1025 PX  +++++++++++++ (min-device-width: 1024px) to (max-device-width: 1440px)*/
 
-@media all and (min-width:1025px) and (max-width:1440px) {
+@media all and (max-width:1440px) {
     #hireme {
         left: 999px;
     }
