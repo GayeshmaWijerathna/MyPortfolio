@@ -4,113 +4,97 @@
     <meta charset="UTF-8">
     <title>DOM Manipulation With JS - 2</title>
 
-  <style>
+    <style>
 
-section{
-    position: absolute;
-    height: 400px;
-    width: 1000px;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    display: flex;
-    gap: 3px;
-    align-items: center;
+        body{
+            background-color: #04414d;
+        }
+        section {
 
-}
+            position: absolute;
+            height: 400px;
+            width: 1000px;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            display: flex;
+            gap: 3px;
+            align-items: center;
 
-section>div{
-    flex-grow: 1;
-    height: 100px;
-    border-radius: 20px;
-}
-      div:first-child{
-          height: 100px;
-          /*width: 120px;*/
-          /*background-color: red;*/
-          /*border-radius: 20px;*/
-          align-self: start;
-      }
+        }
 
-      /*.middle{*/
-      /*    position: relative;*/
-      /*    height: 100px;*/
-      /*    !*width: 120px;*!*/
-      /*    top: 200px;*/
-      /*    bottom: 0;*/
-      /*    !*background-color: #ea868f;*!*/
-      /*    border-radius: 20px;*/
-      /*    !*gap: 12px;*!*/
-      /*    !*left: 60px;*!*/
-      /*    align-items: center;*/
+        section > div {
+            flex-grow: 1;
+            height: 100px;
+            border-radius: 20px;
+        }
 
-      /*}*/
-
-      /* div:nth-child(3){*/
-      /*    background-color: green;*/
-      /*     height: 60px;*/
-      /*     width: 120px;*/
-      /*}*/
-      /* div:nth-child(4){*/
-      /*    background-color: blue;*/
-      /*}*/
-      /*div:nth-child(5){*/
-      /*    background-color: #ffc720;*/
-      /*}*/
-      /*div:nth-child(6){*/
-      /*    background-color: pink;*/
-      /*}*/
-
-     div:last-child{
-
-          height: 100px;
-          /*width: 120px;*/
-          /*background-color: hotpink;*/
-          /*border-radius: 20px;*/
-          /*left:506px;*/
-          align-self: end;
-      }
+        div:first-child {
+            height: 100px;
+            align-self: start;
+        }
 
 
+        div:last-child {
+            height: 100px;
+            align-self: end;
+        }
 
-  </style>
+
+        .line{
+            position: absolute;
+            top: 250px;
+            left: 220px;
+            height: 2px;
+            width: 900px;
+            background-color: white;
+        }
+
+        .line1{
+            position: absolute;
+            top: 400px;
+            left: 220px;
+            height: 2px;
+            width: 900px;
+            background-color: white;
+        }
+    </style>
 </head>
 <body>
 <section>
-    <div class="top">
-    </div>
-<!--    <hr>-->
-    <div class="middle"></div>
-    <div class="middle"></div>
-    <div class="middle"></div>
-    <div class="middle"></div>
-<!--    <hr>-->
-    <div class="bottom"></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
 
 </section>
+
+<div class="line"></div>
+<div class="line1"></div>
 <script>
 
-    let colors = ["red", "yellow", "green", "blue" , "deeppink", "orange"];
+    let colors = ["red", "yellow", "green", "blue", "deeppink", "orange"];
 
-    let divarray =document.querySelector("section").children;
+    let divArray = document.querySelector("section").children;
 
-setInterval(function (){
+    setInterval(function () {
 
-    for (let i = 0; i < divarray.length; i++) {
-        console.log(divarray[i]);
-        divarray[i].style.background=colors[i];
-    }
-        let lastElemnt = colors.pop();
-        colors.unshift(lastElemnt);
+        for (let i = 0; i < divArray.length; i++) {
+            console.log(divArray[i]);
+            divArray[i].style.background = colors[i];
+        }
+        let lastElement = colors.pop();
+        colors.unshift(lastElement);
 
-},500);
+    }, 500);
 
 </script>
 
 </body>
-
 
 
 </html>

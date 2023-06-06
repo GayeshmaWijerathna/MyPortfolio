@@ -70,7 +70,7 @@ header menu li a {
     left: 0;
     width: 1px;
     height: 3px;
-    background-color: #000000;
+    background-color: White;
     transition: width 0.3s ease-in-out;
 }
 
@@ -950,12 +950,12 @@ legend {
 
 
 input::placeholder {
-    color: #000;
+    color: White;
 }
 
 
 textarea::placeholder {
-    color: #000;
+    color: White;
 }
 
 

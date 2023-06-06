@@ -8,6 +8,7 @@
     <script src="js/bootstrap.js"></script>
     <link rel="stylesheet" href="css/myStyleJS.css">
 
+
 </head>
 
 <body>
@@ -350,6 +351,7 @@
 
 <!--End Order section-->
 
+<script src="js/jquery-3.7.0.min.js"></script>
 <script>
     document.addEventListener("DOMContentLoaded", function () {
         document.getElementById("home").style.display = 'inline-block';
@@ -357,6 +359,7 @@
         document.getElementById("item").style.display = 'none';
         document.getElementById("order").style.display = 'none';
     });
+
     document.getElementById("homeform").addEventListener("click", function () {
         document.getElementById("home").style.display = 'inline-block';
         document.getElementById("customer").style.display = 'none';
@@ -370,12 +373,14 @@
         document.getElementById("item").style.display = 'none';
         document.getElementById("order").style.display = 'none';
     });
+
     document.getElementById("itemform").addEventListener("click", function () {
         document.getElementById("home").style.display = 'none';
         document.getElementById("customer").style.display = 'none';
         document.getElementById("item").style.display = 'inline-block';
         document.getElementById("order").style.display = 'none';
     });
+
     document.getElementById("orderform").addEventListener("click", function () {
         document.getElementById("home").style.display = 'none';
         document.getElementById("customer").style.display = 'none';
@@ -388,24 +393,23 @@
         document.getElementById("customer").style.display='none';
         document.getElementById("item").style.display='none';
         document.getElementById("order").style.display='inline-block';
-    } );
+    });
 
     document.getElementById("customerform2").addEventListener("click", function () {
         document.getElementById("home").style.display='none';
         document.getElementById("customer").style.display='inline-block';
         document.getElementById("item").style.display='none';
         document.getElementById("order").style.display='none';
-    } );
+    });
+
     document.getElementById("itemform2").addEventListener("click", function () {
         document.getElementById("home").style.display='none';
         document.getElementById("customer").style.display='none';
         document.getElementById("item").style.display='inline-block';
         document.getElementById("order").style.display='none';
-    } );
-
+    });
 
         //-------------Customer Table----------------------------------
-
 
     document.getElementById("add").addEventListener("click",function(){
         let CusId=document.getElementById("CusID").value;
@@ -468,10 +472,6 @@
 
         itemTable.appendChild(tr);
     });
-
-
-
-
 
 </script>
 
