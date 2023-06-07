@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Smart-Grocery</title>
+    <script src="js/bootstrap.js"></script>
+    <link rel="stylesheet" href="css/myStyleJS.css">
+
+
+</head>
+
+<body>
+
+<header class="jumbotron bg-primary text-white p-3">
+    <!-- navigation -->
+        <nav class="navbar navbar-expand-lg bg-gradient" data-bs-theme="dark">
+            <!-- <nav class="navbar bg-primary" data-bs-theme="dark"> -->
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">DARKTOWN</a>
+                <img src="img/posLogo.png" alt="Logo" width="60" height="28"
+                     class="d-inline-block align-text-top">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#home" id="homeform">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#customer" id="customerform">Customers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#item" id="itemform">Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#order" id="orderform"> <img
+                                    src="img/CartPos.png" alt="" width="30"> Shop Now >> </a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="searchBtn" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </section>
+</header>
+
+<!-- Home section -->
+<section id="home"  style="padding-left: 45px;">
+    <section class="cards">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card h-100" style="width: 360px;">
+                    <a href="#order" id="orderform2"><img src="img/orders1.png" class="card-img-top" alt="orders"></a>
+                    <div class="card-body">
+                        <h1 class="card-title">Shop Now</h1>
+                        <p class="card-text"> <<< Click This >>> for your Orders </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100" style="width: 360px;">
+                    <a href="#customer" id="customerform2"> <img src="img/Customer1.png" class="card-img-top"
+                                                                 alt="customers"></a>
+                    <div class="card-body">
+                        <h1 class="card-title">Customers</h1>
+                        <p class="card-text"> <<< Click This >>> for Manage Customer </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100" style="width: 360px;">
+                    <a href="#item" id="itemform2"> <img src="img/Items.gif" class="card-img-top" alt="items"> </a>
+                    <div class="card-body">
+                        <h1 class="card-title">Products</h1>
+                        <p class="card-text"> <<< Click This >>> for Manage Items </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</section>
+<!-- End Home section -->
+
+<!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+
+<!--Customer-section -->
+<section id="customer" style="padding-left: 15px;">
+    <div id="manageAllCustomers ">
+        <section class="container w-100 bg-white">
+            <section class="row bg-white">
+                <div class="col-5  bg-white">
+                    <form>
+                        <div class="col-autoLbl">
+                            <label for="CusID" class="col-form-label">Customer Id</label>
+                        </div>
+                        <div class="col-auto">
+                            <input type="text" id="CusID" class="form-control" placeholder="ex: C001" aria-describedby="passwordHelpInline">
+                        </div>
+
+                        <div class="col-autoLbl">
+                            <label for="CusName" class="col-form-label">Name</label>
+                        </div>
+                        <div class="col-auto">
+                            <input type="text" id="CusName" class="form-control" placeholder="ex: A.B.C.Perera" aria-describedby="passwordHelpInline">
+                        </div>
+
+                        <div class="col-autoLbl">
+                            <label for="Address" class="col-form-label">Address</label>
+                        </div>
+                        <div class="col-auto">
+                            <input type="text" id="Address" class="form-control" placeholder="ex: No236/2, Galle RD, Panadura." aria-describedby="passwordHelpInline">
+                        </div>
+
+                        <div class="col-autoLbl">
+                            <label for="Contact" class="col-form-label">Contact</label>
+                        </div>
+                        <div class="col-auto">
+                            <input type="text" id="Contact" class="form-control" placeholder="ex: 0771234567" aria-describedby="passwordHelpInline">
+                        </div>
+
+                        <div class="buttons container-fluid">
+                            <button id="add" class="btn btn-success" type="button">Add</button>
+                            <button id="update" class="btn bg-warning" type="button">Update</button>
+                            <button id="remove" class="btn btn-danger" type="button">Remove</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="col-7 bg-light">
+                    <table class="table table-hover">
+                        <thead class="bg-secondary bg-gradient ">
+                        <tr>
+                            <th>Customer ID</th>
+                            <th> Name</th>
+                            <th>Address</th>
+                            <th>Contact No</th>
+
+                        </tr>
+                        </thead>
+                        <tbody id="table">
+
+
+
+                        </tbody>
+                    </table>
+                </div>
+
+            </section>
+        </section>
+    </div>
+</section>
+
+<!--End customer-section -->
+
+<!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+
+<!-- Item section -->
+<section id="item" style="padding-left: 15px;">
+
+    <div id="manageItem ">
+        <section class="container w-100 bg-white">
+            <section class="row bg-white">
+                <div class="col-5  bg-white">
+                    <form>
+                        <div class="col-autoLbl">
+                            <label for="Itemcode" class="col-form-label">Item Code</label>
+                        </div>
+                        <div class="col-auto">
+                            <input type="text" id="Itemcode" class="form-control" placeholder="ex: I001" aria-describedby="passwordHelpInline">
+                        </div>
+
+                        <div class="col-autoLbl">
+                            <label for="Desc" class="col-form-label">Description</label>
+                        </div>
+                        <div class="col-auto">
+                            <input type="text" id="Desc" class="form-control" placeholder="Item Name" aria-describedby="passwordHelpInline">
+                        </div>
+                        <div class="col-autoLbl">
+                            <label for="qty" class="col-form-label">Qty</label>
+                        </div>
+                        <div class="col-auto">
+                            <input type="text" id="qty" class="form-control" placeholder="00"  aria-describedby="passwordHelpInline">
+                        </div>
+                        <div class="col-autoLbl">
+                            <label for="Up" class="col-form-label">Unit Price</label>
+                        </div>
+                        <div class="col-auto">
+                            <input type="text" id="Up" class="form-control" placeholder="Price" aria-describedby="passwordHelpInline">
+                        </div>
+
+                        <div class="buttons container-fluid">
+                            <button id="iAdd" class="btn btn-success" type="button">Add</button>
+                            <button id="iUpdate" class="btn bg-warning" type="button">Update</button>
+                            <button id="iRemove" class="btn btn-danger" type="button">Remove</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="col-7 bg-gradient">
+                    <table class="table table-hover">
+                        <thead class="bg-gradient bg-info ">
+                        <tr>
+                            <th>Item Code</th>
+                            <th> Description </th>
+                            <th>Qty</th>
+                            <th>Unit Price</th>
+
+                        </tr>
+                        </thead>
+                        <tbody id="iTBody">
+
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </section>
+    </div>
+
+</section>
+<!-- End Item section -->
+
+<!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+
+<!-- Order section -->
+<section id="order" style="padding-left: 15px;">
+
+        <section class="container-fluid w-100 bg-white" style=" padding-left: 30px;">
+            <section class="row bg-white">
+                <div class="col-4 bg-white">
+                    <form>
+
+                        <div class="col-autoLbl">
+                            <label class="col-form-label">Customer Id</label>
+                        </div>
+                        <div class="col-auto">
+                            <input type="text" class="form-control" aria-describedby="passwordHelpInline">
+                        </div>
+
+                        <div class="col-autoLbl">
+                            <label  class="col-form-label">Name</label>
+                        </div>
+                        <div class="col-auto">
+                            <input type="text" class="form-control" aria-describedby="passwordHelpInline">
+                        </div>
+
+                        <div class="col-autoLbl">
+                            <label  class="col-form-label">Address</label>
+                        </div>
+                        <div class="col-auto">
+                            <input type="text"  class="form-control" aria-describedby="passwordHelpInline">
+                        </div>
+
+                        <div class="col-autoLbl">
+                            <label  class="col-form-label">Contact</label>
+                        </div>
+                        <div class="col-auto">
+                            <input type="text" class="form-control" aria-describedby="passwordHelpInline">
+                        </div>
+                    </form>
+                </div>
+                <div class="col-2  bg-white">
+                    <button class="searchBtn btn-success " style="width: 120px; margin-left: 0; background-color: #6610f2" type="button">Search </button>
+                </div>
+                <div class="col-3  bg-white">
+                    <form>
+                        <div class="col-autoLbl">
+                            <label class="col-form-label">Item Code</label>
+
+                        </div>
+                        <div class="col-auto">
+                            <input type="text" class="form-control" aria-describedby="passwordHelpInline">
+                        </div>
+
+                        <div class="col-autoLbl">
+                            <label  class="col-form-label">Description</label>
+                        </div>
+                        <div class="col-auto">
+                            <input type="text"  class="form-control" aria-describedby="passwordHelpInline">
+                        </div>
+                        <div class="col-autoLbl">
+                            <label for="unit" class="col-form-label">Unit Price</label>
+                        </div>
+                        <div class="col-auto">
+                            <input type="text"  class="form-control" aria-describedby="passwordHelpInline">
+                        </div>
+                        <div class="col-auto">
+                            <div class="col-qty">
+                                <label for="unit"   class="col-form-label-lg">Qty</label>
+                            </div>
+                            <div class="qtyNum" >
+                                <input type="number" id="unit" class="qty"  aria-describedby="qtyHelpInline">
+                                <button id="btnaddtoCart" class="addToCartBtn btn-warning " style=" margin-left: 160px; margin-top:  -4px; position: absolute; background-color: #ffc720; width: 100px; height: 40px; border-radius: 15px" type="button">Add To Cart </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-2  bg-white" style="padding-top: 30px">
+                    <button class="searchBtn btn-success " style="width: 80px; margin-left: 90px; background-color: #6610f2"  type="button">Search </button>
+
+                    <button class="buyCartBtn btn-success " style=" font-weight: bold; margin-left: 90px; color: white; background-color: #04414d; font-size: large; border-radius: 20px; margin-top: 150px; height: 70px;" type="button">Buy Cart</button>
+
+                </div>
+
+            </section>
+
+        </section>
+
+    <div class="col-12 bg-info-subtle" style="justify-content: center">
+        <table class="table table-hover" style="margin-top: 10px;">
+            <thead class="bg-success ">
+            <tr>
+                <th>Item Code</th>
+                <th>Description</th>
+                <th>Unit Price</th>
+                <th>Qty</th>
+                <th>Total</th>
+                <th><button class="butCartBtn btn-danger " style="border-radius: 20px; background-color: #ff253a;"  type="button">Remove Item</button></th>
+
+            </tr>
+            </thead>
+            <tbody id="orderTID">
+            <tr>
+                <td>I001</td>
+                <td>Tikiri Mari</td>
+                <td>1</td>
+                <td>250.00</td>
+                <td>250.00</td>
+            </tr>
+
+            <tr>
+                <td>I002</td>
+                <td>Cargils Ice Cream</td>
+                <td>1L</td>
+                <td>520.00</td>
+                <td>520.00</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+</section>
+
+<!--End Order section-->
+
+<script src="js/jquery-3.7.0.min.js"></script>
+<script>
+   $("DOMContentLoaded", function () {
+       $("#home").css("display", 'inline-block');
+       $("#customer").css("display", 'none');
+        $("#item").css("display", 'none');
+        $("#order").css("display", 'none');
+    });
+
+    $("#homeform").click( function () {
+        $("#home").css("display", 'inline-block');
+        $("#customer").css("display", 'none');
+        $("#item").css("display", 'none');
+      $("#order").css("display", 'none');
+    });
+
+    $("#customerform").click( function () {
+        $("#home").css("display", 'none');
+       $("#customer").css("display", 'inline-block');
+        $("#item").css("display", 'none');
+        $("#order").css("display", 'none');
+    });
+
+    $("#itemform").click( function () {
+        $("#home").css("display", 'none');
+        $("#customer").css("display", 'none');
+      $("#item").css("display", 'inline-block');
+        $("#order").css("display", 'none');
+    });
+
+    $("#orderform").click( function () {
+        $("#home").css("display", 'none');
+       $("#customer").css("display", 'none');
+      $("#item").css("display", 'none');
+        $("#order").css("display", 'inline-block');
+    });
+
+    $("#orderform2").click( function () {
+        $("#home").css("display", 'none');
+        $("#customer").css("display", 'none');
+       $("#item").css("display", 'none');
+      $("#order").css("display", 'inline-block');
+    });
+
+    $("#customerform2").click( function () {
+        $("#home").css("display", 'none');
+        $("#customer").css("display", 'inline-block');
+        $("#item").css("display", 'none');
+        $("#order").css("display", 'none');
+    });
+
+    $("#itemform2").click( function () {
+       $("#home").css("display", 'none');
+       $("#customer").css("display", 'none');
+        $("#item").css("display", 'inline-block');
+        $("#order").css("display", 'none');
+    });
+
+        //-------------Customer Table----------------------------------
+
+   $("#add").click(function(){
+        let CusId= $("#CusID").val();
+        let CusName=$("#CusName").val();
+        let address=$("#Address").val();
+        let contact=$("#Contact").val();
+
+        console.log(CusId,CusName,address,contact);
+
+        let table = $("#table");
+
+            let tr = $('<tr>');
+            let td1 = $('<td>');
+            let td2 = $('<td>');
+            let td3 = $('<td>');
+            let td4 = $('<td>');
+
+            td1.text(CusId);
+            td2.text(CusName);
+            td3.text(address);
+            td4.text(contact);
+
+
+            tr.append(td1);
+            tr.append(td2);
+            tr.append(td3);
+            tr.append(td4);
+
+            table.append(tr);
+        });
+
+
+
+    //-------------Item Table----------------------------------
+
+
+    $("#iAdd").click(function(){
+        let itemCode= $("#Itemcode").val();
+        let description= $("#Desc").val();
+        let qty= $("#qty").val();
+        let unitPrice=$("#Up").val();
+        // console.log(itemCode,CusName,address,contact);
+
+        let itemTable = $("#iTBody");
+
+        let tr = $('<tr>');
+        let td1 = $('<td>');
+        let td2 = $('<td>');
+        let td3 = $('<td>');
+        let td4 = $('<td>');
+
+        td1.text(itemCode);
+        td2.text(description);
+        td3.text(qty);
+        td4.text(unitPrice);
+
+        tr.append(td1);
+        tr.append(td2);
+        tr.append(td3);
+        tr.append(td4);
+
+        itemTable.append(tr);
+    });
+
+
+   //-------------Order Table----------------------------------
+
+
+
+
+</script>
+
+<script src="js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
