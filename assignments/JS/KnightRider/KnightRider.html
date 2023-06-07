@@ -117,7 +117,8 @@
 
     let section = document.querySelector("section");
     let divArray = section.getElementsByTagName("div");
-    let mySound = new Audio("audio/Knight-Rider-Theme-Song.mp3");
+    let mySound = new Audio("audio/kitt scanner.mp3");
+    let mySound2 = new Audio("audio/Knight-Rider-Theme-Song.mp3");
 
     let count = 0;
     let reverse = true;
@@ -173,6 +174,10 @@
         clearInterval(interval);
         Kitt();
         mySound.play();
+        setInterval( function (){
+            mySound2.play();
+        },8000);
+
     });
 
     //Stop
