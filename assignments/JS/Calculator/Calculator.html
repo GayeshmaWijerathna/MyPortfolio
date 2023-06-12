@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Calculator</title>
-    <script src="Assets/jquery-3.7.0.min.js"></script>
+    <link rel="stylesheet" href="Assets/CalcStyle.css">
 </head>
 
 <body>
@@ -11,20 +11,23 @@
 <div class="container">
     <form name="form">
         <div class="display">
-            <input type="text" placeholder="0" name="displayResult"/>
+            <div class="Cal">Calculator</div>
+            <input type="text" id="result" placeholder="0" name="displayResult" style="color: white">
         </div>
+
         <div class="buttons">
             <div class="row">
-                <input type="button" name="divb" value="/" onClick="calcNumbers(divb.value)">
-                <input type="button" name="subb" value="-" onClick="calcNumbers(subb.value)">
-                <input type="button" name="clear" value="c" onClick="calcNumbers(clear.0)">
-                <input type="button" name="precent" value="%" onClick="calcNumbers(precent.value)">
+                <input type="button" name="bdiv" value="/" onClick="calcNumbers(bdiv.value)">
+                <input type="button" name="bminus" value="-" onClick="calcNumbers(bminus.value)">
+                <input type="button" name="clear" value="C" onClick="clearResult()">
+                <input type="button" name="bpres" value="%" onClick="calcNumbers(bpres.value)">
             </div>
+
             <div class="row">
                 <input type="button" name="b7" value="7" onClick="calcNumbers(b7.value)">
                 <input type="button" name="b8" value="8" onClick="calcNumbers(b8.value)">
                 <input type="button" name="b9" value="9" onClick="calcNumbers(b9.value)">
-                <input type="button" name="mulb" value="x" onClick="calcNumbers(mulb.value)">
+                <input type="button" name="bmul" value="*" onClick="calcNumbers(bmul.value)">
             </div>
 
             <div class="row">
@@ -38,15 +41,15 @@
                 <input type="button" name="b1" value="1" onClick="calcNumbers(b1.value)">
                 <input type="button" name="b2" value="2" onClick="calcNumbers(b2.value)">
                 <input type="button" name="b3" value="3" onClick="calcNumbers(b3.value)">
-                <input type="button" name="addb" value="+" onClick="calcNumbers(addb.value)">
+                <input type="button" id="plus" name="bplus" value="+" onClick="calcNumbers(bplus.value)">
 
             </div>
 
             <div class="row">
-                <input type="button" name="potb" value="." onClick="calcNumbers(potb.value)">
+                <input type="button" name="dot" value="." onClick="calcNumbers(dot.value)">
                 <input type="button" name="b0" value="0" onClick="calcNumbers(b0.value)">
                 <input type="button" name="b00" value="00" onClick="calcNumbers(b00.value)">
-                <input type="button" class="red" value="=" onClick="displayResult.value=eval(displayResult.value)">
+                <input type="button" class="equal" value="=" onClick="displayResult.value=eval(displayResult.value)">
             </div>
         </div>
 
@@ -54,9 +57,15 @@
 </div>
 
 <script>
-    function calcNumbers(result){
-        form.displayResult.value=form.displayResult.value+result;
+    function calcNumbers(result) {
+        form.displayResult.value = form.displayResult.value += result;
     }
+
+    function clearResult() {
+        document.getElementById('result').value = '';
+    }
+
+
 </script>
 
 </body>
