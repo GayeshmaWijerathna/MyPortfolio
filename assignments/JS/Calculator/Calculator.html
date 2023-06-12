@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Calculator</title>
-    <script src="Js/jquery-3.7.0.min.js"></script>
+    <script src="Assets/jquery-3.7.0.min.js"></script>
 </head>
 
 <body>
@@ -17,7 +17,7 @@
             <div class="row">
                 <input type="button" name="divb" value="/" onClick="calcNumbers(divb.value)">
                 <input type="button" name="subb" value="-" onClick="calcNumbers(subb.value)">
-                <input type="button" name="clear" value="c" onClick="calcNumbers(clear.value)">
+                <input type="button" name="clear" value="c" onClick="calcNumbers(clear.0)">
                 <input type="button" name="precent" value="%" onClick="calcNumbers(precent.value)">
             </div>
             <div class="row">
@@ -52,5 +52,12 @@
 
     </form>
 </div>
+
+<script>
+    function calcNumbers(result){
+        form.displayResult.value=form.displayResult.value+result;
+    }
+</script>
+
 </body>
 </html>
