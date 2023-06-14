@@ -135,6 +135,7 @@
                             <button id="add" class="btn btn-success" type="button">Add</button>
                             <button id="update" class="btn bg-warning" type="button">Update</button>
                             <button id="remove" class="btn btn-danger" type="button">Remove</button>
+                            <button id="GetAll" class="btn btn-info" type="button">GetAll</button>
                         </div>
                     </form>
                 </div>
@@ -208,6 +209,7 @@
                             <button id="iAdd" class="btn btn-success" type="button">Add</button>
                             <button id="iUpdate" class="btn bg-warning" type="button">Update</button>
                             <button id="iRemove" class="btn btn-danger" type="button">Remove</button>
+                            <button id="iGetAll" class="btn btn-info" type="button">GetAll</button>
                         </div>
                     </form>
                 </div>
@@ -457,30 +459,56 @@
 
         console.log(customerDB);
 
-        let table = $("#table");
+        // ------- Add Table ------------
+        // let table = $("#table");
+        //
+        // let tr = $('<tr>');
+        // let td1 = $('<td>');
+        // let td2 = $('<td>');
+        // let td3 = $('<td>');
+        // let td4 = $('<td>');
+        //
+        // td1.text(cusDBlist[0]);
+        // td2.text(cusDBlist[1]);
+        // td3.text(cusDBlist[2]);
+        // td4.text(cusDBlist[3]);
+        //
+        // tr.append(td1);
+        // tr.append(td2);
+        // tr.append(td3);
+        // tr.append(td4);
+        //
+        // table.append(tr);
+    });
 
-        let tr = $('<tr>');
-        let td1 = $('<td>');
-        let td2 = $('<td>');
-        let td3 = $('<td>');
-        let td4 = $('<td>');
+    //GetAll-----------------
 
-        td1.text(cusDBlist[0]);
-        td2.text(cusDBlist[1]);
-        td3.text(cusDBlist[2]);
-        td4.text(cusDBlist[3]);
+    $("#GetAll").click(function () {
+        $("#table").empty();
+        for (let i =0; i<customerDB.length; i++){
+            let id = customerDB[i].id;
+            let name = customerDB[i].name;
+            let address = customerDB[i].address;
+            let contact = customerDB[i].contact;
 
-        tr.append(td1);
-        tr.append(td2);
-        tr.append(td3);
-        tr.append(td4);
+            let flow =` <tr>
+                <td>${id}</td>
+                <td>${name}</td>
+                <td>${address}</td>
+                <td>${contact}</td>
+            </tr>`;
 
-        table.append(tr);
+
+            $("#table").append(flow);
+
+        }
+
     });
 
 
     //-------------Item Table----------------------------------
 
+let itemList = [];
 
     $("#iAdd").click(function () {
         let itemCode = $("#Itemcode").val();
@@ -489,25 +517,57 @@
         let unitPrice = $("#Up").val();
         // console.log(itemCode,CusName,address,contact);
 
-        let itemTable = $("#iTBody");
+        var item = {
+            iCode: itemCode,
+            desc: description,
+            qty1: qty,
+            uPrice: unitPrice
+        }
 
-        let tr = $('<tr>');
-        let td1 = $('<td>');
-        let td2 = $('<td>');
-        let td3 = $('<td>');
-        let td4 = $('<td>');
+        itemList.push(item);
 
-        td1.text(itemCode);
-        td2.text(description);
-        td3.text(qty);
-        td4.text(unitPrice);
+        // let itemTable = $("#iTBody");
+        //
+        // let tr = $('<tr>');
+        // let td1 = $('<td>');
+        // let td2 = $('<td>');
+        // let td3 = $('<td>');
+        // let td4 = $('<td>');
+        //
+        // td1.text(itemCode);
+        // td2.text(description);
+        // td3.text(qty);
+        // td4.text(unitPrice);
+        //
+        // tr.append(td1);
+        // tr.append(td2);
+        // tr.append(td3);
+        // tr.append(td4);
+        //
+        // itemTable.append(tr);
+    });
 
-        tr.append(td1);
-        tr.append(td2);
-        tr.append(td3);
-        tr.append(td4);
+    $("#iGetAll").click(function () {
 
-        itemTable.append(tr);
+        $("#iTBody").empty();
+
+        for (let i =0; i<itemList.length; i++) {
+            let itemCode = itemList[i].iCode;
+            let description = itemList[i].desc;
+            let qty = itemList[i].qty1;
+            let unitPrice = itemList[i].uPrice;
+
+            let list = ` <tr>
+                <td>${itemCode}</td>
+                <td>${description}</td>
+                <td>${qty}</td>
+                <td>${unitPrice}</td>
+            </tr>`;
+
+
+            $("#iTBody").append(list);
+        }
+
     });
 
 
