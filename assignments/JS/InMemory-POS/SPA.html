@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <title>Smart-Grocery</title>
-    <script src="js/bootstrap.js"></script>
-    <link rel="stylesheet" href="css/myStyleJS.css">
+    <script src="assets/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="assets/css/myStyleJS.css">
+
 
 
 </head>
@@ -19,7 +20,7 @@
         <!-- <nav class="navbar bg-primary" data-bs-theme="dark"> -->
         <div class="container-fluid">
             <a class="navbar-brand" href="#">DARKTOWN</a>
-            <img src="img/posLogo.png" alt="Logo" width="60" height="28"
+            <img src="assets/img/posLogo.png" alt="Logo" width="60" height="28"
                  class="d-inline-block align-text-top">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -39,7 +40,7 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#order" id="orderform"> <img
-                                src="img/CartPos.png" alt="" width="30"> Shop Now >> </a>
+                                src="assets/img/CartPos.png" alt="" width="30"> Shop Now >> </a>
                     </li>
                 </ul>
                 <form class="d-flex" role="search">
@@ -58,7 +59,7 @@
         <div class="row row-cols-1 row-cols-md-3 g-4">
             <div class="col">
                 <div class="card h-100" style="width: 360px;">
-                    <a href="#order" id="orderform2"><img src="img/orders1.png" class="card-img-top" alt="orders"></a>
+                    <a href="#order" id="orderform2"><img src="assets/img/orders1.png" class="card-img-top" alt="orders"></a>
                     <div class="card-body">
                         <h1 class="card-title">Shop Now</h1>
                         <p class="card-text"> <<< Click This >>> for your Orders </p>
@@ -67,7 +68,7 @@
             </div>
             <div class="col">
                 <div class="card h-100" style="width: 360px;">
-                    <a href="#customer" id="customerform2"> <img src="img/Customer1.png" class="card-img-top"
+                    <a href="#customer" id="customerform2"> <img src="assets/img/Customer1.png" class="card-img-top"
                                                                  alt="customers"></a>
                     <div class="card-body">
                         <h1 class="card-title">Customers</h1>
@@ -77,7 +78,7 @@
             </div>
             <div class="col">
                 <div class="card h-100" style="width: 360px;">
-                    <a href="#item" id="itemform2"> <img src="img/Items.gif" class="card-img-top" alt="items"> </a>
+                    <a href="#item" id="itemform2"> <img src="assets/img/Items.gif" class="card-img-top" alt="items"> </a>
                     <div class="card-body">
                         <h1 class="card-title">Products</h1>
                         <p class="card-text"> <<< Click This >>> for Manage Items </p>
@@ -171,7 +172,7 @@
 <section id="item" style="padding-left: 15px;">
 
     <div id="manageItem ">
-        <section class="container w-100 bg-white">
+        <section class="container w-70 bg-white">
             <section class="row bg-white">
                 <div class="col-5  bg-white">
                     <form>
@@ -250,9 +251,16 @@
                     <div class="col-autoLbl">
                         <label class="col-form-label">Customer Id</label>
                     </div>
-                    <div class="col-auto">
-                        <input type="text" class="form-control" aria-describedby="passwordHelpInline">
-                    </div>
+                    <div class="form-group">
+<!--                        <input type="text" class="form-control" aria-describedby="passwordHelpInline">-->
+                        <select class="form-control" id="selectCusID">
+                            <option value="1">C001</option>
+                            <option value="2">C002</option>
+                            <option value="3">C003</option>
+                        </select>
+                        <span class="control-error"
+                              id="cus-empty-error"></span>
+                         </div>
 
                     <div class="col-autoLbl">
                         <label class="col-form-label">Name</label>
@@ -374,7 +382,7 @@
 
 <!--End Order section-->
 
-<script src="js/jquery-3.7.0.min.js"></script>
+<script src="assets/js/jquery-3.7.0.min.js"></script>
 
 <script>
     $("DOMContentLoaded", function () {
@@ -382,6 +390,7 @@
         $("#customer").css("display", 'none');
         $("#item").css("display", 'none');
         $("#order").css("display", 'none');
+        GetAllCustomers();
     });
 
     $("#homeform").click(function () {
@@ -435,148 +444,15 @@
 
     //-------------Customer Table----------------------------------
 
-    let customerDB = [];
-
-    $("#add").click(function () {
-
-        let CusId = $("#CusID").val();
-        let CusName = $("#CusName").val();
-        let address = $("#Address").val();
-        let contact = $("#Contact").val();
-
-
-        var customer = {
-            id: CusId,
-            name: CusName,
-            address: address,
-            contact: contact
-        }
-
-
-        // let cusDBlist = [CusId, CusName, address, contact];
-
-        customerDB.push(customer);
-
-        console.log(customerDB);
-
-        // ------- Add Table ------------
-        // let table = $("#table");
-        //
-        // let tr = $('<tr>');
-        // let td1 = $('<td>');
-        // let td2 = $('<td>');
-        // let td3 = $('<td>');
-        // let td4 = $('<td>');
-        //
-        // td1.text(cusDBlist[0]);
-        // td2.text(cusDBlist[1]);
-        // td3.text(cusDBlist[2]);
-        // td4.text(cusDBlist[3]);
-        //
-        // tr.append(td1);
-        // tr.append(td2);
-        // tr.append(td3);
-        // tr.append(td4);
-        //
-        // table.append(tr);
-    });
-
-    //GetAll-----------------
-
-    $("#GetAll").click(function () {
-        $("#table").empty();
-        for (let i =0; i<customerDB.length; i++){
-            let id = customerDB[i].id;
-            let name = customerDB[i].name;
-            let address = customerDB[i].address;
-            let contact = customerDB[i].contact;
-
-            let flow =` <tr>
-                <td>${id}</td>
-                <td>${name}</td>
-                <td>${address}</td>
-                <td>${contact}</td>
-            </tr>`;
-
-
-            $("#table").append(flow);
-
-        }
-
-    });
-
-
-    //-------------Item Table----------------------------------
-
-let itemList = [];
-
-    $("#iAdd").click(function () {
-        let itemCode = $("#Itemcode").val();
-        let description = $("#Desc").val();
-        let qty = $("#qty").val();
-        let unitPrice = $("#Up").val();
-        // console.log(itemCode,CusName,address,contact);
-
-        var item = {
-            iCode: itemCode,
-            desc: description,
-            qty1: qty,
-            uPrice: unitPrice
-        }
-
-        itemList.push(item);
-
-        // let itemTable = $("#iTBody");
-        //
-        // let tr = $('<tr>');
-        // let td1 = $('<td>');
-        // let td2 = $('<td>');
-        // let td3 = $('<td>');
-        // let td4 = $('<td>');
-        //
-        // td1.text(itemCode);
-        // td2.text(description);
-        // td3.text(qty);
-        // td4.text(unitPrice);
-        //
-        // tr.append(td1);
-        // tr.append(td2);
-        // tr.append(td3);
-        // tr.append(td4);
-        //
-        // itemTable.append(tr);
-    });
-
-    $("#iGetAll").click(function () {
-
-        $("#iTBody").empty();
-
-        for (let i =0; i<itemList.length; i++) {
-            let itemCode = itemList[i].iCode;
-            let description = itemList[i].desc;
-            let qty = itemList[i].qty1;
-            let unitPrice = itemList[i].uPrice;
-
-            let list = ` <tr>
-                <td>${itemCode}</td>
-                <td>${description}</td>
-                <td>${qty}</td>
-                <td>${unitPrice}</td>
-            </tr>`;
-
-
-            $("#iTBody").append(list);
-        }
-
-    });
-
-
-    //-------------Order Table----------------------------------
-
-
 </script>
-
-<script src="js/bootstrap.bundle.js"></script>
+<script src="controllers/CustomerController.js"></script>
+<script src="controllers/ItemController.js"></script>
+<script src="db/DB.js"></script>
+<script src="models/Customer.js"></script>
+<script src="models/Item.js"></script>
+<script src="controllers/validations/CustomerValidations.js"></script>
+<script src="controllers/validations/ItemValidations.js"></script>
+<script src="assets/js/bootstrap.bundle.js"></script>
 </body>
 
 </html>

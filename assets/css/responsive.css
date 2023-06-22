@@ -668,7 +668,7 @@
 
 @media all and (max-width:1440px) {
     #hireme {
-        left: 999px;
+        left: 1100px;
     }
 
     main > section > p {
@@ -701,10 +701,10 @@
     }
 
     #about {
-        height: 350%;
+        height: 406%;;
     }
     #buttonset {
-        bottom: -35px;
+        bottom: 50px;
     }
 
 
