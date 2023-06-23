@@ -1,10 +1,9 @@
-
-const CUS_ID_REGEX = /^(C0)[0-9]{2,}$/;
+const CUS_ID_REGEX = /^(C00-)[0-9]{3,}$/;
 const CUS_NAME_REGEX = /^[A-Za-z ]{5,}$/;
-const CUS_ADDRESS_REGEX = /^[A-Za-z0-9 ]{8,}$/;
+const CUS_ADDRESS_REGEX = /^[A-Za-z0-9 ]{5,}$/;
 const CUS_CONTACT_REGEX = /^[0-9]{2,}([.][0-9]{2})?$/;
 
-let c_vArray = new Array();
+let c_vArray = [];
 c_vArray.push({field: $("#CusID"), regEx: CUS_ID_REGEX});
 c_vArray.push({field: $("#CusName"), regEx: CUS_NAME_REGEX});
 c_vArray.push({field: $("#Address"), regEx: CUS_ADDRESS_REGEX});
@@ -95,7 +94,7 @@ function setBtn() {
     }
 
     let id = $("#CusID").val();
-    if (GetAllCustomers(id) == undefined) {
+    if (checkAll(id) == undefined) {
         $("#remove").prop("disabled", true);
         $("#update").prop("disabled", true);
     } else {

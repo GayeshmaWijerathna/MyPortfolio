@@ -1,20 +1,20 @@
 // validation for item
-const ITEM_CODE_REGEX = /^(I0)[0-9]{2}$/;
+const ITEM_CODE_REGEX = /^(I00-)[0-9]{3,}$/;
 const ITEM_NAME_REGEX = /^[A-Za-z ]{3,}$/;
 const ITEM_QTY_REGEX = /^[0-9]+$/;
 const ITEM_PRICE_REGEX = /^[0-9]{2,}([.][0-9]{2})?$/;
 
 //add validations and text fields to the
-let i_vArray = new Array();
+let i_vArray = [];
 i_vArray.push({field: $("#Itemcode"), regEx: ITEM_CODE_REGEX});
 i_vArray.push({field: $("#Desc"), regEx: ITEM_NAME_REGEX});
 i_vArray.push({field: $("#qty"), regEx: ITEM_QTY_REGEX});
 i_vArray.push({field: $("#Up"), regEx: ITEM_PRICE_REGEX});
 
-function clearItemInputFields() {
-    $("#Itemcode,#Desc,#qty,#Up").val("");
-    $("#Itemcode,#Desc,#qty,#Up").css("border", "1px solid #ced4da");
-    $("#Itemcode").focus();
+function clearItemFields() {
+    $("#Desc,#qty,#Up").val("");
+    $("#Desc,#qty,#Up").css("border", "1px solid #ced4da");
+    $("#Desc").focus();
     setItemBtn();
 }
 
@@ -96,7 +96,7 @@ function setItemBtn() {
     }
 
     let code = $("#Itemcode").val();
-    if (searchItem(code) == undefined) {
+    if (checkAllItems(code) == undefined) {
         $("#iRemove").prop("disabled", true);
         $("#iUpdate").prop("disabled", true);
     } else {

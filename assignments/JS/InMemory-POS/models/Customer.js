@@ -1,4 +1,4 @@
-let customer={
+let customers={
     id:"",
     name:"",
     address:"",

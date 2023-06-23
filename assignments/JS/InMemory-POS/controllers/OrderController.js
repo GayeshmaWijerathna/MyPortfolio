@@ -1,18 +1,12 @@
+/*========================SAVE ORDER=============================*/
 
 $("#btnPurchase").attr('disabled', true);
 $("#btnAddToCart").attr('disabled', true);
 
-/**
- * Invoice Details
- * */
-
-/**
- * Invoice Details
- * Order ID
- * */
+/*------------Generate new order id---------------*/
 function generateOrderID() {
-    if (orderArray.length > 0) {
-        let lastId = orderArray[orderArray.length - 1].oId;
+    if (orderList.length > 0) {
+        let lastId = orderList[orderList.length - 1].oId;
         let digit = lastId.substring(6);
         let number = parseInt(digit) + 1;
         return lastId.replace(digit, number);
@@ -21,10 +15,7 @@ function generateOrderID() {
     }
 }
 
-/**
- * Invoice Details
- * Order Date
- * */
+/*----------Set date----------------*/
 function setCurrentDate() {
     let orderDate = $("#orderDate");
     let today = new Date();
@@ -35,22 +26,19 @@ function setCurrentDate() {
     orderDate.val(today);
 }
 
-/**
- * Invoice Details
- * Customer Select Combo
- * */
+/*---------------Customer to combo-------------------*/
 function loadAllCustomersForOption() {
     $("#cmbCustomerId").empty();
-    for (let cus of customerArray) {
+    for (let cus of customerDB) {
         $("#cmbCustomerId").append(`<option>${cus.id}</option>`);
     }
 }
 
 $("#cmbCustomerId").click(function () {
-    let rCmbC = customerArray.find(({id}) => id === $("#cmbCustomerId").val());
+    let rCmbC = customerDB.find(({id}) => id === $("#cmbCustomerId").val());
     $("#customerName").val(rCmbC.name);
     $("#customerAddress").val(rCmbC.address);
-    $("#customerSalary").val(rCmbC.e_mail);
+    $("#customerContact").val(rCmbC.contact);
 });
 
 
@@ -67,21 +55,20 @@ let discount = 0;
 let subTotal = 0;
 
 
-/*------------Item details to combo-------------*/
+/*------------Items to combo-------------*/
 function loadAllItemsForOption() {
     $("#cmbItemCode").empty();
-    for (let item of itemArray) {
-        $("#cmbItemCode").append(`<option>${item.itemId}</option>`);
+    for (let item of itemListDB) {
+        $("#cmbItemCode").append(`<option>${item.code}</option>`);
     }
 }
 
 $("#cmbItemCode").click(function () {
-    let rCmbI = itemArray.find(({itemId}) => itemId === $("#cmbItemCode").val());
-    $("#itemName").val(rCmbI.descriptions);
-    $("#itemPrice").val(rCmbI.unitprice);
+    let rCmbI = itemListDB.find(({code}) => code === $("#cmbItemCode").val());
+    $("#itemName").val(rCmbI.description);
+    $("#itemPrice").val(rCmbI.unitPrice);
     $("#qtyOnHand").val(rCmbI.qty);
 });
-
 
 
 /*------------Place holder-------------*/
@@ -89,6 +76,7 @@ $("#cmbItemCode").click(function () {
 let tableRow = [];
 
 $("#btnAddToCart").click(function () {
+
     let duplicate = false;
 
     for (let i = 0; i < $("#tblAddToCart tr").length; i++) {
@@ -113,9 +101,9 @@ $("#btnAddToCart").click(function () {
 
     }
 
-    /*------------Place holder table add-------------*/
+    /*------------table to Place holder ------------*/
 
-    $("#tblAddToCart>tr").click('click', function () {
+    $("#tblAddToCart>tr").click(function () {
 
         tableRow = $(this);
         let itemCode = $(this).children(":eq(0)").text();
@@ -130,7 +118,10 @@ $("#btnAddToCart").click(function () {
         $("#buyQty").val(qty);
         $("#txtTotal").val(total);
 
+        $("#orderId").val(generateOrderID());
+
     });
+
 });
 
 /*------------Place holder table load-------------*/
@@ -191,6 +182,7 @@ function manageTotal(preTotal, nowTotal) {
 /*------------Place holder generate discount-------------*/
 
 $(document).on("change keyup blur", "#txtDiscount", function () {
+
     discount = $("#txtDiscount").val();
     discount = (total / 100) * discount;
     subTotal = total - discount;
@@ -224,20 +216,19 @@ function placeOrder() {
     let subTotal = $("#txtSubTotal").val();
     let discount = $("#txtDiscount").val();
 
-    let newOrder= Object.assign({},orderObject);
-    newOrder.oId=orderID;
-    newOrder.cId=customerId;
-    newOrder.oDate=orderDate;
-    newOrder.subTotal=subTotal;
-    newOrder.discount=discount;
+    let newOrder = Object.assign({}, orderObject);
+    newOrder.oId = orderID;
+    newOrder.cId = customerId;
+    newOrder.oDate = orderDate;
+    newOrder.subTotal = subTotal;
+    newOrder.discount = discount;
 
-    orderArray.push(newOrder);
+    orderList.push(newOrder);
 
 }
 
 
 /*-------place order to array for table 02------------*/
-
 function pushOrderDetails() {
     for (let i = 0; i < $("#tblAddToCart tr").length; i++) {
         let orderId = $("#orderId").val();
@@ -248,12 +239,12 @@ function pushOrderDetails() {
         let qty = $("#tblAddToCart tr").children(':nth-child(4)')[i].innerText;
         let total = $("#tblAddToCart tr").children(':nth-child(5)')[i].innerText;
 
-        let newOrder= Object.assign({},placeOrderObject);
-        newOrder.orderId=orderId;
-        newOrder.cusId=cusId;
-        newOrder.itemId=itemId;
-        newOrder.qty=qty;
-        newOrder.total=total;
+        let newOrder = Object.assign({}, placeOrderObject);
+        newOrder.orderId = orderId;
+        newOrder.cusId = cusId;
+        newOrder.itemId = itemId;
+        newOrder.qty = qty;
+        newOrder.total = total;
 
         orderDetails.push(newOrder);
 
@@ -265,7 +256,7 @@ function pushOrderDetails() {
 $("#btnPurchase").click(function () {
     placeOrder();
     pushOrderDetails();
-    $("#orderId").val( generateOrderID());
+    // $("#orderId").val(generateOrderID());
     clearDetails();
     $("#tblAddToCart").empty();
     setCurrentDate();
@@ -275,14 +266,42 @@ $("#btnPurchase").click(function () {
 
 /*----------clear rows------------------*/
 function clearDetails() {
-    $('#cmbCustomerId,#customerName,#customerAddress,#customerSalary,#cmbItemCode,#itemName,#itemPrice,#qtyOnHand,#buyQty,#txtDiscount,#txtTotal,#txtDiscount,#txtSubTotal,#txtCash,#txtBalance').val("");
+    $('#cmbCustomerId,#customerName,#customerAddress,#customerContact,#cmbItemCode,#itemName,#itemPrice,#qtyOnHand,#buyQty,#txtDiscount,#txtTotal,#txtDiscount,#txtSubTotal,#txtCash,#txtBalance').val("");
 
 }
 
+/*----------Check qty allows------------------*/
 $("#btnClearAll").click(function () {
     clearDetails();
 });
 
+$("#btnAddToCart").click(function () {
+    $("#orderId").val(generateOrderID());
+    let itemIdQ = $("#cmbItemCode").val();
+    let response = updateItemQty(itemIdQ);
+    if (response) {
+    }
+});
+
+function updateItemQty(itemIdQ) {
+    let itemQ = searchItemQty(itemIdQ);
+    if (itemQ != null) {
+        itemQ.qty = $("#qtyOnHand").val();
+        GetAllItems();
+        return true;
+    } else {
+        return false;
+    }
+}
+
+function searchItemQty(itemIdQ) {
+    for (let itemQ of itemListDB) {
+        if (itemQ.code === itemIdQ) {
+            return itemQ;
+        }
+    }
+    return null;
+}
 
 /*------------Check qty allow------------*/
 
@@ -291,34 +310,10 @@ $(document).on("change keyup blur", "#buyQty", function () {
     let buyQty = $("#buyQty").val();
     let buyOnHand = qtyOnHand - buyQty;
     if (buyOnHand < 0) {
-        $("#lblCheckQty").parent().children('strong').text(qtyOnHand + " : Empty On Stock..!!");
+        $("#lblCheckQty").parent().children('strong').text(qtyOnHand + " : Empty Stock..!!");
         $("#btnAddToCart").attr('disabled', true);
     } else {
         $("#lblCheckQty").parent().children('strong').text("");
         $("#btnAddToCart").attr('disabled', false);
     }
 });
-
-/* ------------------Order details-----------------------*/
-
-function loadAllOrders() {
-
-    $("#T_body_Place_Order_detail1").empty();
-
-    for (var order of orderArray) {
-        console.log(order);
-        var row = `<tr><td>${order.oId}</td><td>${order.cId}</td><td>${order.oDate}</td><td>${order.subTotal}</td><td>${order.discount}</td></tr>`;
-        $("#T_body_Place_Order_detail1").append(row);
-    }
-}
-
-function loadAllOrderDetails() {
-
-    $("#T_body_Place_Order_detail2").empty();
-
-    for (var orderDetail of orderDetails) {
-        console.log(orderDetail);
-        var row = `<tr><td>${orderDetail.orderId}</td><td>${orderDetail.cusId}</td><td>${orderDetail.itemId}</td><td>${orderDetail.qty}</td><td>${orderDetail.total}</td></tr>`;
-        $("#T_body_Place_Order_detail2").append(row);
-    }
-}

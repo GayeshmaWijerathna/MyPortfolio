@@ -2,54 +2,26 @@
 
 
 $("#iAdd").click(function () {
-    let itemCode = $("#Itemcode").val();
-    let description = $("#Desc").val();
-    let qty = $("#qty").val();
-    let unitPrice = $("#Up").val();
-    // console.log(itemCode,CusName,address,contact);
-
-    var item = {
-        iCode: itemCode,
-        desc: description,
-        qty1: qty,
-        uPrice: unitPrice
-    }
-
-    itemList.push(item);
+    AddItem();
     GetAllItems();
-    // let itemTable = $("#iTBody");
-    //
-    // let tr = $('<tr>');
-    // let td1 = $('<td>');
-    // let td2 = $('<td>');
-    // let td3 = $('<td>');
-    // let td4 = $('<td>');
-    //
-    // td1.text(itemCode);
-    // td2.text(description);
-    // td3.text(qty);
-    // td4.text(unitPrice);
-    //
-    // tr.append(td1);
-    // tr.append(td2);
-    // tr.append(td3);
-    // tr.append(td4);
-    //
-    // itemTable.append(tr);
+    loadAllItemsForOption();
 });
 
 $("#iGetAll").click(function () {
     GetAllItems();
+    loadAllItemsForOption();
 });
 
 function GetAllItems(){
+    $("#Itemcode").val(generateItemID());
+
     $("#iTBody").empty();
 
-    for (let i = 0; i < itemList.length; i++) {
-        let itemCode = itemList[i].iCode;
-        let description = itemList[i].desc;
-        let qty = itemList[i].qty1;
-        let unitPrice = itemList[i].uPrice;
+    for (let i = 0; i < itemListDB.length; i++) {
+        let itemCode = itemListDB[i].code;
+        let description = itemListDB[i].description;
+        let qty = itemListDB[i].qty;
+        let unitPrice = itemListDB[i].unitPrice;
 
         let list = ` <tr>
                 <td>${itemCode}</td>
@@ -58,7 +30,6 @@ function GetAllItems(){
                 <td>${unitPrice}</td>
             </tr>`;
 
-
         $("#iTBody").append(list);
 
         bindItemTrEvents();
@@ -66,31 +37,36 @@ function GetAllItems(){
 
 }
 
+// function clearItemFields2(){
+//     $("#Desc,#qty,#Up").val("");
+//     $("#Desc").focus();
+// }
+
 function bindItemTrEvents() {
     $("#iTBody").on('click', 'tr', function () {
 
         let itemCode = $(this).children(":eq(0)").text();
         let description = $(this).children(":eq(1)").text();
         let qty = $(this).children(":eq(2)").text();
-        let contact = $(this).children(":eq(3)").text();
+        let unitPrice = $(this).children(":eq(3)").text();
 
         $("#Itemcode").val(itemCode);
         $("#Desc").val(description);
         $("#qty").val(qty);
-        $("#Up").val(contact);
+        $("#Up").val(unitPrice);
     });
 
 }
 
-
 function AddItem() {
+
     let itemCode = $("#Itemcode").val();
     let description = $("#Desc").val();
     let qtyOnHand = $("#qty").val();
     let unitPrice = $("#Up").val();
 
 
-    var item = {
+   /* var item = {
         ic: itemCode,
         descript: description,
         qtyoh: qtyOnHand,
@@ -98,11 +74,19 @@ function AddItem() {
     }
 
     itemListDB.push(item);
+*/
 
-    clearItemInputFields();
+    let newItems=Object.assign({},item);
+    newItems.code=itemCode;
+    newItems.description=description;
+    newItems.qty=qtyOnHand;
+    newItems.unitPrice=unitPrice;
 
+
+    itemListDB.push(newItems);
+
+    clearItemFields();
     GetAllItems();
-
 }
 
 /*----------Remove Item------------------*/
@@ -110,11 +94,11 @@ $('#iRemove').click(function () {
     let id = $('#Itemcode').val();
 
     if (confirm("Are you Sure??")) {
-        let response = DeleteCustomers(id);
+        let response = DeleteItems(id);
         if (response) {
             alert("Delete this Item?");
             GetAllItems();
-            clearItemInputFields();
+            clearItemFields();
         }else {
             alert("Something went wrong...!!");
         }
@@ -125,7 +109,7 @@ $('#iRemove').click(function () {
 
 function DeleteItems(id) {
     for (let i = 0; i < itemListDB.length; i++) {
-        if (itemListDB[i].id == id){
+        if (itemListDB[i].code == id){
             itemListDB.splice(i,1);
             return true;
         }
@@ -145,7 +129,7 @@ $("#iUpdate").click(function () {
     if(response){
         alert("Item update success !")
         GetAllItems();
-        clearItemInputFields();
+        clearItemFields();
     }else {
         alert("Something went wrong...!!")
     }
@@ -153,15 +137,18 @@ $("#iUpdate").click(function () {
 
 function updateItem(id) {
     for (let i=0;i<itemListDB.length;i++){
-        if(itemListDB[i].id==id){
+        if(itemListDB[i].code==id){
 
-            let itemCode=$("#Itemcode").val();
+
             let description=$("#Desc").val();
+            let qty=$("#qty").val();
             let uniPrice=$("#Up").val();
 
-            itemListDB[i].name=itemCode;
-            itemListDB[i].address=description;
-            itemListDB[i].contact=uniPrice;
+
+            itemListDB[i].description=description;
+            itemListDB[i].qty=qty;
+            itemListDB[i].unitPrice=uniPrice;
+
 
             GetAllItems();
 
@@ -170,5 +157,15 @@ function updateItem(id) {
 
     }
 
+}
+function generateItemID() {
+    if (itemListDB.length > 0) {
+        let lastId = itemListDB[itemListDB.length - 1].code;
+        let digit = lastId.substring(6);
+        let number = parseInt(digit) + 1;
+        return lastId.replace(digit, number);
+    } else {
+        return "I00-001";
+    }
 }
 

@@ -2,6 +2,9 @@
 /*----------Add Customer------------------*/
 $("#add").click(function () {
     AddCustomer();
+
+    GetAllCustomers();
+    loadAllCustomersForOption();
     // console.log(customerDB);
 
     // ------- Add Table ------------
@@ -27,7 +30,7 @@ $("#add").click(function () {
 });
 
 function GetAllCustomers() {
-
+    $("#CusID").val(generateCustomerID());
     $("#table").empty();
     for (let i = 0; i < customerDB.length; i++) {
         let id = customerDB[i].id;
@@ -52,31 +55,39 @@ function GetAllCustomers() {
 
 
 function AddCustomer() {
+
+
     let CusId = $("#CusID").val();
     let CusName = $("#CusName").val();
     let cusAddress = $("#Address").val();
     let cusContact = $("#Contact").val();
 
 
-    var customer = {
+    /*var customer = {
         id: CusId,
         name: CusName,
         address: cusAddress,
         contact: cusContact
-    }
+    }*/
+    let customer= Object.assign({},customers);
+    customer.id=CusId;
+    customer.name=CusName;
+    customer.address=cusAddress;
+    customer.contact=cusContact;
 
     customerDB.push(customer);
 
     clearCustomerFields();
-
+    loadAllCustomersForOption();
     GetAllCustomers();
-
 }
 //GetAll-----------------
+
 
 $("#GetAll").click(function () {
     GetAllCustomers();
     clearCustomerFields();
+    loadAllCustomersForOption();
 });
 
 
@@ -86,12 +97,12 @@ function bindTrEvents() {
         let id = $(this).children(":eq(0)").text();
         let name = $(this).children(":eq(1)").text();
         let address = $(this).children(":eq(2)").text();
-        let salary = $(this).children(":eq(3)").text();
+        let contact = $(this).children(":eq(3)").text();
 
         $("#CusID").val(id);
         $("#CusName").val(name);
         $("#Address").val(address);
-        $("#Contact").val(salary);
+        $("#Contact").val(contact);
     });
 }
 
@@ -165,6 +176,18 @@ function updateCustomer(id) {
 
 
 function clearCustomerFields(){
-    $('#CusID, #CusName , #Address , #Contact').val(" ");
-    $('#CusID').focus();
+    $('#CusName , #Address , #Contact').val(" ");
+    $('#CusName').focus();
+}
+
+
+function generateCustomerID() {
+    if (customerDB.length > 0) {
+        let lastId = customerDB[customerDB.length - 1].id;
+        let digit = lastId.substring(6);
+        let number = parseInt(digit) + 1;
+        return lastId.replace(digit, number);
+    } else {
+        return "C00-001";
+    }
 }

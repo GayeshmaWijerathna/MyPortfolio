@@ -1,75 +1,65 @@
-//logics for SPA
-initiateUI();
-
-function initiateUI() {
-    clearAll();
-    $("#dashboardContent").css("display", "block");
-    setTheLastView();
-}
-
-function saveLastView(clickedID) {
-    switch (clickedID) {
-        case "dashboardContent":
-            localStorage.setItem("view", "HOME");
-            break;
-        case "customerContent":
-            localStorage.setItem("view", "CUSTOMER");
-            break;
-        case "itemContent":
-            localStorage.setItem("view", "ITEM");
-            break;
-        case "orderContent":
-            localStorage.setItem("view", "ORDER");
-            break;
-    }
-}
-
-function setTheLastView() {
-    let view = localStorage.getItem("view");
-    switch (view) {
-        case "HOME":
-            setView($("#dashboardContent"));
-            break;
-        case "ITEM":
-            setView($("#itemContent"));
-            break;
-        case "CUSTOMER":
-            setView($("#customerContent"));
-            break;
-        case "ORDER":
-            setView($("#orderContent"));
-            break;
-        default:
-            setView($("#dashboardContent"));
-    }
-}
-
-function clearAll() {
-    $("#dashboardContent,#customerContent,#itemContent,#orderContent").css('display', 'none');
-}
-
-function setView(viewOb) {
-    clearAll();
-    viewOb.css("display", "block");
-    saveLastView(viewOb.get(0).id);
-    console.log(viewOb.get(0).id);
-}
-
-//bind events
-$("#lnkHome").click(function () {
-    setView($("#dashboardContent"));
+$("DOMContentLoaded", function () {
+    $("#home").css("display", 'inline-block');
+    $("#customer").css("display", 'none');
+    $("#item").css("display", 'none');
+    $("#order").css("display", 'none');
+    GetAllCustomers();
+    GetAllItems();
+    $("#CusID").val(generateCustomerID());
+    $("#Itemcode").val(generateItemID());
+    $("#orderId").val(generateOrderID());
 });
 
-$("#lnkCustomer").click(function () {
-    setView($("#customerContent"));
+$("#homeform").click(function () {
+    $("#home").css("display", 'inline-block');
+    $("#customer").css("display", 'none');
+    $("#item").css("display", 'none');
+    $("#order").css("display", 'none');
 });
 
-$("#lnkItem").click(function () {
-    setView($("#itemContent"));
+$("#customerform").click(function () {
+    $("#home").css("display", 'none');
+    $("#customer").css("display", 'inline-block');
+    $("#item").css("display", 'none');
+    $("#order").css("display", 'none');
 });
 
-$("#lnkOrders").click(function () {
-    setView($("#orderContent"));
+$("#itemform").click(function () {
+    $("#home").css("display", 'none');
+    $("#customer").css("display", 'none');
+    $("#item").css("display", 'inline-block');
+    $("#order").css("display", 'none');
+
 });
 
-//end of logics for SPA
+$("#orderform").click(function () {
+    $("#home").css("display", 'none');
+    $("#customer").css("display", 'none');
+    $("#item").css("display", 'none');
+    $("#order").css("display", 'inline-block');
+    setCurrentDate();
+
+});
+
+$("#orderform2").click(function () {
+    $("#home").css("display", 'none');
+    $("#customer").css("display", 'none');
+    $("#item").css("display", 'none');
+    $("#order").css("display", 'inline-block');
+    setCurrentDate();
+
+});
+
+$("#customerform2").click(function () {
+    $("#home").css("display", 'none');
+    $("#customer").css("display", 'inline-block');
+    $("#item").css("display", 'none');
+    $("#order").css("display", 'none');
+});
+
+$("#itemform2").click(function () {
+    $("#home").css("display", 'none');
+    $("#customer").css("display", 'none');
+    $("#item").css("display", 'inline-block');
+    $("#order").css("display", 'none');
+});
