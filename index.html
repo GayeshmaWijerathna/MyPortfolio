@@ -22,7 +22,30 @@
     <meta name="viewport" content="width=device-width initial-scale=1 minimum-scale=0.5 maximum-scale=2">
     <link rel="icon" href="logo.png">
 
-
+    <style>
+        #loader {
+            transition: opacity 1s;
+            position: fixed;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background: #000000;
+        }
+        #loader>div {
+            width: 290px;
+            height: 290px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+            background: url("assets/image/loader.gif");
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
 
 </head>
 
@@ -307,6 +330,7 @@
        </section>
 
     </section>
+
     <div id="loader">
         <div></div>
         </div>
@@ -377,5 +401,13 @@
     <small> &nbsp;&nbsp;&nbsp;   © Copyright Gayeshma Wijayarathna. All Rights Reserved 2023. </small>
 </footer>
 
+
+<script>
+    let loader = document.getElementById("loader");
+    window.addEventListener("load", function () {
+        console.log("This message will print just after fully loading the website")
+        loader.style.display = 'none';
+    });
+</script>
 </body>
 </html>
