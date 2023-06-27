@@ -1,5 +1,47 @@
 
-@media all and (max-width:1024px) {
+@media all and (max-width:425px) {
+    main > section > h3 {
+
+        font-size: 24px;
+        top: 250px;
+        left: 44px;
+    }
+    main > section > h1 {
+        top: 287px;
+        font-size: 30pt;
+        left: 52px;
+    }
+
+    #Background {
+        width: 364px;
+        height: 570px;
+        top: 70px;
+        left: 30px;
+
+    }
+
+    #Mylogo>img {
+        position: absolute;
+        top: 135px;
+        left: 155px;
+        height: 94px;
+        width: 110px;
+    }
+
+    main > section > div > h5 {
+        left: 50px;
+        top: 474px;
+    }
+
+    #hireme {
+        position: absolute;
+        left: 528px;
+        top: 561px;
+    }
+
+    .fast-flicker{
+        left: 500px;
+    }
 }
 
 
@@ -93,7 +135,6 @@
     #hireme{
         left: 896px;
     }
-
 
     #edu2 {
         left: 869px;
