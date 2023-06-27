@@ -19,5 +19,6 @@ GitHub Pages : https://gayeshmawijerathna.github.io/MyPortfolio/ <br>
  
 Desktop View
 
-![Desktop - 1](c)
+![Desktop - 1](![image](https://github.com/GayeshmaWijerathna/MyPortfolio/assets/109783810/5b608f0e-899f-405d-883b-5e176fcf00f1)
+)
 
