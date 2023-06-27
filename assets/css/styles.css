@@ -936,7 +936,7 @@ main > section > p {
     position: absolute;
     top: 945px;
     left: 30%;
-    z-index: 18;
+    z-index: 10;
     width: 500px;
 }
 
