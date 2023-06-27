@@ -213,11 +213,6 @@
         right: 13px;
     }
 
-    #edu2 {
-        position: relative;
-        left: 329px;
-    }
-
     #ijseli2 {
         left: 45px;
         top: 485px;
@@ -464,7 +459,7 @@
 
 /*++++++++++++++  START - 768 PX  +++++++++++++ (min-device-width: 768px) to (max-device-width: 1024px)*/
 
-@media all and (max-width:1024px) {
+@media all and (min-width:1024px) {
 
 
     #Mylogo>img {
@@ -545,18 +540,18 @@
 
     .education {
         color: white;
-        position: relative;
+        position: absolute;
         margin-left: -99px;
         margin-right: 5px;
     }
 
 
     #edu2 {
-        position: relative;
+        position: absolute;
         left: 959px;
     }
     #edu4 {
-        /*position: relative;*/
+        position: absolute;
         left: 959px;
     }
 
@@ -660,13 +655,25 @@
 
     }
 
+   /* #edu2 {
+        position: absolute;
+        top: 480px;
+
+        left: 449px;
+    }*/
+
+    /*#edu4{
+        position: absolute;
+        top: 480px;
+        left: 602px;
+    }*/
 }
 /*=======================   END */
 
 
 /*++++++++++++++  START - 1025 PX  +++++++++++++ (min-device-width: 1024px) to (max-device-width: 1440px)*/
 
-@media all and (max-width:1440px) {
+/*@media all and (max-width:1440px) {
     #hireme {
         left: 1100px;
     }
@@ -679,10 +686,16 @@
         height: 120%;
     }
 
-    #edu2 {
+  !*  #edu2 {
         left: 1050px;
     }
+*!
 
+    #edu2 {
+        position: absolute;
+        top: 480px;
+        left: 849px;
+    }
     #edu4 {
         left: 1050px;
     }
@@ -709,7 +722,7 @@
 
 
 
-}
+}*/
 
 /*=======================   END */
 

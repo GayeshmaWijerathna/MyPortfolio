@@ -1,0 +1,109 @@
+
+@media all and (max-width:1024px) {
+}
+
+
+@media all and (max-width:768px){
+    #hireme {
+        margin-left: -305px;
+    }
+
+
+    #edu2 {
+
+        top: 490px;
+        left: 521px;
+        margin-left: -225px;
+    }
+
+    #edu4 {
+
+        top: 680px;
+        left: 573px;
+        margin-left: -225px;
+    }
+
+    .activities {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: space-around;
+        column-gap: 115px;
+        align-items: center;
+        margin-top: 2168px;
+    }
+
+    .seti {
+        width: 214px;
+        height: 359px;
+        margin-left: -90px;
+    }
+
+    #btnSubmit {
+        position: relative;
+        height: 30px;
+        width: 254px;
+        bottom: 1px;
+        left: -51px;
+        color: white;
+        background-color: #566573;
+        border-radius: 20px;
+        border: none;
+    }
+
+    #Background {
+        color: black;
+        background-color: black;
+        position: absolute;
+        width: 703px;
+        height: 570px;
+        border-radius: 10%;
+        top: 70px;
+        left: 30px;
+        opacity: 69%;
+    }
+
+    #btnSubmit {
+        position: relative;
+        height: 30px;
+        width: 169px;
+        bottom: -7px;
+        left: 110px;
+        color: white;
+        background-color: #566573;
+        border-radius: 20px;
+        border: none;
+    }
+
+    #buttonset {
+        position: absolute;
+        display: flex;
+        gap: 6px;
+        transform: scale(1.6);
+        left: 84px;
+        bottom: 55px;
+    }
+    footer {
+        height: 60%;
+}
+}
+
+
+@media all and (max-width:1024px){
+    #hireme{
+        left: 896px;
+    }
+
+
+    #edu2 {
+        left: 869px;
+        width: 60px;
+    }
+
+    #edu4 {
+        width: 60px;
+        left: 869px;
+    }
+
+
+}

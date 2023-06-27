@@ -118,7 +118,7 @@ html {
 #hireme{
     position: absolute;
     top: 580px;
-    left: 1350px;
+    left: 1200px;
     color: #ffb5b5;
     /*background: linear-gradient(to right, black, #A93226);*/
     /*background-clip: initial;*/
@@ -422,12 +422,12 @@ main > section > div > h5 {
 main > section > p {
     position: absolute;
     font-family: Inter;
-    left: 75px;
+    left: 59px;
     top: 531px;
-    right: 550px;
+    right: 570px;
     text-align: center;
     color: #ffffff;
-    font-size: 19px;
+    font-size: 17px;
     filter: drop-shadow(4px 2px 3px black);
 }
 
@@ -801,7 +801,7 @@ main > section > p {
 
 
 #about { /* about */
-    height: 280%;
+    height: 100%;
     width: 100%;
     margin-top: 3644px;
     position: absolute;
@@ -877,6 +877,7 @@ main > section > p {
     position: absolute;
     top: 480px;
     left: 1010px;
+    width:60px;
 }
 
 /* COT Text */
@@ -909,6 +910,7 @@ main > section > p {
     position: absolute;
     top: 680px;
     left: 1010px;
+    width:60px;
 }
 
 /* PILANA Text */
@@ -932,25 +934,28 @@ main > section > p {
 
 #cimg1 {
     position: absolute;
-    top: 890px;
-    left: 28%;
+    top: 945px;
+    left: 30%;
     z-index: 18;
+    width: 500px;
 }
 
 
 #cimg2 {
     position: absolute;
     top: 948px;
-    left: 12%;
+    left: 13%;
     opacity: 25%;
+    width: 500px;
 }
 
 
 #cimg3 {
     position: absolute;
     top: 948px;
-    left: 55%;
+    left: 45%;
     opacity: 25%;
+    width: 500px;
 }
 
 
@@ -1042,12 +1047,12 @@ main > section > p {
 }
 
 /* Movies */
-#actimg1 {
-    position: absolute;
-    top: 2140px;
-    left: 244px;
+/*#actimg1 {*/
+/*    position: absolute;*/
+/*    top: 2140px;*/
+/*    left: 244px;*/
 
-}
+/*}*/
 
 /* Movies Text */
 #acth1 {
@@ -1061,11 +1066,11 @@ main > section > p {
 }
 
 /* Music */
-#actimg2 {
-    position: absolute;
-    top: 2154px;
-    left: 481px;
-}
+/*#actimg2 {*/
+/*    position: absolute;*/
+/*    top: 2154px;*/
+/*    left: 481px;*/
+/*}*/
 
 /* Music Text */
 #acth2 {
@@ -1080,12 +1085,12 @@ main > section > p {
 }
 
 /* Web */
-#actimg3 {
-    position: absolute;
-    top: 2154px;
-    left: 696px;
+/*#actimg3 {*/
+/*    position: absolute;*/
+/*    top: 2154px;*/
+/*    left: 696px;*/
 
-}
+/*}*/
 
 /* Web Text */
 #acth3 {
@@ -1099,11 +1104,11 @@ main > section > p {
 }
 
 /* Travel */
-#actimg4 {
-    position: absolute;
-    top: 2154px;
-    left: 916px;
-}
+/*#actimg4 {*/
+/*    position: absolute;*/
+/*    top: 2154px;*/
+/*    left: 916px;*/
+/*}*/
 
 /* Travel Text */
 #acth4 {
@@ -1116,6 +1121,15 @@ main > section > p {
     color: transparent;
 }
 
+.activities {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-around;
+    column-gap: 115px;
+    align-items: center;
+    margin-top: 2168px;
+}
 
 /* --------------------------Footer--------------------------- */
 
@@ -1125,7 +1139,7 @@ footer {
     position: absolute;
     margin-bottom: 0;
     background-color: white;
-    height: 47%;
+    height: 48%;
     margin-top: 6000px;
 }
 
