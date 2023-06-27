@@ -17,7 +17,7 @@ Mockup : https://www.figma.com/file/xpr1twUPmcGvDIXxM7q5mM/Mock-up?type=design&n
 GitHub Pages : https://gayeshmawijerathna.github.io/MyPortfolio/ <br>
 
  
-Desktop View
 
+Desktop View
 ![Desktop - 1](https://github.com/GayeshmaWijerathna/MyPortfolio/assets/109783810/5b608f0e-899f-405d-883b-5e176fcf00f1)
 
